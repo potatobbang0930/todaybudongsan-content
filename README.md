@@ -29,4 +29,11 @@ https://raw.githubusercontent.com/<username>/todaybudongsan-content/main/content
 3. `content/archive.json`에 `{ "date", "title" }` 항목 추가
 4. 커밋 + push = 발행
 
-아직 실제 콘텐츠 파일은 없다 (Day 5 네트워크 로직 테스트, Day 8 실제 운영 시작 예정).
+## ⚠️ 현재 상태 (2026-08-11)
+
+**지금 올라와 있는 콘텐츠는 전부 `[SAMPLE]` 표시된 가짜 데이터다.** 앱의 latest.json
+요청·캐시·폴백 3단계 로직을 실제 URL로 검증하기 위해 Day 5에 발행한 것이며, 어떤 사실도
+담고 있지 않다.
+
+**출시 전 반드시 실제 콘텐츠로 교체해야 한다** (Day 8 발행 루틴). 교체 전에 앱이 출시되면
+사용자에게 `[SAMPLE]` 문구가 그대로 노출된다.

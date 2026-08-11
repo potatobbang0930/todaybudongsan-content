@@ -1,0 +1,46 @@
+{
+  "date": "2026-08-11",
+  "publishedAt": "2026-08-11T09:00:00+09:00",
+  "updatedAt": "2026-08-11T09:00:00+09:00",
+  "version": 1,
+  "title": "[SAMPLE] 네트워크 로딩 검증용 콘텐츠입니다 (실제 콘텐츠 아님)",
+  "summary": [
+    "[SAMPLE] 이 파일은 앱의 latest.json 요청·캐시·폴백 3단계 로직을 검증하기 위한 가짜 콘텐츠입니다.",
+    "[SAMPLE] 아래 모든 문장은 구조를 채우기 위해 임의로 작성된 것이며, 어떤 사실도 담고 있지 않습니다.",
+    "[SAMPLE] 실제 콘텐츠는 Day 8 발행 루틴에서 사람 검수를 거쳐 이 파일을 대체합니다."
+  ],
+  "whyItMatters": [
+    {
+      "type": "fact",
+      "text": "[SAMPLE] 이 문장은 '사실' 배지의 렌더링을 확인하기 위한 자리표시 문장입니다."
+    },
+    {
+      "type": "interpretation",
+      "text": "[SAMPLE] 이 문장은 '해석' 배지의 렌더링을 확인하기 위한 자리표시 문장입니다."
+    },
+    {
+      "type": "outlook",
+      "text": "[SAMPLE] 이 문장은 '전망' 배지의 렌더링을 확인하기 위한 자리표시 문장입니다."
+    }
+  ],
+  "impact": [
+    {
+      "audience": "[SAMPLE] 대상 표기 자리",
+      "type": "interpretation",
+      "text": "[SAMPLE] audience 필드가 있는 항목의 렌더링을 확인하기 위한 자리표시 문장입니다."
+    },
+    {
+      "type": "fact",
+      "text": "[SAMPLE] audience 필드가 없는 항목의 렌더링을 확인하기 위한 자리표시 문장입니다."
+    }
+  ],
+  "timelineImpact": {
+    "type": "fact",
+    "text": "[SAMPLE] 일정 영향 섹션의 렌더링을 확인하기 위한 자리표시 문장입니다."
+  },
+  "sources": [
+    {
+      "name": "[SAMPLE] 출처 없음 — 검증용 가짜 데이터입니다"
+    }
+  ]
+}
