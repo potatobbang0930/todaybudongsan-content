@@ -136,9 +136,15 @@ def main() -> int:
     opener = build_opener()
     candidates: list[dict] = []
 
+    failed: list[str] = []
+
     for name, url, needs_lookup in FEEDS:
         raw = get(opener, url)
         if not raw:
+            # 조용히 넘어가면 "그날 자료가 없었다"와 구분이 안 된다.
+            # 한 기관이 통째로 빠진 채 정상처럼 보이는 게 가장 위험하다.
+            print(f"  {name}: ❌ 접속 실패 — 이 기관 자료가 통째로 빠집니다")
+            failed.append(name)
             continue
         xml = raw.decode("utf-8", "replace")
         items = re.findall(r"<item>(.*?)</item>", xml, re.S)
@@ -179,9 +185,17 @@ def main() -> int:
             print(f"  본문 확보: {c['title'][:40]} ({len(c['body'])}자)")
 
     with open(args.out, "w", encoding="utf-8") as f:
-        json.dump({"target_date": target, "candidates": candidates},
-                  f, ensure_ascii=False, indent=2)
+        json.dump({"target_date": target, "candidates": candidates,
+                   "failed_sources": failed}, f, ensure_ascii=False, indent=2)
     print(f"\n총 {len(candidates)}건 → {args.out}")
+
+    if failed:
+        print(f"\n❌ 접속 실패 {len(failed)}곳: {', '.join(failed)}")
+        print("   이 결과를 그대로 쓰면 안 됩니다. 빠진 기관에 더 중요한 자료가")
+        print("   있었을 수 있고, 결과만 보면 알 방법이 없습니다.")
+        print("   (GitHub 러너에서는 .go.kr 사이트 접속이 막힙니다 — 국내에서 실행하세요.)")
+        return 1
+
     if not candidates:
         print("⚠️  후보가 없습니다. 주말·공휴일이면 정상입니다.")
     return 0
