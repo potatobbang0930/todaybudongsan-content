@@ -1,0 +1,103 @@
+# 매일 22시(KST)에 공식 자료를 수집해 콘텐츠 초안 PR을 만든다.
+# 22시인 이유: 그 시각이면 부처 업무가 끝나 그날 나온 자료가 전부 올라와 있다.
+#
+# 이 워크플로는 PR을 만드는 데까지다. 발행은 사람이 Merge할 때 일어난다
+# ("검수 없는 완전 자동 발행"은 MVP 금지 항목).
+name: 일일 초안
+
+on:
+  schedule:
+    # GitHub Actions cron은 UTC 기준. 22:00 KST = 13:00 UTC.
+    # 실행이 몇 분에서 길게는 그 이상 밀릴 수 있다(GitHub 부하에 따라).
+    - cron: '0 13 * * *'
+  workflow_dispatch:
+    inputs:
+      date:
+        description: '수집 대상 날짜 (YYYY-MM-DD, 비우면 오늘 KST)'
+        required: false
+      effort:
+        description: '모델 effort'
+        required: false
+        default: high
+        type: choice
+        options: [low, medium, high, xhigh, max]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 의존성 설치
+        run: pip install --quiet anthropic
+
+      - name: 대상 날짜 결정 (KST)
+        id: d
+        run: |
+          DATE="${{ inputs.date }}"
+          if [ -z "$DATE" ]; then DATE=$(TZ=Asia/Seoul date +%F); fi
+          echo "date=$DATE" >> "$GITHUB_OUTPUT"
+          echo "대상 날짜: $DATE"
+
+      - name: 공식 자료 수집
+        run: python3 scripts/collect_sources.py --date "${{ steps.d.outputs.date }}"
+
+      - name: 초안 생성
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python3 scripts/generate_draft.py \
+            --effort "${{ inputs.effort || 'high' }}"
+
+      - name: 검증
+        run: python3 scripts/validate_content.py content/latest.json
+
+      - name: PR 생성
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          DATE="${{ steps.d.outputs.date }}"
+          BRANCH="content/$DATE"
+
+          if [ -z "$(git status --porcelain content/latest.json)" ]; then
+            echo "변경 없음 — PR을 만들지 않습니다."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add content/latest.json
+          git commit -m "콘텐츠 초안 $DATE"
+          git push -f -u origin "$BRANCH"
+
+          TITLE=$(python3 -c "import json;print(json.load(open('content/latest.json'))['title'])")
+
+          {
+            echo "## 오늘의 콘텐츠 초안 ($DATE 자료)"
+            echo
+            echo "> 확인하실 것은 **3가지**입니다. 나머지는 자동 검사가 통과했어요."
+            echo "> ① 숫자·날짜가 원문과 맞는지 ② 오늘 이걸 다루는 게 맞는지 ③ 사람이 쓴 것 같은지"
+            echo ">"
+            echo "> 괜찮으면 **Merge** = 발행. 고칠 게 있으면 \`content/latest.json\`을 바로 수정하세요."
+            echo
+            echo "### $TITLE"
+            echo
+            python3 scripts/render_draft.py content/latest.json
+            echo
+            echo "---"
+            echo
+            echo "## 왜 이걸 골랐나 (모델 설명)"
+            echo
+            cat selection_note.md
+          } > pr_body.md
+
+          gh pr create --title "콘텐츠 초안 $DATE — $TITLE" --body-file pr_body.md

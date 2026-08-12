@@ -69,3 +69,33 @@ https://raw.githubusercontent.com/<username>/todaybudongsan-content/main/content
 ```sh
 python3 scripts/validate_content.py content/latest.json
 ```
+
+## 자동 수집 파이프라인
+
+매일 22시(KST)에 GitHub Actions가 공식 자료를 훑어 초안 PR을 만들어요.
+**PR을 만드는 데까지가 자동이고, 발행은 사람이 Merge할 때 일어나요.**
+
+| 스크립트 | 하는 일 |
+|---|---|
+| `collect_sources.py` | Tier 1 피드 6개 수집. 국토부는 본문이 hwpx 첨부에만 있어 내려받아 파싱하고, 금융위는 RSS에 날짜가 없어 상세 페이지에서 보완해요 |
+| `generate_draft.py` | Claude API로 초안 생성. 출력 JSON은 structured outputs로 스키마가 보장돼요 |
+| `render_draft.py` | PR 본문용 마크다운 렌더링 (검수자가 JSON 대신 글을 읽도록) |
+| `validate_content.py` | 스키마·문체 검증 |
+| `archive_content.py` | 머지 후 날짜별 보관본·인덱스 생성 |
+
+### 필요한 설정
+
+**저장소 Secrets에 `ANTHROPIC_API_KEY`를 추가해야 해요** (Settings → Secrets and
+variables → Actions). 없으면 초안 생성 단계에서 실패해요.
+
+### 손으로 돌려보기
+
+```sh
+pip install anthropic
+python3 scripts/collect_sources.py --date 2026-08-12   # → candidates.json
+python3 scripts/generate_draft.py --dry-run            # 키 없이 요청만 확인
+python3 scripts/generate_draft.py                      # → content/latest.json
+python3 scripts/validate_content.py content/latest.json
+```
+
+Actions 탭에서 **일일 초안 → Run workflow**로 날짜와 effort를 지정해 수동 실행할 수도 있어요.
