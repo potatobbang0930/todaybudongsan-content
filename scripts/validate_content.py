@@ -1,0 +1,156 @@
+#!/usr/bin/env python3
+"""콘텐츠 JSON 검증.
+
+앱(app/src/content/loadContent.ts)의 런타임 검증과 같은 규칙을 쓴다.
+여기서 통과해야 앱이 폴백으로 내려가지 않는다.
+문체 규칙은 docs/UXW_GUIDE.md 기준.
+"""
+import json
+import re
+import sys
+
+TYPES = {"fact", "interpretation", "outlook"}
+DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+
+# docs/UXW_GUIDE.md 4절 "AI가 쓴 티가 나는 패턴" + 콘텐츠 원칙 금지 표현
+FORBIDDEN = {
+    "당신": "번역투 — 주어를 생략하세요",
+    "여러분": "번역투 — 주어를 생략하세요",
+    "습니다": "해요체가 아님",
+    "할 수 있습니다": "AI 티 — 해요체로",
+    "중요합니다": "AI 티 — 중요하다고 말하지 말고 보여주세요",
+    "에 대해": "AI 티 — 조사로 바꾸세요",
+    "와 관련하여": "AI 티 — 조사로 바꾸세요",
+    "결론적으로": "AI 티 — 지워도 뜻이 통합니다",
+    "종합하면": "AI 티 — 지워도 뜻이 통합니다",
+    "폭등": "과장 표현",
+    "폭락": "과장 표현",
+    "지금이 기회": "투자 권유",
+    # 활용형까지 넣는다. '서두르'만 두면 '서둘러'를 놓친다(2026-08-12 테스트에서 확인).
+    "서두르": "조급함 유도",
+    "서둘러": "조급함 유도",
+    "지금 사": "매수 권유",
+    "매수하세요": "매수 권유",
+    "매도하세요": "매도 권유",
+}
+
+errors: list[str] = []
+warnings: list[str] = []
+
+
+def err(msg: str) -> None:
+    errors.append(msg)
+
+
+def need(cond: bool, msg: str) -> bool:
+    if not cond:
+        err(msg)
+    return cond
+
+
+def check_statement(s, where: str, allow_audience: bool = False) -> None:
+    if not isinstance(s, dict):
+        err(f"{where}: 객체가 아닙니다")
+        return
+    if s.get("type") not in TYPES:
+        err(f"{where}: type이 {sorted(TYPES)} 중 하나여야 합니다 (현재: {s.get('type')!r})")
+    if not isinstance(s.get("text"), str) or not s["text"].strip():
+        err(f"{where}: text가 비어 있습니다")
+    if not allow_audience and "audience" in s:
+        err(f"{where}: audience는 impact 항목에만 쓸 수 있습니다")
+
+
+def main(path: str) -> int:
+    try:
+        with open(path, encoding="utf-8") as f:
+            d = json.load(f)
+    except FileNotFoundError:
+        print(f"❌ 파일이 없습니다: {path}")
+        return 1
+    except json.JSONDecodeError as e:
+        # 사람이 GitHub에서 직접 고치다 가장 흔히 내는 실수다.
+        print(f"❌ JSON 문법 오류 — {e.lineno}행 {e.colno}열: {e.msg}")
+        print("   쉼표 빠짐, 따옴표 짝 안 맞음, 마지막 항목 뒤 쉼표를 확인하세요.")
+        return 1
+
+    if not isinstance(d, dict):
+        print("❌ 최상위가 객체(JSON object)여야 합니다")
+        return 1
+
+    # --- 필수 필드 ---
+    for k in ("date", "publishedAt", "updatedAt", "version", "title",
+              "summary", "whyItMatters", "impact", "timelineImpact", "sources"):
+        need(k in d, f"필수 필드 누락: {k}")
+
+    if isinstance(d.get("date"), str):
+        need(bool(DATE_RE.match(d["date"])), f"date는 YYYY-MM-DD 형식이어야 합니다 (현재: {d['date']!r})")
+
+    need(isinstance(d.get("version"), int) and d["version"] >= 1,
+         f"version은 1 이상의 정수여야 합니다 (현재: {d.get('version')!r})")
+
+    need(isinstance(d.get("title"), str) and bool(d.get("title", "").strip()),
+         "title이 비어 있습니다")
+
+    # summary는 정확히 3개 — 앱이 이걸로 폴백 여부를 가른다
+    s = d.get("summary")
+    if need(isinstance(s, list), "summary는 배열이어야 합니다"):
+        need(len(s) == 3, f"summary는 정확히 3개여야 합니다 (현재: {len(s)}개)")
+        for i, line in enumerate(s):
+            need(isinstance(line, str) and bool(line.strip()), f"summary[{i}]가 비어 있습니다")
+
+    for key, allow_aud in (("whyItMatters", False), ("impact", True)):
+        v = d.get(key)
+        if need(isinstance(v, list), f"{key}는 배열이어야 합니다"):
+            need(len(v) >= 1, f"{key}는 최소 1개가 필요합니다")
+            for i, item in enumerate(v):
+                check_statement(item, f"{key}[{i}]", allow_aud)
+
+    check_statement(d.get("timelineImpact"), "timelineImpact")
+
+    src = d.get("sources")
+    if need(isinstance(src, list), "sources는 배열이어야 합니다"):
+        need(len(src) >= 1, "sources는 최소 1개가 필요합니다")
+        for i, item in enumerate(src):
+            if not isinstance(item, dict) or not str(item.get("name", "")).strip():
+                err(f"sources[{i}]: name이 비어 있습니다")
+
+    # --- 문체 (docs/UXW_GUIDE.md) ---
+    texts = [d.get("title", "")]
+    texts += [x for x in (d.get("summary") or []) if isinstance(x, str)]
+    for key in ("whyItMatters", "impact"):
+        for item in (d.get(key) or []):
+            if isinstance(item, dict):
+                texts.append(str(item.get("text", "")))
+                texts.append(str(item.get("audience", "")))
+    ti = d.get("timelineImpact")
+    if isinstance(ti, dict):
+        texts.append(str(ti.get("text", "")))
+    body = " ".join(texts)
+
+    for word, why in FORBIDDEN.items():
+        if word in body:
+            err(f"문체 위반: '{word}' 사용 — {why}")
+
+    # 출처 기관명: 2026-01-02부로 기획재정부 → 재정경제부
+    all_text = body + " " + " ".join(str(x.get("name", "")) for x in (src or []) if isinstance(x, dict))
+    if "기획재정부" in all_text:
+        err("출처 기관명 오류: '기획재정부'는 2026-01-02부로 '재정경제부'로 바뀌었습니다")
+
+    # 조언조로 흐르기 가장 쉬운 자리 — 경고만 (사람이 판단)
+    if isinstance(ti, dict) and re.search(r"(하세요|해야 해요|하는 게 좋|유리해요)", str(ti.get("text", ""))):
+        warnings.append("timelineImpact가 조언처럼 읽힙니다. '언제 무엇이 달라진다'까지만 쓰세요")
+
+    for w in warnings:
+        print(f"⚠️  {w}")
+    if errors:
+        print(f"\n❌ 검증 실패 — {len(errors)}건\n")
+        for e in errors:
+            print(f"  · {e}")
+        return 1
+
+    print(f"✅ 검증 통과 — {d['date']} · {d['title']}")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv[1] if len(sys.argv) > 1 else "content/latest.json"))
