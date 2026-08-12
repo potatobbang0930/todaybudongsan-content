@@ -70,32 +70,51 @@ https://raw.githubusercontent.com/<username>/todaybudongsan-content/main/content
 python3 scripts/validate_content.py content/latest.json
 ```
 
-## 자동 수집 파이프라인
+## 파이프라인 (2026-08-12 — 비용 0 구성)
 
-매일 22시(KST)에 GitHub Actions가 공식 자료를 훑어 초안 PR을 만들어요.
-**PR을 만드는 데까지가 자동이고, 발행은 사람이 Merge할 때 일어나요.**
+**수집만 자동이고, 글쓰기는 사람이 Claude Code에서 해요.** 사용자가 없는 단계에서
+월 고정비를 만들지 않기 위한 선택이에요.
 
-| 스크립트 | 하는 일 |
-|---|---|
-| `collect_sources.py` | Tier 1 피드 6개 수집. 국토부는 본문이 hwpx 첨부에만 있어 내려받아 파싱하고, 금융위는 RSS에 날짜가 없어 상세 페이지에서 보완해요 |
-| `generate_draft.py` | Claude API로 초안 생성. 출력 JSON은 structured outputs로 스키마가 보장돼요 |
-| `render_draft.py` | PR 본문용 마크다운 렌더링 (검수자가 JSON 대신 글을 읽도록) |
-| `validate_content.py` | 스키마·문체 검증 |
-| `archive_content.py` | 머지 후 날짜별 보관본·인덱스 생성 |
+```
+22:00   Action이 공식 자료 수집 → candidates.json 커밋 + 알림 이슈      [무료]
+편할 때  Claude Code에서 "오늘 콘텐츠 만들어줘"                          [구독]
+        → 선정 기준 적용 → 초안 → PR
+        Merge = 발행
+```
 
-### 필요한 설정
+| 스크립트 | 하는 일 | 비용 |
+|---|---|---|
+| `collect_sources.py` | 피드 6개 수집. 국토부는 본문이 hwpx 첨부에만 있어 내려받아 파싱하고, 금융위는 RSS에 날짜가 없어 상세 페이지에서 보완해요 | 없음 |
+| `generate_draft.py` | Claude API로 초안 생성 (structured outputs로 스키마 보장) | **API 과금** |
+| `render_draft.py` | PR 본문용 마크다운 렌더링 | 없음 |
+| `validate_content.py` | 스키마·문체 검증 | 없음 |
+| `archive_content.py` | 머지 후 날짜별 보관본·인덱스 생성 | 없음 |
 
-**저장소 Secrets에 `ANTHROPIC_API_KEY`를 추가해야 해요** (Settings → Secrets and
-variables → Actions). 없으면 초안 생성 단계에서 실패해요.
+### 워크플로
+
+| 이름 | 자동 실행 | 비고 |
+|---|---|---|
+| **일일 수집** | ✅ 매일 22:00 KST | 자료만 모아요. 비용 없음 |
+| **일일 초안 (API 과금)** | ❌ 수동만 | 켜려면 `ANTHROPIC_API_KEY` 등록 + schedule 주석 해제 |
+| **콘텐츠 검증** | PR마다 | |
+| **발행 후 보관** | main 머지 후 | |
+
+### 자동 발행으로 바꿀 때
+
+사용자가 생겨서 매일 발행이 중요해지면:
+
+1. Settings → Secrets and variables → Actions에 `ANTHROPIC_API_KEY` 등록
+2. `daily-draft.yml`의 `schedule` 주석 해제
+3. `daily-collect.yml`의 `schedule` 주석 처리 (중복 수집 방지)
 
 ### 손으로 돌려보기
 
 ```sh
-pip install anthropic
-python3 scripts/collect_sources.py --date 2026-08-12   # → candidates.json
-python3 scripts/generate_draft.py --dry-run            # 키 없이 요청만 확인
-python3 scripts/generate_draft.py                      # → content/latest.json
+python3 scripts/collect_sources.py --date 2026-08-12   # → candidates.json (무료)
 python3 scripts/validate_content.py content/latest.json
-```
 
-Actions 탭에서 **일일 초안 → Run workflow**로 날짜와 effort를 지정해 수동 실행할 수도 있어요.
+# 아래는 API 키가 있을 때만
+pip install anthropic
+python3 scripts/generate_draft.py --dry-run            # 호출 없이 요청만 확인
+python3 scripts/generate_draft.py
+```

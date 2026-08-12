@@ -1,15 +1,22 @@
-# 매일 22시(KST)에 공식 자료를 수집해 콘텐츠 초안 PR을 만든다.
-# 22시인 이유: 그 시각이면 부처 업무가 끝나 그날 나온 자료가 전부 올라와 있다.
+# 공식 자료를 수집해 콘텐츠 초안 PR을 만든다 (수집 + AI 글쓰기).
 #
-# 이 워크플로는 PR을 만드는 데까지다. 발행은 사람이 Merge할 때 일어난다
+# ⚠️ 이 워크플로는 **Anthropic API를 호출하므로 실행할 때마다 비용이 든다.**
+#    그래서 지금은 자동 실행을 꺼두었다 — 수동 실행(Run workflow)만 가능하다.
+#    평상시 흐름은 daily-collect.yml(수집만, 무료) + 사람이 Claude Code에서 글쓰기다.
+#
+# 자동 발행으로 전환하려면:
+#   1) 저장소 Secrets에 ANTHROPIC_API_KEY 등록
+#   2) 아래 schedule 두 줄의 주석을 푼다 (22:00 KST = 13:00 UTC)
+#   3) daily-collect.yml의 schedule은 주석 처리한다 (중복 수집 방지)
+# 전환 판단 기준은 docs/DECISION_LOG.md 2026-08-12 (9) 참고.
+#
+# PR을 만드는 데까지이고, 발행은 사람이 Merge할 때 일어난다
 # ("검수 없는 완전 자동 발행"은 MVP 금지 항목).
-name: 일일 초안
+name: 일일 초안 (API 과금)
 
 on:
-  schedule:
-    # GitHub Actions cron은 UTC 기준. 22:00 KST = 13:00 UTC.
-    # 실행이 몇 분에서 길게는 그 이상 밀릴 수 있다(GitHub 부하에 따라).
-    - cron: '0 13 * * *'
+  # schedule:
+  #   - cron: '0 13 * * *'
   workflow_dispatch:
     inputs:
       date:
