@@ -37,3 +37,35 @@ https://raw.githubusercontent.com/<username>/todaybudongsan-content/main/content
 
 **출시 전 반드시 실제 콘텐츠로 교체해야 한다** (Day 8 발행 루틴). 교체 전에 앱이 출시되면
 사용자에게 `[SAMPLE]` 문구가 그대로 노출된다.
+
+## 발행 방식 (2026-08-12 확정)
+
+**사람이 손대는 파일은 `content/latest.json` 하나뿐이에요.** 나머지는 자동으로 만들어져요.
+
+```
+매일 22:00  수집 → 초안 생성 → PR 생성          (latest.json 아직 그대로)
+     22:30  PR을 읽고 Merge                     ← 이 순간이 '발행'
+     직후   Action이 날짜별 보관본·인덱스 생성
+```
+
+| 파일 | 누가 만드나 | 쓰임 |
+|---|---|---|
+| `content/latest.json` | 사람 (PR로 검수·수정) | **앱이 읽는 유일한 파일** |
+| `content/YYYY-MM-DD.json` | Action (머지 후 자동) | 주말 "주간 요약"을 쓸 때 그 주 콘텐츠를 읽는 용도 |
+| `content/archive.json` | Action (머지 후 자동) | 날짜·제목 인덱스 |
+
+### 자동 검사
+
+`content/latest.json`을 건드리는 PR에는 검증이 자동으로 돌아요
+(`scripts/validate_content.py`). **통과해야 Merge하세요.**
+
+- JSON 문법 (쉼표 빠짐 등 — GitHub에서 직접 고칠 때 가장 흔한 실수)
+- 스키마 (`summary` 정확히 3개, `type` 값, 필수 필드) — 어기면 앱이 폴백으로 내려가요
+- 문체 ("당신"·"여러분"·해요체·AI 티 패턴·과장 표현)
+- 출처 기관명 (기획재정부 → **재정경제부**, 2026-01-02 개편)
+
+로컬에서 미리 돌려볼 수도 있어요.
+
+```sh
+python3 scripts/validate_content.py content/latest.json
+```

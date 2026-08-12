@@ -1,0 +1,16 @@
+# 콘텐츠 PR 검증 — 사람이 GitHub에서 직접 수정할 수 있게 되면서 필요해진 안전장치.
+# JSON이 깨지거나 스키마를 어기면 앱이 조용히 폴백으로 내려가므로, Merge 전에 잡는다.
+name: 콘텐츠 검증
+
+on:
+  pull_request:
+    paths:
+      - 'content/latest.json'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: 스키마·문체 검사
+        run: python3 scripts/validate_content.py content/latest.json

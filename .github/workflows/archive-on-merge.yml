@@ -1,0 +1,36 @@
+# 발행(main 머지) 직후 날짜별 보관본과 인덱스를 자동 생성한다.
+# 사람이 손대는 파일은 latest.json 하나로 유지하기 위한 장치다.
+#   - 날짜별 파일: 주말 "주간 요약"을 쓸 때 그 주 콘텐츠를 읽는 용도
+#   - archive.json: 날짜·제목 인덱스
+# 이 잡은 latest.json을 바꾸지 않으므로 자기 자신을 다시 트리거하지 않는다.
+name: 발행 후 보관
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'content/latest.json'
+
+permissions:
+  contents: write
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: 발행 전 마지막 검증
+        run: python3 scripts/validate_content.py content/latest.json
+      - name: 날짜별 보관본·인덱스 생성
+        run: python3 scripts/archive_content.py
+      - name: 변경분 커밋
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "변경 없음 — 커밋 생략"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/
+          git commit -m "보관: $(python3 -c "import json;print(json.load(open('content/latest.json'))['date'])") 콘텐츠 아카이빙 [skip ci]"
+          git push
