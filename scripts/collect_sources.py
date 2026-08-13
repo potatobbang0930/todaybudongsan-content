@@ -13,9 +13,11 @@ import argparse
 import html
 import io
 import json
+import os
 import re
 import sys
 import urllib.error
+import urllib.parse
 import urllib.request
 import zipfile
 from datetime import datetime, timedelta, timezone
@@ -32,8 +34,16 @@ UA = (
 # needs_date_lookup=True 인 피드는 RSS에 <pubDate>가 아예 없어서, 상세 페이지에서
 # 날짜를 읽어와야 한다. 이걸 안 하면 날짜 필터가 그 기관 자료를 통째로 조용히
 # 버린다(2026-08-12에 금융위에서 실제로 발생).
+#
+# 2026-08-13 추가: 국토교통부 공지사항(N01_B).
+# 2026-08-12에는 "우리 주제와 무관"하다고 보고 뺐던 피드다. 그때 선정 기준이
+# "확정된 규칙 변경"이어서 *공고*는 규칙 변경이 아니라 전부 걸렸기 때문이다.
+# 기준을 "돈·자격·일정·판단"으로 넓히면서 **토지거래허가구역 지정 공고**가
+# 자격(B축)의 정확한 재료가 됐다 — 규제지역 지정은 청약·대출 자격을 바로 바꾼다.
+# 신호 비율은 낮다(10건 중 직접 관련 2건). 그래서 넣되 선정 단계에서 거른다.
 FEEDS = [
     ("국토교통부", "https://www.molit.go.kr/dev/board/board_rss.jsp?rss_id=NEWS", False),
+    ("국토교통부(공고)", "https://www.molit.go.kr/dev/board/board_rss.jsp?rss_id=N01_B", False),
     ("재정경제부", "https://mofe.go.kr/com/detailRssTagService.do?bbsId=MOSFBBS_000000000028", False),
     ("금융위원회", "https://www.fsc.go.kr/about/fsc_bbs_rss/?fid=0111", True),
     ("금융위원회(보도설명)", "https://www.fsc.go.kr/about/fsc_bbs_rss/?fid=0112", True),
@@ -120,6 +130,89 @@ def fetch_molit_body(opener, link: str) -> str:
     return extract_hwpx_text(get(opener, dl, timeout=60))
 
 
+# --- 청약홈 분양정보 (한국부동산원, 공공데이터포털 OpenAPI) ---------------------
+#
+# 2026-08-13 추가. Tier 1 RSS 6개는 전부 중앙부처 보도자료라 **"오늘 뭘 해야 하는지"를
+# 주는 소스가 하나도 없었다**(선정 기준 C=일정 축이 통째로 비어 있었다).
+# 청약 공고는 접수 시작·마감일이 박혀 있어 그 자체가 행동 시한이다.
+#
+# 사용자 요청으로 **서울 + APT**만 가져온다. 전국을 다 넣으면 선정 1단계 제외 기준
+# 4번(특정 지역)에 걸릴 후보만 잔뜩 늘어난다.
+APPLYHOME_URL = ("https://api.odcloud.kr/api/ApplyhomeInfoDetailSvc/v1"
+                 "/getAPTLttotPblancDetail")
+
+# 규제 관련 플래그 — 자격(B축) 판단에 직접 쓰인다
+REGULATION_FLAGS = [
+    ("SPECLT_RDN_EARTH_AT", "투기과열지구"),
+    ("MDAT_TRGET_AREA_SECD", "조정대상지역"),
+    ("PARCPRC_ULS_AT", "분양가상한제"),
+    ("IMPRMN_BSNS_AT", "정비사업"),
+]
+
+
+def fetch_applyhome(cutoff: str, target: str) -> tuple[list[dict], str | None]:
+    """서울 APT 분양공고 중 모집공고일이 수집 기간에 든 것.
+
+    반환: (후보 목록, 건너뛴 사유 또는 None)
+
+    키는 환경변수로만 읽는다. 이 저장소는 공개라 키를 파일에 두면 안 된다.
+    """
+    key = os.environ.get("ODCLOUD_API_KEY", "").strip()
+    if not key:
+        return [], "ODCLOUD_API_KEY 환경변수가 없습니다"
+
+    params = {
+        "page": 1,
+        "perPage": 100,
+        "cond[SUBSCRPT_AREA_CODE_NM::EQ]": "서울",
+        "cond[RCRIT_PBLANC_DE::GTE]": cutoff,
+        "cond[RCRIT_PBLANC_DE::LTE]": target,
+        "serviceKey": key,
+    }
+    url = f"{APPLYHOME_URL}?{urllib.parse.urlencode(params)}"
+    try:
+        req = urllib.request.Request(url, headers={"Accept": "application/json"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            payload = json.load(r)
+    except (urllib.error.URLError, OSError, json.JSONDecodeError) as e:
+        return [], f"요청 실패 — {e}"
+
+    # ⚠️ totalCount는 **필터를 적용하기 전** 전체 건수다(2026-08-13 확인: 서울 8건인데
+    # 2844로 응답). 이걸 건수로 쓰면 안 된다. data 길이를 쓴다.
+    rows = payload.get("data") or []
+
+    out: list[dict] = []
+    for r in rows:
+        name = (r.get("HOUSE_NM") or "").strip()
+        if not name:
+            continue
+        flags = [label for field, label in REGULATION_FLAGS if r.get(field) == "Y"]
+        lines = [
+            f"단지명: {name}",
+            f"공급위치: {r.get('HSSPLY_ADRES') or '-'}",
+            f"공급규모: {r.get('TOT_SUPLY_HSHLDCO') or '-'}세대",
+            f"모집공고일: {r.get('RCRIT_PBLANC_DE') or '-'}",
+            f"특별공급 접수: {r.get('SPSPLY_RCEPT_BGNDE') or '-'} ~ {r.get('SPSPLY_RCEPT_ENDDE') or '-'}",
+            f"1순위 접수(해당지역): {r.get('GNRL_RNK1_CRSPAREA_RCPTDE') or '-'}",
+            f"1순위 접수(기타지역): {r.get('GNRL_RNK1_ETC_AREA_RCPTDE') or '-'}",
+            f"전체 접수기간: {r.get('RCEPT_BGNDE') or '-'} ~ {r.get('RCEPT_ENDDE') or '-'}",
+            f"당첨자 발표: {r.get('PRZWNER_PRESNATN_DE') or '-'}",
+            f"계약: {r.get('CNTRCT_CNCLS_BGNDE') or '-'} ~ {r.get('CNTRCT_CNCLS_ENDDE') or '-'}",
+            f"입주예정: {r.get('MVN_PREARNGE_YM') or '-'}",
+            f"시공사: {r.get('CNSTRCT_ENTRPS_NM') or '-'}",
+            f"사업주체: {r.get('BSNS_MBY_NM') or '-'}",
+            f"규제: {', '.join(flags) if flags else '해당 없음'}",
+        ]
+        out.append({
+            "source": "청약홈(서울 APT)",
+            "title": f"{name} 입주자모집공고",
+            "date": r.get("RCRIT_PBLANC_DE") or target,
+            "url": r.get("PBLANC_URL") or "",
+            "body": "\n".join(lines),
+        })
+    return out, None
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", help="수집 대상 날짜 YYYY-MM-DD (기본: 오늘 KST)")
@@ -137,6 +230,7 @@ def main() -> int:
     candidates: list[dict] = []
 
     failed: list[str] = []
+    skipped: list[str] = []
 
     for name, url, needs_lookup in FEEDS:
         raw = get(opener, url)
@@ -178,6 +272,17 @@ def main() -> int:
         note = f" (날짜 확인 실패 {skipped_no_date}건)" if skipped_no_date else ""
         print(f"  {name}: {kept}건 / 전체 {len(items)}건{note}")
 
+    # 청약홈은 RSS가 아니라 JSON API라 위 루프와 경로가 다르다.
+    applyhome, skip_reason = fetch_applyhome(cutoff, target)
+    if skip_reason:
+        # 조용히 넘어가지 않는다 — 접속 실패와 같은 이유다. 결과만 봐서는
+        # "그날 공고가 없었다"와 구분되지 않는다.
+        print(f"  청약홈(서울 APT): ⚠️  건너뜀 — {skip_reason}")
+        skipped.append(f"청약홈(서울 APT): {skip_reason}")
+    else:
+        candidates.extend(applyhome)
+        print(f"  청약홈(서울 APT): {len(applyhome)}건")
+
     # 국토부만 본문이 첨부에 있다. 다른 기관은 description으로 충분하다.
     for c in candidates:
         if c["source"] == "국토교통부" and c["url"]:
@@ -186,7 +291,8 @@ def main() -> int:
 
     with open(args.out, "w", encoding="utf-8") as f:
         json.dump({"target_date": target, "candidates": candidates,
-                   "failed_sources": failed}, f, ensure_ascii=False, indent=2)
+                   "failed_sources": failed, "skipped_sources": skipped},
+                  f, ensure_ascii=False, indent=2)
     print(f"\n총 {len(candidates)}건 → {args.out}")
 
     if failed:

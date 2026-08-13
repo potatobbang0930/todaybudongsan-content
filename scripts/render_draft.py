@@ -18,7 +18,17 @@ def main(path: str) -> int:
     d = json.load(open(path, encoding="utf-8"))
     out = []
 
-    out.append("**오늘 뭐가 바뀌었냐면**")
+    # 제목과 확정 여부는 첫 화면에서 함께 읽히는 한 덩어리다.
+    # 검수할 때도 같이 보여야 "이거 확정된 거야?"를 판단할 수 있다.
+    out.append(f"### {d['title']}")
+    status = d.get("status")
+    if status:
+        mark = "🟠 확정 전" if not status.get("confirmed") else "⚪ 확정"
+        out.append(f"{mark} · {status.get('label', '')}")
+    else:
+        out.append("_(status 없음 — 화면에 확정 여부 줄이 나오지 않아요)_")
+
+    out.append("\n**오늘 뭐가 바뀌었냐면**")
     out += [f"- {line}" for line in d["summary"]]
 
     out.append("\n**이게 왜 중요하냐면**")

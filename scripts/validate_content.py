@@ -91,6 +91,15 @@ def main(path: str) -> int:
     need(isinstance(d.get("title"), str) and bool(d.get("title", "").strip()),
          "title이 비어 있습니다")
 
+    # status는 선택 필드지만, 있으면 형태가 맞아야 한다 (2026-08-13 신설)
+    st = d.get("status")
+    if st is not None:
+        if need(isinstance(st, dict), "status는 객체여야 합니다"):
+            need(isinstance(st.get("confirmed"), bool),
+                 f"status.confirmed는 true/false여야 합니다 (현재: {st.get('confirmed')!r})")
+            need(isinstance(st.get("label"), str) and bool(str(st.get("label", "")).strip()),
+                 "status.label이 비어 있습니다")
+
     # summary는 정확히 3개 — 앱이 이걸로 폴백 여부를 가른다
     s = d.get("summary")
     if need(isinstance(s, list), "summary는 배열이어야 합니다"):
@@ -116,6 +125,8 @@ def main(path: str) -> int:
 
     # --- 문체 (docs/UXW_GUIDE.md) ---
     texts = [d.get("title", "")]
+    if isinstance(st, dict) and isinstance(st.get("label"), str):
+        texts.append(st["label"])
     texts += [x for x in (d.get("summary") or []) if isinstance(x, str)]
     for key in ("whyItMatters", "impact"):
         for item in (d.get(key) or []):
@@ -139,6 +150,41 @@ def main(path: str) -> int:
     # 조언조로 흐르기 가장 쉬운 자리 — 경고만 (사람이 판단)
     if isinstance(ti, dict) and re.search(r"(하세요|해야 해요|하는 게 좋|유리해요)", str(ti.get("text", ""))):
         warnings.append("timelineImpact가 조언처럼 읽힙니다. '언제 무엇이 달라진다'까지만 쓰세요")
+
+    # 제목 규칙 (2026-08-12 개정): 기본형은 '대상 + 핵심 변화 + (금액·날짜)'.
+    # 질문형은 예외로만 허용하므로 자동으로 막지 않고 사람에게 되묻는다.
+    #
+    # ⚠️ '나요'를 그냥 넣으면 안 된다(2026-08-13 오탐으로 확인).
+    # "대출 여력이 늘어나요"의 끝 두 글자가 '나요'라 평서문이 질문형으로 잡혔다.
+    # '-나요'는 의문형('되나요?')과 평서형('늘어나요')이 같은 꼴이라 어미만으로는
+    # 못 가른다. 그래서 물음표나 의문사가 함께 있을 때만 의문형으로 본다.
+    # '까요/을까/ㄹ까'는 그 자체로 의문형이라 조건 없이 잡는다.
+    title = str(d.get("title", ""))
+    QUESTION_WORDS = ("뭐", "무엇", "얼마", "언제", "어디", "누가", "왜", "어떻게", "어떤")
+    looks_interrogative = (
+        re.search(r"(까요|을까|ㄹ까)\s*\??$", title)
+        or (re.search(r"(나요|가요|는가)\s*\??$", title)
+            and ("?" in title or any(w in title for w in QUESTION_WORDS)))
+    )
+    if looks_interrogative:
+        warnings.append(
+            "title이 질문형입니다. 질문 자체가 정보 전달에 더 효과적인 경우가 아니면 "
+            "'대상 + 핵심 변화 + (금액·날짜)'로 바꾸세요 (content-schema.md 카피 작성 원칙)"
+        )
+
+    # 같은 수치를 여러 절에서 되풀이하면 읽을 덩어리만 늘어난다 (2026-08-12 외부 검토).
+    # 3회 이상 나오면 알린다 — 2회는 요약과 본문에 한 번씩일 수 있어 정상이다.
+    numbers = re.findall(r"\d[\d,]*\s*(?:억|만|천)?\s*(?:원|%|퍼센트)", body)
+    seen: dict[str, int] = {}
+    for n in numbers:
+        key = n.replace(" ", "")
+        seen[key] = seen.get(key, 0) + 1
+    repeated = [f"{k}({v}번)" for k, v in seen.items() if v >= 3]
+    if repeated:
+        warnings.append(
+            "같은 수치를 세 번 이상 설명하고 있어요: " + ", ".join(repeated) +
+            " — 수치는 한 번만 설명하고 뒤에서는 되풀이하지 마세요"
+        )
 
     for w in warnings:
         print(f"⚠️  {w}")

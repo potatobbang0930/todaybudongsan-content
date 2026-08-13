@@ -1,0 +1,11 @@
+# 인증키는 절대 커밋하지 않는다. 이 저장소는 공개다.
+# 수집 스크립트는 환경변수 ODCLOUD_API_KEY로만 키를 읽는다.
+.env
+.env.*
+*.key
+.apikey
+secrets/
+
+# 파이썬
+__pycache__/
+*.pyc
