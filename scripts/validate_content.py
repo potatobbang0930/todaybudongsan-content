@@ -91,6 +91,16 @@ def main(path: str) -> int:
     need(isinstance(d.get("title"), str) and bool(d.get("title", "").strip()),
          "title이 비어 있습니다")
 
+    # kind는 선택 필드지만, 있으면 값이 맞아야 한다 (2026-08-17 신설)
+    #
+    # 앱이 이 값으로 요약 제목("오늘/이번 주 뭐가 바뀌었냐면")과 날짜 라벨을 가른다.
+    # 오타를 통과시키면 라이브 앱이 그 콘텐츠를 통째로 거부해 옛날 콘텐츠가 남는다
+    # (loadContent.ts의 isKind가 같은 기준으로 검사한다). 여기서 먼저 막는다.
+    kind = d.get("kind")
+    if kind is not None:
+        need(kind in ("daily", "weekly"),
+             f"kind는 'daily' 또는 'weekly'여야 합니다 (현재: {kind!r})")
+
     # status는 선택 필드지만, 있으면 형태가 맞아야 한다 (2026-08-13 신설)
     st = d.get("status")
     if st is not None:
@@ -101,6 +111,11 @@ def main(path: str) -> int:
                  "status.label이 비어 있습니다")
 
     # summary는 정확히 3개 — 앱이 이걸로 폴백 여부를 가른다
+    #
+    # 2026-08-14: 1줄로 줄이는 안을 검토했다가 폐기했다(일주일 더 발행해보고 판단).
+    # 만약 나중에 다시 꺼낸다면 **앱 번들이 먼저다** — 라이브 loadContent.ts가
+    # `summary.length === 3`을 하드 검증하므로, 검증 완화 번들이 출시되기 전에
+    # 1줄을 발행하면 앱이 조용히 폴백(옛날 콘텐츠)으로 떨어진다.
     s = d.get("summary")
     if need(isinstance(s, list), "summary는 배열이어야 합니다"):
         need(len(s) == 3, f"summary는 정확히 3개여야 합니다 (현재: {len(s)}개)")
