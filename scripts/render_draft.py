@@ -28,7 +28,12 @@ def main(path: str) -> int:
     else:
         out.append("_(status 없음 — 화면에 확정 여부 줄이 나오지 않아요)_")
 
-    out.append("\n**오늘 뭐가 바뀌었냐면**")
+    # 앱 화면과 같은 기준으로 제목을 고른다 (TodayIssueScreen.tsx SUMMARY_TITLE).
+    # 여기가 어긋나면 PR 미리보기가 실제 화면과 다른 것을 보여준다.
+    summary_title = (
+        "이번 주 뭐가 바뀌었냐면" if d.get("kind") == "weekly" else "오늘 뭐가 바뀌었냐면"
+    )
+    out.append(f"\n**{summary_title}**")
     out += [f"- {line}" for line in d["summary"]]
 
     out.append("\n**이게 왜 중요하냐면**")
