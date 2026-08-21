@@ -207,9 +207,13 @@ def main() -> int:
     draft = json.loads(text)  # 스키마가 보장되므로 파싱은 안전하다
 
     note = draft.pop("selectionNote", "")
-    now = datetime.now(KST).replace(microsecond=0).isoformat()
+    now_dt = datetime.now(KST).replace(microsecond=0)
+    now = now_dt.isoformat()
+    # date는 발행일이다 (2026-08-21 변경, DECISION_LOG 참고).
+    # 수집 대상 날짜(target)를 쓰면, 며칠 전 자료를 다루는 날 앞서 발행한 콘텐츠와
+    # 날짜가 겹쳐 content/YYYY-MM-DD.json 보관본이 덮어써진다.
     item = {
-        "date": target,
+        "date": now_dt.strftime("%Y-%m-%d"),
         "publishedAt": now,
         "updatedAt": now,
         "version": 1,
