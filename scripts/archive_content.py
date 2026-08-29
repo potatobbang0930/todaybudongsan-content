@@ -3,7 +3,7 @@
 
 사람이 손대는 파일을 latest.json 하나로 유지하기 위해, 나머지는 여기서 만든다.
   - content/<date>.json : 주말 "주간 요약"을 쓸 때 그 주 콘텐츠를 읽는 용도
-  - content/archive.json: 날짜·제목 인덱스 (최신순)
+  - content/archive.json: 날짜·제목·카테고리 인덱스 (최신순)
 
 같은 날짜를 다시 발행하면(사실 정정 등) 보관본을 덮어쓰고 인덱스 제목을 갱신한다.
 """
@@ -28,6 +28,8 @@ def main() -> int:
 
     date = latest.get("date")
     title = latest.get("title")
+    # 목록 화면이 카테고리 배지를 그린다. 없으면 15개 파일을 다 받아야 한다 (2026-08-29 추가).
+    category = latest.get("category")
     if not date or not title:
         print("❌ latest.json에 date 또는 title이 없습니다")
         return 1
@@ -49,7 +51,7 @@ def main() -> int:
             print("⚠️  archive.json을 읽지 못해 새로 만듭니다")
 
     entries = [e for e in entries if e.get("date") != date]
-    entries.append({"date": date, "title": title})
+    entries.append({"date": date, "title": title, "category": category})
     entries.sort(key=lambda e: e["date"], reverse=True)  # 최신순
     write_json(ARCHIVE, entries)
     print(f"인덱스 갱신: {ARCHIVE} ({len(entries)}건)")
