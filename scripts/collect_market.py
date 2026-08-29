@@ -378,7 +378,7 @@ def main() -> int:
         return 1
 
     os.makedirs(args.out_dir, exist_ok=True)
-    index, failed = [], []
+    index, failed, dead = [], [], []
     for i, (code, sido, name, group, _) in enumerate(targets, 1):
         print(f"[{i}/{len(targets)}] {sido} {name} ({code})")
         try:
@@ -414,6 +414,15 @@ def main() -> int:
 
         index.append({"code": code, "region": doc["region"], "sido": sido,
                       "name": name, "group": group, "sparse": sparse})
+
+        # 🔴 6개월치가 통째로 0건이면 코드가 죽은 것이다 — 행정구역이 바뀌었을 수 있다.
+        #    API 는 없는 코드에도 오류가 아니라 "0건"을 돌려준다 (2026-08-29 실측).
+        #    2026-07-01 인천 개편과 화성 구 신설을 이 신호로 잡았다. 조용히 넘기면
+        #    그 지역이 앱에서 빈 화면이 되고, 왜 비는지도 알 수 없다.
+        if not trades and not rents:
+            dead.append(code)
+            print(f"    🔴 6개월 내내 0건 — 코드가 죽었을 수 있다 (행정구역 개편 확인)",
+                  file=sys.stderr)
         flag = " ⚠️ 표본 부족" if sparse else ""
         print(f"    {detail['week']} · 평당 {detail['pyeongPrice']}만 · "
               f"매매 {detail['count']}건 · 3개월 {len(trades3)}건{flag}")
@@ -424,9 +433,16 @@ def main() -> int:
                        "count": len(index), "regions": index}, f, ensure_ascii=False, indent=2)
             f.write("\n")
 
-    print(f"\n완료 — {len(index)}곳 저장, 실패 {len(failed)}곳")
-    if failed:
-        print("실패:", ", ".join(f"{c}({label(c)})" for c in failed), file=sys.stderr)
+    print(f"\n완료 — {len(index)}곳 저장, 실패 {len(failed)}곳, 0건 {len(dead)}곳")
+    if dead:
+        print("\n🔴 6개월 내내 거래가 0건인 지역:", file=sys.stderr)
+        for c in dead:
+            print(f"   {c} {label(c)}", file=sys.stderr)
+        print("   → 행정구역이 바뀌었는지 확인하고 scripts/regions.py 를 고친다.", file=sys.stderr)
+        print("   → 지역 목록이 바뀌면 content/legal.json 의 regionTier 도 같이 고친다.", file=sys.stderr)
+    if failed or dead:
+        if failed:
+            print("실패:", ", ".join(f"{c}({label(c)})" for c in failed), file=sys.stderr)
         return 1
     return 0
 
