@@ -10,6 +10,10 @@ import re
 import sys
 
 TYPES = {"fact", "interpretation", "outlook"}
+
+# 2026-08-28 신설: 정책 소식 탭 필터와 알림 분류에 쓴다.
+# 앱 화면·알림 설정의 순서와 같게 유지한다 (docs/PRD.md "카테고리").
+CATEGORIES = ["청약", "대출", "금리", "전월세", "공급", "세금", "입지"]
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 # docs/UXW_GUIDE.md 4절 "AI가 쓴 티가 나는 패턴" + 콘텐츠 원칙 금지 표현
@@ -100,6 +104,11 @@ def main(path: str) -> int:
     if kind is not None:
         need(kind in ("daily", "weekly"),
              f"kind는 'daily' 또는 'weekly'여야 합니다 (현재: {kind!r})")
+
+    # category는 필수다 (2026-08-28 신설). 정책 소식 탭 필터와 알림 분류가 이 값을 쓴다.
+    # 값이 없거나 오타면 그 글이 필터에서 통째로 사라지는데, 화면만 봐서는 원인을 알 수 없다.
+    need(d.get("category") in CATEGORIES,
+         f"category는 {CATEGORIES} 중 하나여야 합니다 (현재: {d.get('category')!r})")
 
     # status는 선택 필드지만, 있으면 형태가 맞아야 한다 (2026-08-13 신설)
     st = d.get("status")

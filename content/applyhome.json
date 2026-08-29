@@ -1,0 +1,180 @@
+{
+  "date": "2026-08-29",
+  "updatedAt": "2026-08-29T10:49:23+09:00",
+  "area": [
+    "서울",
+    "경기",
+    "인천"
+  ],
+  "count": 6,
+  "items": [
+    {
+      "name": "검암역 푸르지오 프라베뉴 (B-1BL) 공공분양주택",
+      "area": "인천",
+      "address": "인천광역시 서해구 인천검암역세권 공공주택지구 내 B-1BL",
+      "households": 441,
+      "receiptBegin": "2026-08-31",
+      "receiptEnd": "2026-09-02",
+      "state": "upcoming",
+      "dday": 2,
+      "announceDate": "2026-08-21",
+      "winnerDate": "2026-09-08",
+      "specialBegin": "2026-08-31",
+      "specialEnd": "2026-08-31",
+      "rank1": {
+        "local": "2026-09-01",
+        "other": "2026-09-01",
+        "gyeonggi": null
+      },
+      "rank2": {
+        "local": "2026-09-02",
+        "other": "2026-09-02",
+        "gyeonggi": null
+      },
+      "contractBegin": "2026-11-02",
+      "contractEnd": "2026-11-04",
+      "houseType": "국민",
+      "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000404&pblancNo=2026000404"
+    },
+    {
+      "name": "성남복정2 A1블록 신혼희망타운(공공분양)(본청약)",
+      "area": "경기",
+      "address": "경기도 성남시 수정구 신흥동 81-8",
+      "households": 594,
+      "receiptBegin": "2026-08-31",
+      "receiptEnd": "2026-09-08",
+      "state": "upcoming",
+      "dday": 2,
+      "announceDate": "2026-08-10",
+      "winnerDate": "2026-09-17",
+      "specialBegin": null,
+      "specialEnd": null,
+      "rank1": {
+        "local": "2026-08-31",
+        "other": "2026-08-31",
+        "gyeonggi": null
+      },
+      "rank2": {
+        "local": "2026-09-07",
+        "other": "2026-09-07",
+        "gyeonggi": null
+      },
+      "contractBegin": "2026-12-07",
+      "contractEnd": "2026-12-10",
+      "houseType": "국민",
+      "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026820008&pblancNo=2026820008"
+    },
+    {
+      "name": "시티오씨엘 9단지 오션파크뷰",
+      "area": "인천",
+      "address": "인천광역시 미추홀구 학익동 인천 용현·학익 1블록 도시개발구역 공동3BL",
+      "households": 1949,
+      "receiptBegin": "2026-08-31",
+      "receiptEnd": "2026-09-02",
+      "state": "upcoming",
+      "dday": 2,
+      "announceDate": "2026-08-21",
+      "winnerDate": "2026-09-08",
+      "specialBegin": "2026-08-31",
+      "specialEnd": "2026-08-31",
+      "rank1": {
+        "local": "2026-09-01",
+        "other": "2026-09-01",
+        "gyeonggi": null
+      },
+      "rank2": {
+        "local": "2026-09-02",
+        "other": "2026-09-02",
+        "gyeonggi": null
+      },
+      "contractBegin": "2026-09-20",
+      "contractEnd": "2026-09-22",
+      "houseType": "민영",
+      "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000388&pblancNo=2026000388"
+    },
+    {
+      "name": "브라운스톤 월곡 센트럴",
+      "area": "서울",
+      "address": "서울특별시 성북구 하월곡동 70-4번지 일원",
+      "households": 62,
+      "receiptBegin": "2026-09-07",
+      "receiptEnd": "2026-09-10",
+      "state": "upcoming",
+      "dday": 9,
+      "announceDate": "2026-08-28",
+      "winnerDate": "2026-09-16",
+      "specialBegin": "2026-09-07",
+      "specialEnd": "2026-09-07",
+      "rank1": {
+        "local": "2026-09-08",
+        "other": "2026-09-09",
+        "gyeonggi": null
+      },
+      "rank2": {
+        "local": "2026-09-10",
+        "other": "2026-09-10",
+        "gyeonggi": null
+      },
+      "contractBegin": "2026-09-28",
+      "contractEnd": "2026-09-30",
+      "houseType": "민영",
+      "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000399&pblancNo=2026000399"
+    },
+    {
+      "name": "의정부우정 A2블록 공공분양주택(본청약)",
+      "area": "경기",
+      "address": "경기도 의정부시 녹양동 일원 의정부우정 공공주택지구 내 A-2블록",
+      "households": 463,
+      "receiptBegin": "2026-09-07",
+      "receiptEnd": "2026-09-17",
+      "state": "upcoming",
+      "dday": 9,
+      "announceDate": "2026-08-26",
+      "winnerDate": "2026-10-08",
+      "specialBegin": null,
+      "specialEnd": null,
+      "rank1": {
+        "local": "2026-09-07",
+        "other": "2026-09-07",
+        "gyeonggi": null
+      },
+      "rank2": {
+        "local": "2026-09-16",
+        "other": "2026-09-16",
+        "gyeonggi": null
+      },
+      "contractBegin": "2026-12-10",
+      "contractEnd": "2026-12-15",
+      "houseType": "국민",
+      "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000409&pblancNo=2026000409"
+    },
+    {
+      "name": "양주회천지구 A-26블록 공공분양주택",
+      "area": "경기",
+      "address": "경기도 양주시 덕정동 일원 양주신도시 택지개발지구 내 A-26블록",
+      "households": 792,
+      "receiptBegin": "2026-09-14",
+      "receiptEnd": "2026-09-17",
+      "state": "upcoming",
+      "dday": 16,
+      "announceDate": "2026-08-27",
+      "winnerDate": "2026-10-07",
+      "specialBegin": null,
+      "specialEnd": null,
+      "rank1": {
+        "local": "2026-09-14",
+        "other": "2026-09-14",
+        "gyeonggi": "2026-09-14"
+      },
+      "rank2": {
+        "local": "2026-09-16",
+        "other": "2026-09-16",
+        "gyeonggi": "2026-09-16"
+      },
+      "contractBegin": "2026-12-10",
+      "contractEnd": "2026-12-15",
+      "houseType": "국민",
+      "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000416&pblancNo=2026000416"
+    }
+  ]
+}

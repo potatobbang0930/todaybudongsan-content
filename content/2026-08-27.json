@@ -4,6 +4,7 @@
   "updatedAt": "2026-08-27T19:30:37+09:00",
   "version": 1,
   "kind": "daily",
+  "category": "금리",
   "title": "변동금리로 대출받았다면, 기준금리가 3.00%로 올라 이자도 올라요",
   "status": {
     "confirmed": true,
