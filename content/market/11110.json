@@ -3,9 +3,9 @@
   "region": "서울 종로구",
   "sido": "서울",
   "group": "seoul",
-  "updatedAt": "2026-08-29T10:22:24+09:00",
+  "updatedAt": "2026-08-31T14:09:53+09:00",
   "sparse": false,
-  "trades3m": 87,
+  "trades3m": 78,
   "trade": {
     "week": "2026-08-3",
     "weeks": 4,
@@ -53,12 +53,12 @@
     "week": "2026-08-4",
     "weeks": 4,
     "jeonseM84": 71000,
-    "jeonseM59": 52500,
+    "jeonseM59": 49250,
     "monthlyDeposit": 6618,
     "monthlyRent": 66,
     "jeonseRatio": 53,
     "ratioDays": 92,
-    "count": 79
+    "count": 80
   },
   "window": 4,
   "weeks": [
@@ -172,7 +172,7 @@
       "pyeongPrice": 4984,
       "jeonseRatio": 51,
       "tradeCount": 15,
-      "rentCount": 37
+      "rentCount": 38
     },
     {
       "week": "2026-06-5",
@@ -242,7 +242,7 @@
       "pyeongPrice": 4435,
       "jeonseRatio": 53,
       "tradeCount": 0,
-      "rentCount": 24
+      "rentCount": 25
     }
   ]
 }

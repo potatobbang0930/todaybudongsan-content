@@ -3,9 +3,9 @@
   "region": "인천 영종구",
   "sido": "인천",
   "group": "incheon",
-  "updatedAt": "2026-08-29T10:26:16+09:00",
+  "updatedAt": "2026-08-31T14:13:55+09:00",
   "sparse": false,
-  "trades3m": 290,
+  "trades3m": 281,
   "trade": {
     "week": "2026-08-4",
     "weeks": 4,
@@ -231,7 +231,7 @@
       "pyeongPrice": 1632,
       "jeonseRatio": 71,
       "tradeCount": 23,
-      "rentCount": 131
+      "rentCount": 132
     },
     {
       "week": "2026-07-5",

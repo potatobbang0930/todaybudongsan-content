@@ -3,9 +3,9 @@
   "region": "경기 양주시",
   "sido": "경기",
   "group": "gyeonggi-si",
-  "updatedAt": "2026-08-29T10:33:34+09:00",
+  "updatedAt": "2026-08-31T14:21:31+09:00",
   "sparse": false,
-  "trades3m": 712,
+  "trades3m": 695,
   "trade": {
     "week": "2026-08-4",
     "weeks": 4,
@@ -24,7 +24,7 @@
         "apt": "양주회천신도시디에트르센트럴시티",
         "area": 84.9,
         "amount": 53400,
-        "prevHigh": 50500
+        "prevHigh": 48800
       },
       {
         "apt": "e편한세상 옥정어반센트럴",

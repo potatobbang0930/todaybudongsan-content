@@ -3,9 +3,9 @@
   "region": "경기 광명시",
   "sido": "경기",
   "group": "gyeonggi-si",
-  "updatedAt": "2026-08-29T10:31:03+09:00",
+  "updatedAt": "2026-08-31T14:19:02+09:00",
   "sparse": false,
-  "trades3m": 643,
+  "trades3m": 605,
   "trade": {
     "week": "2026-08-3",
     "weeks": 4,
@@ -82,7 +82,7 @@
     "monthlyRent": 85,
     "jeonseRatio": 53,
     "ratioDays": 92,
-    "count": 318
+    "count": 319
   },
   "window": 4,
   "weeks": [
@@ -186,49 +186,49 @@
     },
     {
       "week": "2026-06-3",
-      "pyeongPrice": 4104,
+      "pyeongPrice": 4114,
       "jeonseRatio": 53,
-      "tradeCount": 53,
+      "tradeCount": 52,
       "rentCount": 106
     },
     {
       "week": "2026-06-4",
-      "pyeongPrice": 4299,
+      "pyeongPrice": 4313,
       "jeonseRatio": 53,
       "tradeCount": 68,
       "rentCount": 133
     },
     {
       "week": "2026-06-5",
-      "pyeongPrice": 4313,
+      "pyeongPrice": 4327,
       "jeonseRatio": 53,
       "tradeCount": 7,
       "rentCount": 39
     },
     {
       "week": "2026-07-1",
-      "pyeongPrice": 4437,
+      "pyeongPrice": 4446,
       "jeonseRatio": 53,
-      "tradeCount": 64,
+      "tradeCount": 63,
       "rentCount": 121
     },
     {
       "week": "2026-07-2",
-      "pyeongPrice": 4438,
+      "pyeongPrice": 4440,
       "jeonseRatio": 53,
       "tradeCount": 66,
       "rentCount": 120
     },
     {
       "week": "2026-07-3",
-      "pyeongPrice": 4412,
+      "pyeongPrice": 4422,
       "jeonseRatio": 54,
       "tradeCount": 63,
       "rentCount": 97
     },
     {
       "week": "2026-07-4",
-      "pyeongPrice": 4422,
+      "pyeongPrice": 4425,
       "jeonseRatio": 54,
       "tradeCount": 68,
       "rentCount": 117
@@ -266,7 +266,7 @@
       "pyeongPrice": 4316,
       "jeonseRatio": 53,
       "tradeCount": 0,
-      "rentCount": 67
+      "rentCount": 68
     }
   ]
 }

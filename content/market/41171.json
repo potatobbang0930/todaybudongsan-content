@@ -3,9 +3,9 @@
   "region": "경기 안양 만안구",
   "sido": "경기",
   "group": "gyeonggi-gu",
-  "updatedAt": "2026-08-29T10:28:27+09:00",
+  "updatedAt": "2026-08-31T14:16:20+09:00",
   "sparse": false,
-  "trades3m": 783,
+  "trades3m": 759,
   "trade": {
     "week": "2026-08-4",
     "weeks": 4,
@@ -168,32 +168,32 @@
       "pyeongPrice": 2766,
       "jeonseRatio": 69,
       "tradeCount": 26,
-      "rentCount": 17
+      "rentCount": 18
     },
     {
       "week": "2026-06-1",
-      "pyeongPrice": 2884,
+      "pyeongPrice": 2874,
       "jeonseRatio": 68,
-      "tradeCount": 65,
+      "tradeCount": 66,
       "rentCount": 61
     },
     {
       "week": "2026-06-2",
-      "pyeongPrice": 2913,
+      "pyeongPrice": 2906,
       "jeonseRatio": 69,
       "tradeCount": 70,
       "rentCount": 54
     },
     {
       "week": "2026-06-3",
-      "pyeongPrice": 2923,
-      "jeonseRatio": 67,
+      "pyeongPrice": 2920,
+      "jeonseRatio": 68,
       "tradeCount": 73,
       "rentCount": 55
     },
     {
       "week": "2026-06-4",
-      "pyeongPrice": 2912,
+      "pyeongPrice": 2906,
       "jeonseRatio": 68,
       "tradeCount": 66,
       "rentCount": 55

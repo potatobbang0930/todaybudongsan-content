@@ -3,16 +3,16 @@
   "region": "경기 수원 권선구",
   "sido": "경기",
   "group": "gyeonggi-gu",
-  "updatedAt": "2026-08-29T10:27:36+09:00",
+  "updatedAt": "2026-08-31T14:15:26+09:00",
   "sparse": false,
-  "trades3m": 1569,
+  "trades3m": 1525,
   "trade": {
     "week": "2026-08-4",
     "weeks": 4,
-    "pyeongPrice": 2286,
+    "pyeongPrice": 2288,
     "m84": 58325,
     "m59": 44700,
-    "count": 344,
+    "count": 343,
     "highs": [
       {
         "apt": "호반 써밋 수원",
@@ -249,21 +249,21 @@
     },
     {
       "week": "2026-08-2",
-      "pyeongPrice": 2215,
+      "pyeongPrice": 2216,
       "jeonseRatio": 69,
-      "tradeCount": 94,
+      "tradeCount": 93,
       "rentCount": 207
     },
     {
       "week": "2026-08-3",
-      "pyeongPrice": 2267,
+      "pyeongPrice": 2274,
       "jeonseRatio": 69,
       "tradeCount": 94,
       "rentCount": 96
     },
     {
       "week": "2026-08-4",
-      "pyeongPrice": 2286,
+      "pyeongPrice": 2288,
       "jeonseRatio": 69,
       "tradeCount": 58,
       "rentCount": 104

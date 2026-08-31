@@ -3,9 +3,9 @@
   "region": "경기 안양 동안구",
   "sido": "경기",
   "group": "gyeonggi-gu",
-  "updatedAt": "2026-08-29T10:28:35+09:00",
+  "updatedAt": "2026-08-31T14:16:31+09:00",
   "sparse": false,
-  "trades3m": 1288,
+  "trades3m": 1195,
   "trade": {
     "week": "2026-08-4",
     "weeks": 4,
@@ -18,7 +18,7 @@
         "apt": "목련두산",
         "area": 131.8,
         "amount": 200000,
-        "prevHigh": 174500
+        "prevHigh": 173000
       },
       {
         "apt": "목련우성7",
@@ -30,7 +30,7 @@
         "apt": "꿈마을한신",
         "area": 96.7,
         "amount": 174000,
-        "prevHigh": 169000
+        "prevHigh": 168000
       },
       {
         "apt": "샘마을한양",

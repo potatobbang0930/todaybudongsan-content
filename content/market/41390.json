@@ -3,9 +3,9 @@
   "region": "경기 시흥시",
   "sido": "경기",
   "group": "gyeonggi-si",
-  "updatedAt": "2026-08-29T10:32:17+09:00",
+  "updatedAt": "2026-08-31T14:20:16+09:00",
   "sparse": false,
-  "trades3m": 1473,
+  "trades3m": 1434,
   "trade": {
     "week": "2026-08-4",
     "weeks": 4,
@@ -82,7 +82,7 @@
     "monthlyRent": 70,
     "jeonseRatio": 73,
     "ratioDays": 92,
-    "count": 572
+    "count": 573
   },
   "window": 4,
   "weeks": [
@@ -221,21 +221,21 @@
     },
     {
       "week": "2026-07-3",
-      "pyeongPrice": 2088,
+      "pyeongPrice": 2087,
       "jeonseRatio": 72,
-      "tradeCount": 113,
+      "tradeCount": 112,
       "rentCount": 169
     },
     {
       "week": "2026-07-4",
-      "pyeongPrice": 2087,
+      "pyeongPrice": 2084,
       "jeonseRatio": 72,
       "tradeCount": 118,
       "rentCount": 193
     },
     {
       "week": "2026-07-5",
-      "pyeongPrice": 2100,
+      "pyeongPrice": 2097,
       "jeonseRatio": 72,
       "tradeCount": 44,
       "rentCount": 81
@@ -252,7 +252,7 @@
       "pyeongPrice": 1946,
       "jeonseRatio": 73,
       "tradeCount": 113,
-      "rentCount": 183
+      "rentCount": 184
     },
     {
       "week": "2026-08-3",

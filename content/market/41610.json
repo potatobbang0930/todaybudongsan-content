@@ -3,9 +3,9 @@
   "region": "경기 광주시",
   "sido": "경기",
   "group": "gyeonggi-si",
-  "updatedAt": "2026-08-29T10:33:26+09:00",
+  "updatedAt": "2026-08-31T14:21:23+09:00",
   "sparse": false,
-  "trades3m": 934,
+  "trades3m": 904,
   "trade": {
     "week": "2026-08-4",
     "weeks": 4,
@@ -76,13 +76,13 @@
   "rent": {
     "week": "2026-08-4",
     "weeks": 4,
-    "jeonseM84": 33000,
+    "jeonseM84": 33500,
     "jeonseM59": 30000,
     "monthlyDeposit": 5000,
     "monthlyRent": 110,
     "jeonseRatio": 72,
     "ratioDays": 92,
-    "count": 238
+    "count": 239
   },
   "window": 4,
   "weeks": [
@@ -252,7 +252,7 @@
       "pyeongPrice": 2063,
       "jeonseRatio": 72,
       "tradeCount": 57,
-      "rentCount": 72
+      "rentCount": 73
     },
     {
       "week": "2026-08-3",

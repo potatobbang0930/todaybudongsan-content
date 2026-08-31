@@ -3,9 +3,9 @@
   "region": "인천 검단구",
   "sido": "인천",
   "group": "incheon",
-  "updatedAt": "2026-08-29T10:27:14+09:00",
+  "updatedAt": "2026-08-31T14:15:02+09:00",
   "sparse": false,
-  "trades3m": 773,
+  "trades3m": 738,
   "trade": {
     "week": "2026-08-4",
     "weeks": 4,
@@ -74,25 +74,18 @@
     ]
   },
   "rent": {
-    "week": "2026-08-4",
+    "week": "2026-08-5",
     "weeks": 4,
-    "jeonseM84": 33000,
-    "jeonseM59": 30000,
-    "monthlyDeposit": 4000,
-    "monthlyRent": 98,
+    "jeonseM84": 33500,
+    "jeonseM59": 28000,
+    "monthlyDeposit": 3848,
+    "monthlyRent": 61,
     "jeonseRatio": 73,
     "ratioDays": 92,
-    "count": 458
+    "count": 327
   },
   "window": 4,
   "weeks": [
-    {
-      "week": "2026-03-4",
-      "pyeongPrice": 1958,
-      "jeonseRatio": 71,
-      "tradeCount": 86,
-      "rentCount": 116
-    },
     {
       "week": "2026-03-5",
       "pyeongPrice": 1874,
@@ -158,9 +151,9 @@
     },
     {
       "week": "2026-05-4",
-      "pyeongPrice": 1983,
+      "pyeongPrice": 1978,
       "jeonseRatio": 74,
-      "tradeCount": 59,
+      "tradeCount": 58,
       "rentCount": 120
     },
     {
@@ -172,14 +165,14 @@
     },
     {
       "week": "2026-06-1",
-      "pyeongPrice": 1925,
+      "pyeongPrice": 1911,
       "jeonseRatio": 75,
       "tradeCount": 69,
       "rentCount": 112
     },
     {
       "week": "2026-06-2",
-      "pyeongPrice": 2007,
+      "pyeongPrice": 2006,
       "jeonseRatio": 75,
       "tradeCount": 64,
       "rentCount": 135
@@ -267,6 +260,13 @@
       "jeonseRatio": 73,
       "tradeCount": 27,
       "rentCount": 115
+    },
+    {
+      "week": "2026-08-5",
+      "pyeongPrice": 1998,
+      "jeonseRatio": 73,
+      "tradeCount": 0,
+      "rentCount": 1
     }
   ]
 }

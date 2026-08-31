@@ -3,9 +3,9 @@
   "region": "경기 성남 분당구",
   "sido": "경기",
   "group": "gyeonggi-gu",
-  "updatedAt": "2026-08-29T10:28:18+09:00",
+  "updatedAt": "2026-08-31T14:16:13+09:00",
   "sparse": false,
-  "trades3m": 1040,
+  "trades3m": 986,
   "trade": {
     "week": "2026-08-4",
     "weeks": 4,
@@ -76,13 +76,13 @@
   "rent": {
     "week": "2026-08-4",
     "weeks": 4,
-    "jeonseM84": 72000,
+    "jeonseM84": 72450,
     "jeonseM59": 55000,
     "monthlyDeposit": 20000,
     "monthlyRent": 110,
     "jeonseRatio": 39,
     "ratioDays": 92,
-    "count": 550
+    "count": 551
   },
   "window": 4,
   "weeks": [
@@ -210,7 +210,7 @@
       "pyeongPrice": 7478,
       "jeonseRatio": 39,
       "tradeCount": 109,
-      "rentCount": 277
+      "rentCount": 278
     },
     {
       "week": "2026-07-2",
@@ -259,7 +259,7 @@
       "pyeongPrice": 7342,
       "jeonseRatio": 39,
       "tradeCount": 19,
-      "rentCount": 199
+      "rentCount": 200
     },
     {
       "week": "2026-08-4",

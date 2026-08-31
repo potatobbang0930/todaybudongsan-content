@@ -3,9 +3,9 @@
   "region": "경기 화성 남양구",
   "sido": "경기",
   "group": "gyeonggi-gu",
-  "updatedAt": "2026-08-29T10:29:47+09:00",
+  "updatedAt": "2026-08-31T14:17:49+09:00",
   "sparse": false,
-  "trades3m": 291,
+  "trades3m": 283,
   "trade": {
     "week": "2026-08-4",
     "weeks": 4,
@@ -82,7 +82,7 @@
     "monthlyRent": 27,
     "jeonseRatio": 71,
     "ratioDays": 92,
-    "count": 305
+    "count": 306
   },
   "window": 4,
   "weeks": [
@@ -217,7 +217,7 @@
       "pyeongPrice": 1485,
       "jeonseRatio": 70,
       "tradeCount": 16,
-      "rentCount": 179
+      "rentCount": 180
     },
     {
       "week": "2026-07-3",
@@ -266,7 +266,7 @@
       "pyeongPrice": 1611,
       "jeonseRatio": 71,
       "tradeCount": 7,
-      "rentCount": 59
+      "rentCount": 60
     }
   ]
 }

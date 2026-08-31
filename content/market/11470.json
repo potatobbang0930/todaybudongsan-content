@@ -3,9 +3,9 @@
   "region": "서울 양천구",
   "sido": "서울",
   "group": "seoul",
-  "updatedAt": "2026-08-29T10:24:22+09:00",
+  "updatedAt": "2026-08-31T14:11:55+09:00",
   "sparse": false,
-  "trades3m": 530,
+  "trades3m": 507,
   "trade": {
     "week": "2026-08-4",
     "weeks": 4,
@@ -82,7 +82,7 @@
     "monthlyRent": 70,
     "jeonseRatio": 51,
     "ratioDays": 92,
-    "count": 430
+    "count": 431
   },
   "window": 4,
   "weeks": [
@@ -266,7 +266,7 @@
       "pyeongPrice": 4385,
       "jeonseRatio": 51,
       "tradeCount": 9,
-      "rentCount": 88
+      "rentCount": 89
     }
   ]
 }

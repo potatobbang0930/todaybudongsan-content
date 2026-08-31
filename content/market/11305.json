@@ -3,9 +3,9 @@
   "region": "서울 강북구",
   "sido": "서울",
   "group": "seoul",
-  "updatedAt": "2026-08-29T10:23:27+09:00",
+  "updatedAt": "2026-08-31T14:10:58+09:00",
   "sparse": false,
-  "trades3m": 299,
+  "trades3m": 281,
   "trade": {
     "week": "2026-08-4",
     "weeks": 4,
@@ -42,7 +42,7 @@
         "apt": "삼각산아이원",
         "area": 59.8,
         "amount": 81500,
-        "prevHigh": 80000
+        "prevHigh": 75000
       }
     ],
     "actives": [
@@ -182,14 +182,14 @@
       "pyeongPrice": 3175,
       "jeonseRatio": 61,
       "tradeCount": 27,
-      "rentCount": 106
+      "rentCount": 107
     },
     {
       "week": "2026-06-3",
       "pyeongPrice": 3015,
       "jeonseRatio": 62,
       "tradeCount": 21,
-      "rentCount": 55
+      "rentCount": 56
     },
     {
       "week": "2026-06-4",

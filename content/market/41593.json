@@ -3,9 +3,9 @@
   "region": "경기 화성 봉담구",
   "sido": "경기",
   "group": "gyeonggi-gu",
-  "updatedAt": "2026-08-29T10:29:53+09:00",
+  "updatedAt": "2026-08-31T14:17:56+09:00",
   "sparse": false,
-  "trades3m": 477,
+  "trades3m": 469,
   "trade": {
     "week": "2026-08-4",
     "weeks": 4,
@@ -228,28 +228,28 @@
     },
     {
       "week": "2026-07-4",
-      "pyeongPrice": 1799,
+      "pyeongPrice": 1796,
       "jeonseRatio": 74,
-      "tradeCount": 33,
+      "tradeCount": 32,
       "rentCount": 49
     },
     {
       "week": "2026-07-5",
-      "pyeongPrice": 1821,
+      "pyeongPrice": 1816,
       "jeonseRatio": 73,
       "tradeCount": 9,
       "rentCount": 14
     },
     {
       "week": "2026-08-1",
-      "pyeongPrice": 1788,
+      "pyeongPrice": 1779,
       "jeonseRatio": 72,
       "tradeCount": 32,
       "rentCount": 40
     },
     {
       "week": "2026-08-2",
-      "pyeongPrice": 1809,
+      "pyeongPrice": 1805,
       "jeonseRatio": 72,
       "tradeCount": 27,
       "rentCount": 44

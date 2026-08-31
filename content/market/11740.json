@@ -3,9 +3,9 @@
   "region": "서울 강동구",
   "sido": "서울",
   "group": "seoul",
-  "updatedAt": "2026-08-29T10:26:03+09:00",
+  "updatedAt": "2026-08-31T14:13:42+09:00",
   "sparse": false,
-  "trades3m": 612,
+  "trades3m": 574,
   "trade": {
     "week": "2026-08-4",
     "weeks": 4,
@@ -27,22 +27,22 @@
         "prevHigh": 208000
       },
       {
-        "apt": "강변그대가리버뷰",
-        "area": 85.0,
-        "amount": 195000,
-        "prevHigh": 148000
-      },
-      {
         "apt": "래미안강동팰리스",
         "area": 85.0,
         "amount": 195000,
-        "prevHigh": 184000
+        "prevHigh": 182000
       },
       {
         "apt": "고덕주공9",
         "area": 83.5,
         "amount": 188000,
         "prevHigh": 181000
+      },
+      {
+        "apt": "삼익가든",
+        "area": 117.8,
+        "amount": 174000,
+        "prevHigh": 160000
       }
     ],
     "actives": [
@@ -193,45 +193,45 @@
     },
     {
       "week": "2026-06-4",
-      "pyeongPrice": 6245,
+      "pyeongPrice": 6253,
       "jeonseRatio": 45,
-      "tradeCount": 59,
+      "tradeCount": 58,
       "rentCount": 276
     },
     {
       "week": "2026-06-5",
-      "pyeongPrice": 6129,
+      "pyeongPrice": 6144,
       "jeonseRatio": 45,
       "tradeCount": 20,
       "rentCount": 74
     },
     {
       "week": "2026-07-1",
-      "pyeongPrice": 6005,
+      "pyeongPrice": 6033,
       "jeonseRatio": 44,
-      "tradeCount": 83,
+      "tradeCount": 82,
       "rentCount": 199
     },
     {
       "week": "2026-07-2",
-      "pyeongPrice": 6033,
+      "pyeongPrice": 6048,
       "jeonseRatio": 44,
       "tradeCount": 55,
       "rentCount": 281
     },
     {
       "week": "2026-07-3",
-      "pyeongPrice": 6020,
+      "pyeongPrice": 6027,
       "jeonseRatio": 45,
       "tradeCount": 51,
       "rentCount": 218
     },
     {
       "week": "2026-07-4",
-      "pyeongPrice": 6179,
+      "pyeongPrice": 6187,
       "jeonseRatio": 44,
       "tradeCount": 43,
-      "rentCount": 235
+      "rentCount": 237
     },
     {
       "week": "2026-07-5",

@@ -3,9 +3,9 @@
   "region": "서울 송파구",
   "sido": "서울",
   "group": "seoul",
-  "updatedAt": "2026-08-29T10:25:52+09:00",
+  "updatedAt": "2026-08-31T14:13:29+09:00",
   "sparse": false,
-  "trades3m": 702,
+  "trades3m": 648,
   "trade": {
     "week": "2026-08-4",
     "weeks": 4,
@@ -76,13 +76,13 @@
   "rent": {
     "week": "2026-08-4",
     "weeks": 4,
-    "jeonseM84": 84000,
-    "jeonseM59": 63000,
+    "jeonseM84": 82000,
+    "jeonseM59": 63500,
     "monthlyDeposit": 10808,
     "monthlyRent": 50,
     "jeonseRatio": 39,
     "ratioDays": 92,
-    "count": 869
+    "count": 871
   },
   "window": 4,
   "weeks": [
@@ -186,21 +186,21 @@
     },
     {
       "week": "2026-06-3",
-      "pyeongPrice": 7968,
+      "pyeongPrice": 7971,
       "jeonseRatio": 40,
-      "tradeCount": 61,
+      "tradeCount": 60,
       "rentCount": 344
     },
     {
       "week": "2026-06-4",
-      "pyeongPrice": 7975,
+      "pyeongPrice": 7977,
       "jeonseRatio": 40,
       "tradeCount": 61,
       "rentCount": 323
     },
     {
       "week": "2026-06-5",
-      "pyeongPrice": 8096,
+      "pyeongPrice": 8158,
       "jeonseRatio": 40,
       "tradeCount": 19,
       "rentCount": 135
@@ -252,7 +252,7 @@
       "pyeongPrice": 8397,
       "jeonseRatio": 40,
       "tradeCount": 24,
-      "rentCount": 228
+      "rentCount": 230
     },
     {
       "week": "2026-08-3",
