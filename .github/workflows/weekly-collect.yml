@@ -1,0 +1,146 @@
+# 매주 토요일 아침, 시세와 청약을 받아 PR 을 올린다.
+#
+# 🔴 토요일인 이유는 알림 때문이다. 시세 알림이 **일요일 저녁 8시**에 나간다.
+#    월요일에 수집하면 알림이 지난주 데이터를 가리킨다.
+#    청약 알림은 월요일 아침 9시라 토요일 수집으로 맞는다.
+#
+# 2026-08-29 실측: GitHub 러너에서 apis.data.go.kr · api.odcloud.kr 둘 다 닿는다.
+# (8/12에 `.go.kr` 이 막힌다고 적어뒀던 것은 지금 유효하지 않다)
+name: 주간 수집 (시세·청약)
+
+on:
+  schedule:
+    # 토요일 07:00 KST = 금요일 22:00 UTC
+    - cron: '0 22 * * 5'
+  workflow_dispatch:
+
+# 같은 워크플로가 겹쳐 돌면 PR 이 서로를 덮는다
+concurrency:
+  group: weekly-collect
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    # 시세 80곳은 API 가 429 를 내서 직렬로 받는다. 15분쯤 걸린다
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 날짜
+        id: d
+        run: echo "date=$(TZ=Asia/Seoul date +%F)" >> "$GITHUB_OUTPUT"
+
+      - name: 청약 일정
+        env:
+          ODCLOUD_API_KEY: ${{ secrets.ODCLOUD_API_KEY }}
+        run: |
+          if [ -z "$ODCLOUD_API_KEY" ]; then
+            echo "::error::ODCLOUD_API_KEY 시크릿이 없습니다. 청약 일정이 갱신되지 않습니다."
+            exit 1
+          fi
+          python3 scripts/collect_applyhome.py
+
+      - name: 시세 80곳
+        env:
+          RTMS_API_KEY: ${{ secrets.RTMS_API_KEY }}
+        run: |
+          if [ -z "$RTMS_API_KEY" ]; then
+            echo "::error::RTMS_API_KEY 시크릿이 없습니다."
+            exit 1
+          fi
+          # 🔴 6개월 내내 0건인 지역이 있으면 스크립트가 종료 코드 1 을 낸다.
+          #    행정구역 개편 신호다 — 그때도 PR 은 올리고 본문에 경고를 적는다.
+          python3 scripts/collect_market.py --months 6 2>&1 | tee /tmp/market.log || echo "DEAD=1" >> "$GITHUB_ENV"
+
+      - name: 법령 점검이 필요한가
+        id: legal
+        run: |
+          CHECKED=$(python3 -c "import json;print(json.load(open('content/legal.json'))['minimumDeposit']['checkedAt'])")
+          DAYS=$(( ( $(date +%s) - $(date -d "$CHECKED" +%s) ) / 86400 ))
+          echo "checked=$CHECKED" >> "$GITHUB_OUTPUT"
+          echo "days=$DAYS" >> "$GITHUB_OUTPUT"
+          [ "$DAYS" -ge 7 ] && echo "due=1" >> "$GITHUB_OUTPUT" || echo "due=0" >> "$GITHUB_OUTPUT"
+
+      - name: 바뀐 게 있나
+        id: diff
+        run: |
+          git add -A content/
+          # updatedAt 만 바뀐 것은 갱신으로 치지 않는다 — 매주 의미 없는 PR 이 열린다
+          if git diff --cached --quiet; then
+            echo "changed=0" >> "$GITHUB_OUTPUT"
+          elif [ -z "$(git diff --cached -U0 | grep '^[+-]' | grep -v '^[+-][+-]' | grep -v '"updatedAt"')" ]; then
+            echo "changed=0" >> "$GITHUB_OUTPUT"
+            echo "updatedAt 만 바뀌었습니다. PR 을 열지 않습니다."
+          else
+            echo "changed=1" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: PR
+        if: steps.diff.outputs.changed == '1'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BR="data/weekly-${{ steps.d.outputs.date }}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BR"
+          git commit -qm "주간 수집 ${{ steps.d.outputs.date }} — 시세·청약"
+          git push -q -u origin "$BR"
+
+          APPLY=$(python3 -c "import json;d=json.load(open('content/applyhome.json'));print(d['count'])")
+          OPEN=$(python3 -c "import json;d=json.load(open('content/applyhome.json'));print(sum(1 for i in d['items'] if i['state']=='open'))")
+
+          {
+            echo "토요일 자동 수집입니다. **읽고 머지만** 하면 앱에 반영됩니다."
+            echo
+            echo "| | |"
+            echo "|---|---|"
+            echo "| 청약 | ${APPLY}건 (접수 중 ${OPEN}) |"
+            echo "| 시세 | 80곳 |"
+            echo
+            if [ "${DEAD:-0}" = "1" ]; then
+              echo "## 🔴 6개월 내내 0건인 지역이 있습니다"
+              echo
+              echo "행정구역이 바뀌었을 수 있습니다. \`scripts/regions.py\` 를 고쳐야 합니다."
+              echo "2026-07-01 인천 개편과 화성 구 신설을 이 신호로 발견했습니다."
+              echo
+              echo '```'
+              grep -A20 "0건인 지역" /tmp/market.log | head -20
+              echo '```'
+              echo
+            fi
+            if [ "${{ steps.legal.outputs.due }}" = "1" ]; then
+              echo "## 🔴 법령 점검할 때가 됐습니다"
+              echo
+              echo "마지막 확인 **${{ steps.legal.outputs.checked }}** — ${{ steps.legal.outputs.days }}일 지났습니다."
+              echo
+              echo "- [ ] 위에 0건 경고가 있나 (행정구역 개편 신호)"
+              echo "- [ ] \`regionTier\` 수가 \`regions.py\` 지역 수와 같나"
+              echo "- [ ] \`tiers\` 금액 네 개가 그대로인가 (주택임대차보호법 시행령 제10조·제11조)"
+              echo "- [ ] \`regionSplit\` 6곳이 그대로인가 — **인천경제자유구역은 송도·영종·청라 셋이다**"
+              echo "- [ ] 바뀐 게 없어도 \`checkedAt\` 을 오늘로 갱신했나 (화면에 그대로 뜬다)"
+              echo
+              echo "근거: 수도권정비계획법 시행령 별표1 · 주택임대차보호법 시행령"
+              echo
+            fi
+            echo "## 확인할 것"
+            echo
+            echo "- 청약 건수가 그럴듯한가 (0건인 주도 실제로 있습니다)"
+            echo "- 시세가 튀는 지역이 없나 — 평당가·전세가율은 최근 4주를 합친 값입니다"
+            echo
+            echo "**법령만 바뀌면 번들을 다시 안 냅니다.** 앱이 이 파일들을 읽습니다."
+          } > /tmp/body.md
+
+          gh pr create --title "주간 수집 ${{ steps.d.outputs.date }} — 시세·청약" --body-file /tmp/body.md
+
+      - name: 바뀐 게 없으면
+        if: steps.diff.outputs.changed == '0'
+        run: echo "::notice::갱신할 내용이 없어 PR 을 열지 않았습니다."
