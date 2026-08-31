@@ -3,16 +3,16 @@
   "region": "서울 노원구",
   "sido": "서울",
   "group": "seoul",
-  "updatedAt": "2026-08-29T10:23:50+09:00",
+  "updatedAt": "2026-08-31T14:11:20+09:00",
   "sparse": false,
-  "trades3m": 1750,
+  "trades3m": 1631,
   "trade": {
     "week": "2026-08-4",
     "weeks": 4,
-    "pyeongPrice": 3690,
+    "pyeongPrice": 3682,
     "m84": 82000,
     "m59": 62100,
-    "count": 239,
+    "count": 241,
     "highs": [
       {
         "apt": "롯데우성",
@@ -82,7 +82,7 @@
     "monthlyRent": 70,
     "jeonseRatio": 58,
     "ratioDays": 92,
-    "count": 777
+    "count": 779
   },
   "window": 4,
   "weeks": [
@@ -174,7 +174,7 @@
       "week": "2026-06-1",
       "pyeongPrice": 3496,
       "jeonseRatio": 61,
-      "tradeCount": 179,
+      "tradeCount": 180,
       "rentCount": 241
     },
     {
@@ -186,14 +186,14 @@
     },
     {
       "week": "2026-06-3",
-      "pyeongPrice": 3531,
+      "pyeongPrice": 3530,
       "jeonseRatio": 61,
       "tradeCount": 144,
       "rentCount": 333
     },
     {
       "week": "2026-06-4",
-      "pyeongPrice": 3521,
+      "pyeongPrice": 3512,
       "jeonseRatio": 60,
       "tradeCount": 185,
       "rentCount": 276
@@ -237,36 +237,36 @@
       "week": "2026-07-5",
       "pyeongPrice": 3603,
       "jeonseRatio": 60,
-      "tradeCount": 84,
+      "tradeCount": 85,
       "rentCount": 131
     },
     {
       "week": "2026-08-1",
-      "pyeongPrice": 3595,
+      "pyeongPrice": 3582,
       "jeonseRatio": 59,
-      "tradeCount": 108,
+      "tradeCount": 109,
       "rentCount": 173
     },
     {
       "week": "2026-08-2",
-      "pyeongPrice": 3621,
+      "pyeongPrice": 3619,
       "jeonseRatio": 58,
-      "tradeCount": 109,
+      "tradeCount": 110,
       "rentCount": 255
     },
     {
       "week": "2026-08-3",
-      "pyeongPrice": 3605,
+      "pyeongPrice": 3582,
       "jeonseRatio": 58,
       "tradeCount": 19,
       "rentCount": 194
     },
     {
       "week": "2026-08-4",
-      "pyeongPrice": 3690,
+      "pyeongPrice": 3682,
       "jeonseRatio": 58,
       "tradeCount": 3,
-      "rentCount": 155
+      "rentCount": 157
     }
   ]
 }

@@ -3,9 +3,9 @@
   "region": "경기 하남시",
   "sido": "경기",
   "group": "gyeonggi-si",
-  "updatedAt": "2026-08-29T10:32:40+09:00",
+  "updatedAt": "2026-08-31T14:20:39+09:00",
   "sparse": false,
-  "trades3m": 785,
+  "trades3m": 760,
   "trade": {
     "week": "2026-08-4",
     "weeks": 4,
@@ -24,7 +24,7 @@
         "apt": "미사강변센트럴자이",
         "area": 101.8,
         "amount": 188500,
-        "prevHigh": 170000
+        "prevHigh": 169000
       },
       {
         "apt": "더샵포웰시티",

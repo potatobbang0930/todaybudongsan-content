@@ -3,16 +3,16 @@
   "region": "경기 용인 수지구",
   "sido": "경기",
   "group": "gyeonggi-gu",
-  "updatedAt": "2026-08-29T10:29:40+09:00",
+  "updatedAt": "2026-08-31T14:17:42+09:00",
   "sparse": false,
-  "trades3m": 1497,
+  "trades3m": 1423,
   "trade": {
-    "week": "2026-08-4",
+    "week": "2026-08-5",
     "weeks": 4,
-    "pyeongPrice": 3684,
-    "m84": 105000,
-    "m59": 84700,
-    "count": 250,
+    "pyeongPrice": 3693,
+    "m84": 103500,
+    "m59": 84000,
+    "count": 160,
     "highs": [
       {
         "apt": "성복역롯데캐슬골드타운",
@@ -21,55 +21,55 @@
         "prevHigh": 194500
       },
       {
-        "apt": "광교자이더클래스",
+        "apt": "성복역롯데캐슬골드타운",
         "area": 84.9,
-        "amount": 168500,
-        "prevHigh": 165000
+        "amount": 190000,
+        "prevHigh": 187000
       },
       {
         "apt": "동천센트럴자이",
         "area": 104.5,
         "amount": 163000,
-        "prevHigh": 140500
-      },
-      {
-        "apt": "래미안수지이스트파크",
-        "area": 85.0,
-        "amount": 148000,
-        "prevHigh": 134250
+        "prevHigh": 129500
       },
       {
         "apt": "래미안이스트팰리스3단지",
         "area": 172.9,
         "amount": 144500,
         "prevHigh": 140000
+      },
+      {
+        "apt": "신정7단지(상록)공무원",
+        "area": 85.0,
+        "amount": 144000,
+        "prevHigh": 140000
       }
     ],
     "actives": [
       {
-        "apt": "동부",
-        "count": 7,
-        "median": 83000
+        "apt": "래미안이스트팰리스3단지",
+        "count": 5,
+        "median": 139000
       },
       {
-        "apt": "래미안이스트팰리스3단지",
-        "count": 7,
-        "median": 135000
+        "apt": "동천자이",
+        "count": 4,
+        "median": 118750
+      },
+      {
+        "apt": "새터마을죽전힐스테이트",
+        "count": 4,
+        "median": 83750
       },
       {
         "apt": "성복역리버파크",
-        "count": 6,
-        "median": 91000
+        "count": 4,
+        "median": 91100
       },
       {
-        "apt": "버들치마을성복자이1차",
-        "count": 5,
-        "median": 112000
-      },
-      {
-        "apt": "벽산블루밍",
-        "count": 5,
-        "median": 82000
+        "apt": "광교상현마을현대",
+        "count": 3,
+        "median": 103500
       }
     ]
   },
@@ -82,17 +82,10 @@
     "monthlyRent": 112,
     "jeonseRatio": 54,
     "ratioDays": 92,
-    "count": 422
+    "count": 423
   },
   "window": 4,
   "weeks": [
-    {
-      "week": "2026-03-4",
-      "pyeongPrice": 3342,
-      "jeonseRatio": 54,
-      "tradeCount": 91,
-      "rentCount": 204
-    },
     {
       "week": "2026-03-5",
       "pyeongPrice": 3345,
@@ -244,29 +237,36 @@
       "week": "2026-08-1",
       "pyeongPrice": 3823,
       "jeonseRatio": 54,
-      "tradeCount": 97,
+      "tradeCount": 99,
       "rentCount": 76
     },
     {
       "week": "2026-08-2",
-      "pyeongPrice": 3746,
+      "pyeongPrice": 3774,
       "jeonseRatio": 54,
-      "tradeCount": 91,
+      "tradeCount": 94,
       "rentCount": 165
     },
     {
       "week": "2026-08-3",
-      "pyeongPrice": 3775,
+      "pyeongPrice": 3793,
       "jeonseRatio": 54,
-      "tradeCount": 43,
-      "rentCount": 102
+      "tradeCount": 44,
+      "rentCount": 103
     },
     {
       "week": "2026-08-4",
-      "pyeongPrice": 3684,
+      "pyeongPrice": 3699,
       "jeonseRatio": 54,
-      "tradeCount": 19,
+      "tradeCount": 21,
       "rentCount": 79
+    },
+    {
+      "week": "2026-08-5",
+      "pyeongPrice": 3693,
+      "jeonseRatio": 54,
+      "tradeCount": 1,
+      "rentCount": 0
     }
   ]
 }

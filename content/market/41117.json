@@ -3,9 +3,9 @@
   "region": "경기 수원 영통구",
   "sido": "경기",
   "group": "gyeonggi-gu",
-  "updatedAt": "2026-08-29T10:27:52+09:00",
+  "updatedAt": "2026-08-31T14:15:44+09:00",
   "sparse": false,
-  "trades3m": 1438,
+  "trades3m": 1390,
   "trade": {
     "week": "2026-08-4",
     "weeks": 4,
@@ -144,9 +144,9 @@
     },
     {
       "week": "2026-05-2",
-      "pyeongPrice": 2701,
+      "pyeongPrice": 2700,
       "jeonseRatio": 65,
-      "tradeCount": 172,
+      "tradeCount": 171,
       "rentCount": 165
     },
     {
@@ -158,14 +158,14 @@
     },
     {
       "week": "2026-05-4",
-      "pyeongPrice": 2744,
+      "pyeongPrice": 2739,
       "jeonseRatio": 65,
       "tradeCount": 103,
       "rentCount": 143
     },
     {
       "week": "2026-05-5",
-      "pyeongPrice": 2746,
+      "pyeongPrice": 2745,
       "jeonseRatio": 65,
       "tradeCount": 48,
       "rentCount": 62

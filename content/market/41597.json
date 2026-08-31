@@ -3,9 +3,9 @@
   "region": "경기 화성 동탄구",
   "sido": "경기",
   "group": "gyeonggi-gu",
-  "updatedAt": "2026-08-29T10:30:21+09:00",
+  "updatedAt": "2026-08-31T14:18:21+09:00",
   "sparse": false,
-  "trades3m": 2332,
+  "trades3m": 2178,
   "trade": {
     "week": "2026-08-4",
     "weeks": 4,
@@ -82,7 +82,7 @@
     "monthlyRent": 23,
     "jeonseRatio": 53,
     "ratioDays": 92,
-    "count": 1205
+    "count": 1206
   },
   "window": 4,
   "weeks": [
@@ -266,7 +266,7 @@
       "pyeongPrice": 3223,
       "jeonseRatio": 53,
       "tradeCount": 8,
-      "rentCount": 239
+      "rentCount": 240
     }
   ]
 }

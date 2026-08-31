@@ -3,22 +3,22 @@
   "region": "서울 영등포구",
   "sido": "서울",
   "group": "seoul",
-  "updatedAt": "2026-08-29T10:24:58+09:00",
+  "updatedAt": "2026-08-31T14:12:35+09:00",
   "sparse": false,
-  "trades3m": 603,
+  "trades3m": 570,
   "trade": {
     "week": "2026-08-4",
     "weeks": 4,
-    "pyeongPrice": 5679,
+    "pyeongPrice": 5634,
     "m84": 117000,
-    "m59": 130800,
-    "count": 59,
+    "m59": 130400,
+    "count": 60,
     "highs": [
       {
         "apt": "삼부",
         "area": 177.1,
         "amount": 545000,
-        "prevHigh": 389000
+        "prevHigh": 310000
       },
       {
         "apt": "시범",
@@ -79,10 +79,10 @@
     "jeonseM84": 65575,
     "jeonseM59": 59750,
     "monthlyDeposit": 15000,
-    "monthlyRent": 80,
+    "monthlyRent": 78,
     "jeonseRatio": 46,
     "ratioDays": 92,
-    "count": 461
+    "count": 462
   },
   "window": 4,
   "weeks": [
@@ -221,21 +221,21 @@
     },
     {
       "week": "2026-07-3",
-      "pyeongPrice": 6344,
+      "pyeongPrice": 6395,
       "jeonseRatio": 46,
-      "tradeCount": 52,
+      "tradeCount": 51,
       "rentCount": 142
     },
     {
       "week": "2026-07-4",
-      "pyeongPrice": 6227,
+      "pyeongPrice": 6231,
       "jeonseRatio": 47,
       "tradeCount": 50,
       "rentCount": 183
     },
     {
       "week": "2026-07-5",
-      "pyeongPrice": 6031,
+      "pyeongPrice": 6050,
       "jeonseRatio": 46,
       "tradeCount": 24,
       "rentCount": 69
@@ -244,26 +244,26 @@
       "week": "2026-08-1",
       "pyeongPrice": 5950,
       "jeonseRatio": 46,
-      "tradeCount": 19,
-      "rentCount": 120
+      "tradeCount": 20,
+      "rentCount": 121
     },
     {
       "week": "2026-08-2",
-      "pyeongPrice": 5860,
+      "pyeongPrice": 5840,
       "jeonseRatio": 46,
       "tradeCount": 27,
       "rentCount": 159
     },
     {
       "week": "2026-08-3",
-      "pyeongPrice": 5800,
+      "pyeongPrice": 5740,
       "jeonseRatio": 46,
       "tradeCount": 7,
       "rentCount": 86
     },
     {
       "week": "2026-08-4",
-      "pyeongPrice": 5679,
+      "pyeongPrice": 5634,
       "jeonseRatio": 46,
       "tradeCount": 6,
       "rentCount": 96

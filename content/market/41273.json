@@ -3,9 +3,9 @@
   "region": "경기 안산 단원구",
   "sido": "경기",
   "group": "gyeonggi-gu",
-  "updatedAt": "2026-08-29T10:28:49+09:00",
+  "updatedAt": "2026-08-31T14:16:50+09:00",
   "sparse": false,
-  "trades3m": 650,
+  "trades3m": 624,
   "trade": {
     "week": "2026-08-4",
     "weeks": 4,
@@ -82,7 +82,7 @@
     "monthlyRent": 65,
     "jeonseRatio": 65,
     "ratioDays": 92,
-    "count": 255
+    "count": 256
   },
   "window": 4,
   "weeks": [
@@ -266,7 +266,7 @@
       "pyeongPrice": 2031,
       "jeonseRatio": 65,
       "tradeCount": 21,
-      "rentCount": 41
+      "rentCount": 42
     }
   ]
 }

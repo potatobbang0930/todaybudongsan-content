@@ -3,9 +3,9 @@
   "region": "서울 광진구",
   "sido": "서울",
   "group": "seoul",
-  "updatedAt": "2026-08-29T10:22:52+09:00",
+  "updatedAt": "2026-08-31T14:10:24+09:00",
   "sparse": false,
-  "trades3m": 192,
+  "trades3m": 174,
   "trade": {
     "week": "2026-08-3",
     "weeks": 4,
@@ -27,6 +27,12 @@
         "prevHigh": 168000
       },
       {
+        "apt": "현대3",
+        "area": 84.9,
+        "amount": 173000,
+        "prevHigh": 149000
+      },
+      {
         "apt": "우성2",
         "area": 64.8,
         "amount": 166500,
@@ -37,12 +43,6 @@
         "area": 84.6,
         "amount": 163500,
         "prevHigh": 163000
-      },
-      {
-        "apt": "광진파크하우스",
-        "area": 44.2,
-        "amount": 74000,
-        "prevHigh": 70000
       }
     ],
     "actives": [
@@ -146,7 +146,7 @@
       "week": "2026-05-2",
       "pyeongPrice": 5983,
       "jeonseRatio": 42,
-      "tradeCount": 82,
+      "tradeCount": 81,
       "rentCount": 75
     },
     {

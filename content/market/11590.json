@@ -3,9 +3,9 @@
   "region": "서울 동작구",
   "sido": "서울",
   "group": "seoul",
-  "updatedAt": "2026-08-29T10:25:07+09:00",
+  "updatedAt": "2026-08-31T14:12:43+09:00",
   "sparse": false,
-  "trades3m": 473,
+  "trades3m": 439,
   "trade": {
     "week": "2026-08-4",
     "weeks": 4,
@@ -77,12 +77,12 @@
     "week": "2026-08-4",
     "weeks": 4,
     "jeonseM84": 73000,
-    "jeonseM59": 57600,
+    "jeonseM59": 57700,
     "monthlyDeposit": 20000,
     "monthlyRent": 90,
     "jeonseRatio": 43,
     "ratioDays": 92,
-    "count": 351
+    "count": 353
   },
   "window": 4,
   "weeks": [
@@ -245,7 +245,7 @@
       "pyeongPrice": 6387,
       "jeonseRatio": 44,
       "tradeCount": 18,
-      "rentCount": 101
+      "rentCount": 102
     },
     {
       "week": "2026-08-2",
@@ -266,7 +266,7 @@
       "pyeongPrice": 6687,
       "jeonseRatio": 43,
       "tradeCount": 3,
-      "rentCount": 56
+      "rentCount": 57
     }
   ]
 }

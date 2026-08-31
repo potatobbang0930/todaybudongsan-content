@@ -3,9 +3,9 @@
   "region": "경기 고양 일산동구",
   "sido": "경기",
   "group": "gyeonggi-gu",
-  "updatedAt": "2026-08-29T10:29:05+09:00",
+  "updatedAt": "2026-08-31T14:17:06+09:00",
   "sparse": false,
-  "trades3m": 488,
+  "trades3m": 474,
   "trade": {
     "week": "2026-08-4",
     "weeks": 4,
@@ -19,12 +19,6 @@
         "area": 59.9,
         "amount": 80000,
         "prevHigh": 78000
-      },
-      {
-        "apt": "더샵일산퍼스트월드2단지",
-        "area": 65.0,
-        "amount": 68000,
-        "prevHigh": 45000
       },
       {
         "apt": "위시티블루밍3단지",
@@ -43,6 +37,12 @@
         "area": 130.4,
         "amount": 60500,
         "prevHigh": 59400
+      },
+      {
+        "apt": "백송마을(삼부)",
+        "area": 85.0,
+        "amount": 50300,
+        "prevHigh": 49000
       }
     ],
     "actives": [
@@ -82,7 +82,7 @@
     "monthlyRent": 64,
     "jeonseRatio": 77,
     "ratioDays": 92,
-    "count": 231
+    "count": 233
   },
   "window": 4,
   "weeks": [
@@ -266,7 +266,7 @@
       "pyeongPrice": 1793,
       "jeonseRatio": 77,
       "tradeCount": 16,
-      "rentCount": 37
+      "rentCount": 39
     }
   ]
 }

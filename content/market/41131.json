@@ -3,9 +3,9 @@
   "region": "경기 성남 수정구",
   "sido": "경기",
   "group": "gyeonggi-gu",
-  "updatedAt": "2026-08-29T10:27:58+09:00",
+  "updatedAt": "2026-08-31T14:15:54+09:00",
   "sparse": false,
-  "trades3m": 282,
+  "trades3m": 264,
   "trade": {
     "week": "2026-08-4",
     "weeks": 4,
@@ -73,10 +73,10 @@
     "jeonseM84": 70000,
     "jeonseM59": 57750,
     "monthlyDeposit": 10000,
-    "monthlyRent": 55,
+    "monthlyRent": 53,
     "jeonseRatio": 54,
     "ratioDays": 92,
-    "count": 261
+    "count": 263
   },
   "window": 4,
   "weeks": [
@@ -260,7 +260,7 @@
       "pyeongPrice": 6525,
       "jeonseRatio": 54,
       "tradeCount": 1,
-      "rentCount": 65
+      "rentCount": 67
     }
   ]
 }

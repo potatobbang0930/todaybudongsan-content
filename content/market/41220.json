@@ -3,9 +3,9 @@
   "region": "경기 평택시",
   "sido": "경기",
   "group": "gyeonggi-si",
-  "updatedAt": "2026-08-29T10:31:19+09:00",
+  "updatedAt": "2026-08-31T14:19:17+09:00",
   "sparse": false,
-  "trades3m": 1894,
+  "trades3m": 1849,
   "trade": {
     "week": "2026-08-4",
     "weeks": 4,
@@ -39,10 +39,10 @@
         "prevHigh": 62200
       },
       {
-        "apt": "평택지제역자이",
-        "area": 60.0,
-        "amount": 61000,
-        "prevHigh": 60000
+        "apt": "평택비전푸르지오",
+        "area": 119.6,
+        "amount": 63000,
+        "prevHigh": 37900
       }
     ],
     "actives": [
@@ -82,7 +82,7 @@
     "monthlyRent": 65,
     "jeonseRatio": 78,
     "ratioDays": 92,
-    "count": 903
+    "count": 907
   },
   "window": 4,
   "weeks": [
@@ -140,7 +140,7 @@
       "pyeongPrice": 1314,
       "jeonseRatio": 78,
       "tradeCount": 146,
-      "rentCount": 280
+      "rentCount": 281
     },
     {
       "week": "2026-05-2",
@@ -245,7 +245,7 @@
       "pyeongPrice": 1342,
       "jeonseRatio": 77,
       "tradeCount": 110,
-      "rentCount": 258
+      "rentCount": 259
     },
     {
       "week": "2026-08-2",
@@ -259,14 +259,14 @@
       "pyeongPrice": 1348,
       "jeonseRatio": 77,
       "tradeCount": 103,
-      "rentCount": 168
+      "rentCount": 169
     },
     {
       "week": "2026-08-4",
       "pyeongPrice": 1380,
       "jeonseRatio": 78,
       "tradeCount": 66,
-      "rentCount": 182
+      "rentCount": 184
     }
   ]
 }

@@ -3,9 +3,9 @@
   "region": "서울 강남구",
   "sido": "서울",
   "group": "seoul",
-  "updatedAt": "2026-08-29T10:25:40+09:00",
+  "updatedAt": "2026-08-31T14:13:15+09:00",
   "sparse": false,
-  "trades3m": 454,
+  "trades3m": 417,
   "trade": {
     "week": "2026-08-4",
     "weeks": 4,
@@ -33,16 +33,16 @@
         "prevHigh": 284000
       },
       {
-        "apt": "동현아파트1~6",
-        "area": 84.9,
-        "amount": 285000,
-        "prevHigh": 260000
-      },
-      {
         "apt": "역삼푸르지오",
         "area": 59.9,
         "amount": 280000,
         "prevHigh": 279000
+      },
+      {
+        "apt": "삼익",
+        "area": 49.2,
+        "amount": 212000,
+        "prevHigh": 206000
       }
     ],
     "actives": [
@@ -82,7 +82,7 @@
     "monthlyRent": 150,
     "jeonseRatio": 37,
     "ratioDays": 92,
-    "count": 692
+    "count": 691
   },
   "window": 4,
   "weeks": [
@@ -224,7 +224,7 @@
       "pyeongPrice": 12860,
       "jeonseRatio": 39,
       "tradeCount": 25,
-      "rentCount": 252
+      "rentCount": 253
     },
     {
       "week": "2026-07-4",
@@ -266,7 +266,7 @@
       "pyeongPrice": 10511,
       "jeonseRatio": 37,
       "tradeCount": 4,
-      "rentCount": 119
+      "rentCount": 118
     }
   ]
 }

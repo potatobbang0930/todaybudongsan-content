@@ -3,9 +3,9 @@
   "region": "인천 제물포구",
   "sido": "인천",
   "group": "incheon",
-  "updatedAt": "2026-08-29T10:26:09+09:00",
+  "updatedAt": "2026-08-31T14:13:48+09:00",
   "sparse": false,
-  "trades3m": 182,
+  "trades3m": 177,
   "trade": {
     "week": "2026-08-4",
     "weeks": 4,
@@ -27,12 +27,6 @@
         "prevHigh": 31500
       },
       {
-        "apt": "신포스카이타워",
-        "area": 114.2,
-        "amount": 30200,
-        "prevHigh": 29500
-      },
-      {
         "apt": "신흥아이파크",
         "area": 85.0,
         "amount": 27800,
@@ -43,6 +37,12 @@
         "area": 76.7,
         "amount": 21500,
         "prevHigh": 14300
+      },
+      {
+        "apt": "삼익",
+        "area": 99.3,
+        "amount": 16000,
+        "prevHigh": 14000
       }
     ],
     "actives": [

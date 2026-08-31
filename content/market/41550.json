@@ -3,9 +3,9 @@
   "region": "경기 안성시",
   "sido": "경기",
   "group": "gyeonggi-si",
-  "updatedAt": "2026-08-29T10:33:07+09:00",
+  "updatedAt": "2026-08-31T14:21:05+09:00",
   "sparse": false,
-  "trades3m": 468,
+  "trades3m": 454,
   "trade": {
     "week": "2026-08-4",
     "weeks": 4,
@@ -39,10 +39,10 @@
         "prevHigh": 21000
       },
       {
-        "apt": "임광그대가",
-        "area": 84.9,
-        "amount": 20000,
-        "prevHigh": 18200
+        "apt": "대우경남",
+        "area": 59.3,
+        "amount": 17500,
+        "prevHigh": 15300
       }
     ],
     "actives": [
