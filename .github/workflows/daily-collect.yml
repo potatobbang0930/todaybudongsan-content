@@ -1,4 +1,15 @@
-# 평일 아침, 그날 콘텐츠 후보를 모아둔다.
+# 평일 저녁, 그날 콘텐츠 후보를 모아둔다.
+#
+# 🔴 2026-09-01 에 07:00 → 18:30 으로 옮겼다. 07:00 에는 그날 자료가 하나도 없다.
+#    국토부 보도자료 배포 시각은 오전 08:29~09:12, 오후 15:02~17:26 두 덩어리다.
+#    9/1 07:00 run 은 국토부 0건 · 재정경제부 0건 · 한국은행 0건으로 끝났다.
+#    18:30 이면 두 덩어리를 다 지나 있고, 20:00 정책 알림 전에 발행할 시간도 남는다.
+#
+# 🔴 --days 4 인 이유는 엠바고다. 보도자료의 RSS pubDate 는 **배포일**이고
+#    보도시점은 며칠 뒤일 수 있다. 「환승센터 구축으로 전국을 더 편리하고 가깝게」는
+#    배포 8/28(금) · 보도시점 8/31(월) 조간이라, 8/31 을 하루치로 훑으면 안 잡혔다.
+#    금요일 배포 → 월요일 조간이 가장 흔한 꼴이고, 월요일에서 금요일까지가 4일이다.
+#    3일이면 이 꼴을 못 덮는다(2026-09-01 실측). 이미 다룬 자료는 사람이 거른다.
 #
 # 🔴 2026-08-12 에 예약을 껐다가 **2026-08-29 에 다시 켰다.** 전제가 깨졌기 때문이다.
 #
@@ -17,10 +28,12 @@
 # 배경: docs/DECISION_LOG.md 2026-08-12 (10) · 2026-08-29
 name: 일일 수집
 
+# 🔴 2026-09-01: 예약을 껐다. 러너에서 금융위(fsc.go.kr)가 상시 막혀서
+#    후보에 대출·DSR 자료가 빠진 채로 올라온다. 로컬에서는 0.23초에 정상 응답이라
+#    **사람이 로컬에서 수집하고 쓴다.** 수동 실행(Run workflow)만 남긴다.
 on:
-  schedule:
-    # 평일 07:00 KST = 전날 22:00 UTC. 발행 마감이 오후 6시라 아침에 준비돼 있어야 한다
-    - cron: '0 22 * * 0-4'
+  # schedule:
+  #   - cron: '30 9 * * 1-5'   # 평일 18:30 KST
   workflow_dispatch:
     inputs:
       date:
@@ -50,9 +63,17 @@ jobs:
       - name: 공식 자료 수집
         # 🔴 키가 없으면 청약홈이 통째로 빠진다. 실패가 아니라 "건너뜀"으로 조용히 지나가서
         #    결과만 봐서는 알 수 없다 (2026-08-29 러너에서 실제로 겪었다).
+        # 🔴 continue-on-error 인 이유: 이 잡의 결과물은 **알림**이지 콘텐츠 입력이 아니다.
+        #    글을 쓸 때는 스킬이 로컬에서 항상 새로 수집한다(daily-content/SKILL.md 1절).
+        #    fsc.go.kr 은 러너에서 상시 막히는데, 그 한 곳 때문에 exit 1 로 끝나면
+        #    커밋도 알림 이슈도 안 만들어져서 **알림 기능 자체가 죽는다**.
+        #    대신 빠진 기관을 이슈 맨 위에 굵게 적는다 — 아래 '알림 이슈 만들기' 참고.
+        continue-on-error: true
         env:
           ODCLOUD_API_KEY: ${{ secrets.ODCLOUD_API_KEY }}
-        run: python3 scripts/collect_sources.py --date "${{ steps.d.outputs.date }}"
+        run: |
+          python3 scripts/collect_sources.py \
+            --date "${{ steps.d.outputs.date }}" --days 4
 
       - name: 커밋
         run: |
@@ -71,37 +92,59 @@ jobs:
         run: |
           DATE="${{ steps.d.outputs.date }}"
           N=$(python3 -c "import json;print(len(json.load(open('candidates.json'))['candidates']))")
+          FAILED=$(python3 -c "import json;print(', '.join(json.load(open('candidates.json'))['failed_sources']))")
 
-          if [ "$N" = "0" ]; then
-            echo "후보 0건 — 주말·공휴일이면 정상. 이슈를 만들지 않습니다."
+          # 접속 실패는 후보 0건이어도 알려야 한다. 조용히 넘어가면
+          # "오늘 자료가 없었다" 와 "못 가져왔다" 가 구분되지 않는다.
+          if [ "$N" = "0" ] && [ -z "$FAILED" ]; then
+            echo "후보 0건 · 접속 실패 없음 — 공휴일이면 정상. 이슈를 만들지 않습니다."
             exit 0
           fi
 
           {
-            echo "오늘 나온 공식 자료 **${N}건**을 모았어요. 아직 아무것도 쓰지 않았습니다."
+            if [ -n "$FAILED" ]; then
+              echo "> [!WARNING]"
+              echo "> **러너가 못 읽은 기관: ${FAILED}**"
+              echo "> 아래 목록에는 이 기관 자료가 **빠져 있습니다.** 세 번 재시도해도 실패했어요."
+              echo "> 글을 쓸 때는 어차피 로컬에서 새로 수집하니 이 목록이 짧아도 걱정하지 않아도 됩니다."
+              echo
+            fi
+            echo "최근 4일치 공식 자료 **${N}건**을 모았어요. 아직 아무것도 쓰지 않았습니다."
             echo
             echo "### 후보 목록"
             python3 -c "
-          import json
+          import json, collections
           d = json.load(open('candidates.json'))
+          by_date = collections.defaultdict(list)
           for c in d['candidates']:
-              body = len(c.get('body') or '')
-              mark = '' if body else '  ⚠️ 본문 없음'
-              print(f\"- [{c['source']}] {c['title']}{mark}\")
+              by_date[c.get('date') or '날짜 없음'].append(c)
+          for date in sorted(by_date, reverse=True):
+              print(f'')
+              print(f'**{date}**')
+              for c in by_date[date]:
+                  mark = '' if (c.get('body') or '') else '  ⚠️ 본문 없음'
+                  print(f\"- [{c['source']}] {c['title']}{mark}\")
           "
+            echo
+            echo "> 4일치라 이미 다룬 자료가 섞여 있어요. 엠바고 자료(배포일 ≠ 보도시점)를"
+            echo "> 놓치지 않으려고 일부러 넓게 잡았습니다. 고를 때 사람이 거릅니다."
             echo
             echo "---"
             echo
             echo "**다음 할 일**: Claude Code를 열고 \`오늘 콘텐츠 만들어줘\`라고 하세요."
-            echo "\`candidates.json\`을 읽어 선정 기준을 적용하고 초안 PR을 만들어 줍니다."
+            echo "선정 기준을 적용해 초안 PR까지 만들어 줍니다."
+            echo "**20시에 정책 알림이 나가므로 19시 50분까지는 Merge해야 합니다.**"
             echo
-            echo "> 자료 수집만 자동이고 글쓰기는 수동이에요. 비용을 들이지 않기 위한 선택입니다."
+            echo "> 수집만 자동이고 글쓰기는 수동이에요. 비용을 들이지 않기 위한 선택입니다."
             echo "> 사용자가 생겨서 매일 발행이 중요해지면 \`daily-draft.yml\`의 schedule을 켜면 됩니다."
           } > issue.md
 
+          TITLE="오늘의 후보 ${N}건 — ${DATE}"
+          if [ -n "$FAILED" ]; then TITLE="${TITLE} (${FAILED} 빠짐)"; fi
+
           gh issue create \
-            --title "오늘의 후보 ${N}건 — ${DATE}" \
+            --title "$TITLE" \
             --body-file issue.md \
             --label "" 2>/dev/null || gh issue create \
-            --title "오늘의 후보 ${N}건 — ${DATE}" \
+            --title "$TITLE" \
             --body-file issue.md

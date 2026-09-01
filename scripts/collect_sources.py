@@ -16,6 +16,7 @@ import json
 import os
 import re
 import sys
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -62,13 +63,21 @@ def build_opener() -> urllib.request.OpenerDirector:
     return opener
 
 
-def get(opener, url: str, timeout: int = 30) -> bytes:
-    try:
-        with opener.open(url, timeout=timeout) as r:
-            return r.read()
-    except (urllib.error.URLError, OSError) as e:
-        print(f"  ⚠️  요청 실패 {url[:70]} — {e}", file=sys.stderr)
-        return b""
+# 재시도가 필요한 이유는 fsc.go.kr(금융위) 때문이다. 국내에서는 0.2초에 응답이 오는데
+# GitHub 러너에서는 SSL 핸드셰이크부터 타임아웃한다 (2026-09-01 실측).
+# 한 번 튕겼다고 그 기관을 통째로 버리면 대출·DSR 자료가 조용히 사라진다.
+def get(opener, url: str, timeout: int = 30, tries: int = 3) -> bytes:
+    last: Exception | None = None
+    for attempt in range(1, tries + 1):
+        try:
+            with opener.open(url, timeout=timeout) as r:
+                return r.read()
+        except (urllib.error.URLError, OSError) as e:
+            last = e
+            if attempt < tries:
+                time.sleep(2 ** attempt)  # 2초 → 4초
+    print(f"  ⚠️  요청 실패 {url[:70]} — {last} ({tries}회 시도)", file=sys.stderr)
+    return b""
 
 
 def unwrap(text: str) -> str:
@@ -233,15 +242,28 @@ def main() -> int:
     skipped: list[str] = []
 
     for name, url, needs_lookup in FEEDS:
-        raw = get(opener, url)
-        if not raw:
+        # 🔴 응답이 200이어도 본문이 중간에 잘려 오는 일이 있다.
+        #    2026-09-01 국토부에서 실측: 같은 URL에 6,649바이트(정상)와
+        #    3,794바이트(<item> 0개로 잘린 것)가 번갈아 왔다. 예외가 안 나므로
+        #    잘린 응답은 "그날 자료가 없었다"와 **구분되지 않는다** — 가장 위험한 실패다.
+        #
+        #    피드는 날짜와 무관하게 10~100건을 늘 담고 있다. 그래서 **0건은 언제나 실패다.**
+        #    날짜 필터는 이 아래에서 따로 돈다.
+        items: list[str] = []
+        for attempt in range(1, 4):
+            raw = get(opener, url)
+            xml = raw.decode("utf-8", "replace") if raw else ""
+            items = re.findall(r"<item>(.*?)</item>", xml, re.S)
+            if items:
+                break
+            if attempt < 3:
+                time.sleep(2 ** attempt)
+        if not items:
             # 조용히 넘어가면 "그날 자료가 없었다"와 구분이 안 된다.
             # 한 기관이 통째로 빠진 채 정상처럼 보이는 게 가장 위험하다.
-            print(f"  {name}: ❌ 접속 실패 — 이 기관 자료가 통째로 빠집니다")
+            print(f"  {name}: ❌ 수집 실패 — 이 기관 자료가 통째로 빠집니다")
             failed.append(name)
             continue
-        xml = raw.decode("utf-8", "replace")
-        items = re.findall(r"<item>(.*?)</item>", xml, re.S)
         kept = skipped_no_date = 0
         for item in items:
             t = re.search(r"<title>(.*?)</title>", item, re.S)
