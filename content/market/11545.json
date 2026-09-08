@@ -3,7 +3,7 @@
   "region": "서울 금천구",
   "sido": "서울",
   "group": "seoul",
-  "updatedAt": "2026-09-08T20:23:38+09:00",
+  "updatedAt": "2026-09-08T21:16:15+09:00",
   "sparse": false,
   "trades3m": 291,
   "trade": {
@@ -16,28 +16,39 @@
     "count": 291,
     "highs": [
       {
+        "apt": "금천롯데캐슬골드파크1차",
+        "area": 101.8,
+        "date": "2026-07-16",
+        "amount": 144000,
+        "prevHigh": 119000
+      },
+      {
+        "apt": "금천롯데캐슬골드파크3차",
+        "area": 84.4,
+        "date": "2026-06-18",
+        "amount": 135000,
+        "prevHigh": 123000
+      },
+      {
+        "apt": "남서울힐스테이트",
+        "area": 113.3,
+        "date": "2026-07-11",
+        "amount": 122000,
+        "prevHigh": 111000
+      },
+      {
         "apt": "금천롯데캐슬골드파크2차201동202동",
-        "area": 59.3,
-        "amount": 105000,
-        "prevHigh": 98000
+        "area": 85.0,
+        "date": "2026-06-17",
+        "amount": 120000,
+        "prevHigh": 118000
       },
       {
-        "apt": "e편한세상독산더타워",
-        "area": 78.6,
-        "amount": 97000,
-        "prevHigh": 96000
-      },
-      {
-        "apt": "우방",
-        "area": 114.9,
-        "amount": 77500,
-        "prevHigh": 72000
-      },
-      {
-        "apt": "관악산신도브래뉴",
-        "area": 84.8,
-        "amount": 65500,
-        "prevHigh": 60000
+        "apt": "금천롯데캐슬골드파크3차",
+        "area": 60.0,
+        "date": "2026-08-08",
+        "amount": 110000,
+        "prevHigh": 107000
       }
     ],
     "actives": [

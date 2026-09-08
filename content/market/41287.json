@@ -3,7 +3,7 @@
   "region": "경기 고양 일산서구",
   "sido": "경기",
   "group": "gyeonggi-gu",
-  "updatedAt": "2026-09-08T20:27:47+09:00",
+  "updatedAt": "2026-09-08T21:20:25+09:00",
   "sparse": false,
   "trades3m": 677,
   "trade": {
@@ -16,34 +16,39 @@
     "count": 677,
     "highs": [
       {
-        "apt": "강선마을7단지(삼환,유원)",
-        "area": 84.6,
-        "amount": 67000,
-        "prevHigh": 62400
+        "apt": "한화 포레나 킨텍스",
+        "area": 93.5,
+        "date": "2026-06-19",
+        "amount": 143500,
+        "prevHigh": 141000
       },
       {
-        "apt": "문촌마을16단지뉴삼익",
-        "area": 84.0,
-        "amount": 63500,
-        "prevHigh": 61000
+        "apt": "한화 포레나 킨텍스",
+        "area": 84.5,
+        "date": "2026-06-09",
+        "amount": 120000,
+        "prevHigh": 119500
       },
       {
-        "apt": "후곡마을(금호)",
-        "area": 83.8,
-        "amount": 61200,
-        "prevHigh": 60300
+        "apt": "일산두산위브더제니스",
+        "area": 170.7,
+        "date": "2026-07-10",
+        "amount": 109000,
+        "prevHigh": 98000
       },
       {
-        "apt": "문촌마을(동아)8단지",
-        "area": 85.0,
-        "amount": 54200,
-        "prevHigh": 53200
+        "apt": "강선마을19단지우성",
+        "area": 160.1,
+        "date": "2026-07-02",
+        "amount": 108000,
+        "prevHigh": 85000
       },
       {
-        "apt": "강선마을8단지(롯데,럭키)",
-        "area": 85.0,
-        "amount": 54100,
-        "prevHigh": 52000
+        "apt": "문촌마을18단지대원",
+        "area": 159.2,
+        "date": "2026-06-11",
+        "amount": 92000,
+        "prevHigh": 84500
       }
     ],
     "actives": [

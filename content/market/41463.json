@@ -3,7 +3,7 @@
   "region": "경기 용인 기흥구",
   "sido": "경기",
   "group": "gyeonggi-gu",
-  "updatedAt": "2026-09-08T20:28:03+09:00",
+  "updatedAt": "2026-09-08T21:20:41+09:00",
   "sparse": false,
   "trades3m": 1407,
   "trade": {
@@ -16,34 +16,39 @@
     "count": 1407,
     "highs": [
       {
+        "apt": "용인보정대림(1차)",
+        "area": 198.1,
+        "date": "2026-06-13",
+        "amount": 178000,
+        "prevHigh": 177000
+      },
+      {
         "apt": "삼거마을삼성래미안1",
         "area": 118.5,
+        "date": "2026-09-02",
         "amount": 175000,
-        "prevHigh": 141900
+        "prevHigh": 130000
       },
       {
-        "apt": "죽현마을아이파크",
-        "area": 84.8,
-        "amount": 124000,
-        "prevHigh": 120000
+        "apt": "용인보정대림(2차)",
+        "area": 164.1,
+        "date": "2026-06-19",
+        "amount": 161500,
+        "prevHigh": 144500
       },
       {
-        "apt": "용인보정꿈에그린",
-        "area": 101.7,
-        "amount": 118000,
-        "prevHigh": 113500
+        "apt": "죽현마을동원로얄듀크",
+        "area": 125.5,
+        "date": "2026-06-17",
+        "amount": 160000,
+        "prevHigh": 148500
       },
       {
-        "apt": "기흥역센트럴푸르지오",
-        "area": 84.8,
-        "amount": 109500,
-        "prevHigh": 106700
-      },
-      {
-        "apt": "기흥역파크푸르지오",
-        "area": 84.9,
-        "amount": 100500,
-        "prevHigh": 100000
+        "apt": "e편한세상구성역플랫폼시티",
+        "area": 85.0,
+        "date": "2026-06-22",
+        "amount": 158000,
+        "prevHigh": 154000
       }
     ],
     "actives": [

@@ -3,7 +3,7 @@
   "region": "서울 은평구",
   "sido": "서울",
   "group": "seoul",
-  "updatedAt": "2026-09-08T20:22:50+09:00",
+  "updatedAt": "2026-09-08T21:15:25+09:00",
   "sparse": false,
   "trades3m": 733,
   "trade": {
@@ -16,34 +16,39 @@
     "count": 733,
     "highs": [
       {
-        "apt": "힐스테이트녹번역",
-        "area": 60.0,
-        "amount": 135000,
-        "prevHigh": 81000
+        "apt": "DMC센트럴자이(3단지)",
+        "area": 84.9,
+        "date": "2026-08-04",
+        "amount": 191000,
+        "prevHigh": 180000
       },
       {
-        "apt": "백련산해모로",
+        "apt": "DMC센트럴자이(1단지)",
+        "area": 84.9,
+        "date": "2026-06-09",
+        "amount": 180000,
+        "prevHigh": 175000
+      },
+      {
+        "apt": "DMCSKVIEW",
         "area": 85.0,
-        "amount": 120500,
-        "prevHigh": 115700
+        "date": "2026-06-23",
+        "amount": 169000,
+        "prevHigh": 150000
       },
       {
-        "apt": "북한산래미안아파트(2단지)",
+        "apt": "DMC파인시티자이",
+        "area": 84.9,
+        "date": "2026-08-01",
+        "amount": 162000,
+        "prevHigh": 154000
+      },
+      {
+        "apt": "녹번역e편한세상캐슬",
         "area": 85.0,
-        "amount": 108000,
-        "prevHigh": 104500
-      },
-      {
-        "apt": "DMC우방",
-        "area": 115.0,
-        "amount": 107000,
-        "prevHigh": 105000
-      },
-      {
-        "apt": "마고정3단지센트레빌(310~322동)BL2-3",
-        "area": 84.0,
-        "amount": 105000,
-        "prevHigh": 103500
+        "date": "2026-07-15",
+        "amount": 161000,
+        "prevHigh": 153800
       }
     ],
     "actives": [

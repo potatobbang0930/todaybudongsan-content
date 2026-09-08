@@ -3,7 +3,7 @@
   "region": "경기 이천시",
   "sido": "경기",
   "group": "gyeonggi-si",
-  "updatedAt": "2026-09-08T20:31:14+09:00",
+  "updatedAt": "2026-09-08T21:23:47+09:00",
   "sparse": false,
   "trades3m": 420,
   "trade": {
@@ -16,34 +16,39 @@
     "count": 420,
     "highs": [
       {
-        "apt": "힐스테이트이천역1단지",
-        "area": 84.9,
-        "amount": 56500,
-        "prevHigh": 54000
+        "apt": "현대성우오스타2단지",
+        "area": 123.1,
+        "date": "2026-06-10",
+        "amount": 64000,
+        "prevHigh": 62000
       },
       {
-        "apt": "힐스테이트이천역2단지",
-        "area": 61.0,
-        "amount": 40500,
-        "prevHigh": 39700
+        "apt": "이천중리우미린트리쉐이드",
+        "area": 84.6,
+        "date": "2026-06-24",
+        "amount": 51500,
+        "prevHigh": 51400
       },
       {
-        "apt": "이천센트럴푸르지오",
-        "area": 59.8,
-        "amount": 33000,
-        "prevHigh": 32500
-      },
-      {
-        "apt": "이천증포새도시한양수자인5블럭",
-        "area": 73.0,
-        "amount": 32000,
-        "prevHigh": 30400
-      },
-      {
-        "apt": "이안퍼스티엄이천부발",
+        "apt": "이천빌리브어바인시티2단지",
         "area": 84.8,
-        "amount": 31500,
-        "prevHigh": 31000
+        "date": "2026-08-22",
+        "amount": 49500,
+        "prevHigh": 42200
+      },
+      {
+        "apt": "동양파라곤",
+        "area": 134.8,
+        "date": "2026-06-26",
+        "amount": 47000,
+        "prevHigh": 44500
+      },
+      {
+        "apt": "이천설봉KCC스위첸",
+        "area": 84.9,
+        "date": "2026-06-15",
+        "amount": 40600,
+        "prevHigh": 39000
       }
     ],
     "actives": [

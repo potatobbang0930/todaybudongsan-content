@@ -3,7 +3,7 @@
   "region": "경기 광주시",
   "sido": "경기",
   "group": "gyeonggi-si",
-  "updatedAt": "2026-09-08T20:31:39+09:00",
+  "updatedAt": "2026-09-08T21:24:10+09:00",
   "sparse": false,
   "trades3m": 916,
   "trade": {
@@ -16,34 +16,39 @@
     "count": 916,
     "highs": [
       {
-        "apt": "이편한세상광주역5단지",
-        "area": 84.9,
-        "amount": 80000,
-        "prevHigh": 75000
-      },
-      {
-        "apt": "이편한세상광주역1단지",
-        "area": 73.2,
-        "amount": 75700,
-        "prevHigh": 64000
-      },
-      {
         "apt": "이편한세상태재1단지",
-        "area": 85.0,
-        "amount": 75000,
-        "prevHigh": 72000
+        "area": 171.9,
+        "date": "2026-06-19",
+        "amount": 135000,
+        "prevHigh": 82500
       },
       {
-        "apt": "힐스테이트삼동역",
-        "area": 75.6,
-        "amount": 73500,
-        "prevHigh": 71500
+        "apt": "광주역자연앤자이",
+        "area": 84.6,
+        "date": "2026-08-01",
+        "amount": 98000,
+        "prevHigh": 87500
       },
       {
-        "apt": "더샵오포센트리체",
-        "area": 85.0,
-        "amount": 72000,
-        "prevHigh": 71000
+        "apt": "벽산블루밍1단지",
+        "area": 168.8,
+        "date": "2026-07-15",
+        "amount": 96000,
+        "prevHigh": 47000
+      },
+      {
+        "apt": "오포e편한세상",
+        "area": 160.8,
+        "date": "2026-07-01",
+        "amount": 96000,
+        "prevHigh": 87000
+      },
+      {
+        "apt": "광주역자연앤자이",
+        "area": 74.8,
+        "date": "2026-08-14",
+        "amount": 88000,
+        "prevHigh": 76000
       }
     ],
     "actives": [

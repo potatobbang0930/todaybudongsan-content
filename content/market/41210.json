@@ -3,7 +3,7 @@
   "region": "경기 광명시",
   "sido": "경기",
   "group": "gyeonggi-si",
-  "updatedAt": "2026-09-08T20:29:29+09:00",
+  "updatedAt": "2026-09-08T21:22:00+09:00",
   "sparse": false,
   "trades3m": 595,
   "trade": {
@@ -17,33 +17,38 @@
     "highs": [
       {
         "apt": "주공13",
-        "area": 84.8,
-        "amount": 158000,
-        "prevHigh": 155000
+        "area": 121.3,
+        "date": "2026-07-31",
+        "amount": 192000,
+        "prevHigh": 130700
       },
       {
         "apt": "철산역롯데캐슬&SKVIEW클래스티지",
-        "area": 60.0,
-        "amount": 149000,
-        "prevHigh": 147000
+        "area": 85.0,
+        "date": "2026-07-10",
+        "amount": 175000,
+        "prevHigh": 164000
       },
       {
-        "apt": "광명 두산위브 트레지움",
+        "apt": "철산푸르지오하늘채",
+        "area": 135.0,
+        "date": "2026-07-08",
+        "amount": 164000,
+        "prevHigh": 155500
+      },
+      {
+        "apt": "철산센트럴푸르지오",
         "area": 85.0,
-        "amount": 133500,
-        "prevHigh": 130000
+        "date": "2026-06-08",
+        "amount": 160000,
+        "prevHigh": 157000
       },
       {
         "apt": "철산래미안자이",
-        "area": 59.7,
-        "amount": 130000,
-        "prevHigh": 125000
-      },
-      {
-        "apt": "광명 두산위브 트레지움",
-        "area": 60.0,
-        "amount": 123000,
-        "prevHigh": 121000
+        "area": 134.5,
+        "date": "2026-08-01",
+        "amount": 160000,
+        "prevHigh": 154000
       }
     ],
     "actives": [

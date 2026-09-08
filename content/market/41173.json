@@ -3,7 +3,7 @@
   "region": "경기 안양 동안구",
   "sido": "경기",
   "group": "gyeonggi-gu",
-  "updatedAt": "2026-09-08T20:27:11+09:00",
+  "updatedAt": "2026-09-08T21:19:48+09:00",
   "sparse": false,
   "trades3m": 1142,
   "trade": {
@@ -18,32 +18,37 @@
       {
         "apt": "목련두산",
         "area": 161.8,
+        "date": "2026-08-22",
         "amount": 218500,
-        "prevHigh": 200000
+        "prevHigh": 174500
       },
       {
-        "apt": "샘마을한양",
+        "apt": "목련우성7",
+        "area": 133.7,
+        "date": "2026-08-07",
+        "amount": 193000,
+        "prevHigh": 183000
+      },
+      {
+        "apt": "목련선경",
         "area": 134.6,
-        "amount": 144500,
-        "prevHigh": 140000
+        "date": "2026-06-27",
+        "amount": 180000,
+        "prevHigh": 172000
       },
       {
-        "apt": "샘마을임광",
-        "area": 118.9,
-        "amount": 140000,
-        "prevHigh": 139800
+        "apt": "꿈마을한신",
+        "area": 96.7,
+        "date": "2026-08-08",
+        "amount": 174000,
+        "prevHigh": 169000
       },
       {
-        "apt": "평촌더샵센트럴시티",
-        "area": 60.0,
-        "amount": 129700,
-        "prevHigh": 126800
-      },
-      {
-        "apt": "평촌센텀퍼스트",
-        "area": 59.8,
-        "amount": 121500,
-        "prevHigh": 120000
+        "apt": "목련동아",
+        "area": 127.3,
+        "date": "2026-07-25",
+        "amount": 171500,
+        "prevHigh": 158500
       }
     ],
     "actives": [

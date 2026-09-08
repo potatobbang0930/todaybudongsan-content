@@ -3,7 +3,7 @@
   "region": "경기 부천시",
   "sido": "경기",
   "group": "gyeonggi-si",
-  "updatedAt": "2026-09-08T20:29:21+09:00",
+  "updatedAt": "2026-09-08T21:21:53+09:00",
   "sparse": false,
   "trades3m": 1941,
   "trade": {
@@ -18,32 +18,37 @@
       {
         "apt": "센트럴파크푸르지오",
         "area": 85.0,
+        "date": "2026-08-19",
         "amount": 139500,
-        "prevHigh": 139000
+        "prevHigh": 139200
       },
       {
         "apt": "리첸시아중동",
         "area": 140.6,
+        "date": "2026-08-15",
         "amount": 138000,
-        "prevHigh": 97000
+        "prevHigh": 105000
+      },
+      {
+        "apt": "힐스테이트중동",
+        "area": 85.0,
+        "date": "2026-07-27",
+        "amount": 132000,
+        "prevHigh": 127500
+      },
+      {
+        "apt": "팰리스카운티",
+        "area": 132.6,
+        "date": "2026-06-15",
+        "amount": 119500,
+        "prevHigh": 88750
       },
       {
         "apt": "은하마을(쌍용)",
         "area": 134.1,
+        "date": "2026-08-29",
         "amount": 119000,
-        "prevHigh": 105800
-      },
-      {
-        "apt": "은하마을(동부)",
-        "area": 134.7,
-        "amount": 113000,
-        "prevHigh": 106500
-      },
-      {
-        "apt": "라일락마을(서해)",
-        "area": 127.7,
-        "amount": 113000,
-        "prevHigh": 108000
+        "prevHigh": 116000
       }
     ],
     "actives": [

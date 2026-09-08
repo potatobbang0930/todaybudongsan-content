@@ -278,30 +278,38 @@ def latest_detail(trades: list[dict], months3: list[dict]) -> dict:
     같은 앱의 두 숫자가 서로를 부정하면 사용자는 앱이 고장 났다고 읽는다.
     3개월이면 광진구 기준 21건 → 169건이라 구성 편차가 묻힌다.
 
-    🔴 **신고가만 최근 4주 창을 그대로 쓴다.** "직전 최고가"를 그 앞 기간에서 뽑아야 해서
-    창을 넓히면 비교 대상이 사라진다. 신고가는 "최근에 무슨 일이 있었나"라 짧은 게 맞다.
+    🔴 **신고가도 같은 3개월 창을 쓴다** (2026-09-08 2차 수정). 4주로 두니 화면에
+    "최근 3개월 기준"과 "최근 4주 신고가"가 같이 떠서 어느 기간 얘기인지 알 수 없었다.
+    게다가 실거래 신고 기한이 30일이라 **최근 4주는 거의 빈 창이다** — 강동구 실측으로
+    3개월 551건 중 최근 4주가 27건뿐이었고, 그래서 12,000세대 단지(올림픽파크포레온)가
+    신고가에도 「많이 팔린 곳」에도 안 잡혔다.
+
+    직전 최고가는 **그 앞 3개월**(창에 안 든 나머지)에서 뽑는다. 6개월치를 받아오는 이유가 이것이다.
+    최신성은 거래 날짜를 함께 내보내 화면이 밝히게 한다.
     """
-    window, keys = recent_weeks(trades, WINDOW)
     if not months3:
         return {"week": None, "weeks": WINDOW, "statsDays": STATS_DAYS,
                 "pyeongPrice": None, "m84": None, "m59": None,
                 "count": 0, "highs": [], "actives": []}
-    latest = keys[-1] if keys else None
+    latest = week_key(max(t["date"] for t in months3))
 
-    # 신고가: 같은 단지·같은 평형에서, 창 이전 3개월 안의 최고가를 넘긴 거래
+    # 신고가: 같은 단지·같은 평형에서, **그 앞 3개월** 최고가를 넘긴 거래
+    in3 = {id(t) for t in months3}
     prev_high: dict[tuple, int] = {}
-    for t in sorted(months3, key=lambda x: x["date"]):
-        if week_key(t["date"]) in keys:
+    for t in sorted(trades, key=lambda x: x["date"]):
+        if id(t) in in3:
             continue
         k = (t["seq"], t["band"])
         prev_high[k] = max(prev_high.get(k, 0), t["amount"])
     highs, seen = [], set()
-    for t in sorted(window, key=lambda x: -x["amount"]):
+    for t in sorted(months3, key=lambda x: -x["amount"]):
         k = (t["seq"], t["band"])
         prev = prev_high.get(k)
         if prev and t["amount"] > prev and k not in seen:
             seen.add(k)
+            # 🔴 날짜를 같이 낸다. 창이 3개월이라 화면이 "언제 거래인지"를 밝혀야 한다
             highs.append({"apt": t["apt"], "area": round(t["area"], 1),
+                          "date": t["date"].isoformat(),
                           "amount": t["amount"], "prevHigh": prev})
         if len(highs) == 5:
             break

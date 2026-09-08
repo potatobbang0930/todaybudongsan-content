@@ -3,7 +3,7 @@
   "region": "경기 구리시",
   "sido": "경기",
   "group": "gyeonggi-si",
-  "updatedAt": "2026-09-08T20:30:00+09:00",
+  "updatedAt": "2026-09-08T21:22:33+09:00",
   "sparse": false,
   "trades3m": 504,
   "trade": {
@@ -16,34 +16,39 @@
     "count": 504,
     "highs": [
       {
+        "apt": "금호베스트빌",
+        "area": 134.1,
+        "date": "2026-06-24",
+        "amount": 178000,
+        "prevHigh": 167500
+      },
+      {
+        "apt": "힐스테이트구리역",
+        "area": 84.8,
+        "date": "2026-07-31",
+        "amount": 149000,
+        "prevHigh": 144000
+      },
+      {
+        "apt": "힐스테이트구리역",
+        "area": 74.7,
+        "date": "2026-06-20",
+        "amount": 134000,
+        "prevHigh": 130000
+      },
+      {
         "apt": "e편한세상인창어반포레",
         "area": 60.0,
+        "date": "2026-08-20",
         "amount": 127000,
-        "prevHigh": 122000
+        "prevHigh": 119500
       },
       {
-        "apt": "구리갈매푸르지오",
-        "area": 99.6,
-        "amount": 93000,
-        "prevHigh": 92700
-      },
-      {
-        "apt": "동양주택조합",
-        "area": 85.0,
-        "amount": 83500,
-        "prevHigh": 80500
-      },
-      {
-        "apt": "한라비발디",
+        "apt": "토평마을 e편한세상",
         "area": 84.6,
-        "amount": 81000,
-        "prevHigh": 79500
-      },
-      {
-        "apt": "갈매더샵나인힐스",
-        "area": 82.1,
-        "amount": 77000,
-        "prevHigh": 76300
+        "date": "2026-06-13",
+        "amount": 125000,
+        "prevHigh": 110000
       }
     ],
     "actives": [
