@@ -3,7 +3,7 @@
   "region": "경기 가평군",
   "sido": "경기",
   "group": "gyeonggi-si",
-  "updatedAt": "2026-09-08T20:32:10+09:00",
+  "updatedAt": "2026-09-08T21:24:42+09:00",
   "sparse": false,
   "trades3m": 57,
   "trade": {
@@ -16,16 +16,39 @@
     "count": 57,
     "highs": [
       {
-        "apt": "힐스테이트가평더뉴클래스",
-        "area": 60.0,
-        "amount": 36700,
-        "prevHigh": 30000
+        "apt": "청평삼성쉐르빌",
+        "area": 119.8,
+        "date": "2026-07-16",
+        "amount": 37500,
+        "prevHigh": 21000
       },
       {
-        "apt": "청평삼성쉐르빌",
-        "area": 84.7,
-        "amount": 25200,
-        "prevHigh": 22800
+        "apt": "힐스테이트가평더뉴클래스",
+        "area": 60.0,
+        "date": "2026-08-12",
+        "amount": 36700,
+        "prevHigh": 35000
+      },
+      {
+        "apt": "디엘본가평설악아파트",
+        "area": 84.9,
+        "date": "2026-06-27",
+        "amount": 36000,
+        "prevHigh": 31800
+      },
+      {
+        "apt": "가평자이",
+        "area": 60.0,
+        "date": "2026-07-25",
+        "amount": 30000,
+        "prevHigh": 29400
+      },
+      {
+        "apt": "청평세양청마루",
+        "area": 85.0,
+        "date": "2026-07-13",
+        "amount": 28500,
+        "prevHigh": 24000
       }
     ],
     "actives": [

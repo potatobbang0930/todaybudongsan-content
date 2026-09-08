@@ -3,7 +3,7 @@
   "region": "서울 노원구",
   "sido": "서울",
   "group": "seoul",
-  "updatedAt": "2026-09-08T20:22:42+09:00",
+  "updatedAt": "2026-09-08T21:15:17+09:00",
   "sparse": false,
   "trades3m": 1525,
   "trade": {
@@ -16,34 +16,39 @@
     "count": 1525,
     "highs": [
       {
+        "apt": "롯데우성",
+        "area": 115.3,
+        "date": "2026-08-13",
+        "amount": 152000,
+        "prevHigh": 136500
+      },
+      {
+        "apt": "라이프",
+        "area": 115.7,
+        "date": "2026-08-24",
+        "amount": 149000,
+        "prevHigh": 134000
+      },
+      {
         "apt": "태릉해링턴플레이스",
         "area": 85.0,
+        "date": "2026-08-17",
         "amount": 144500,
-        "prevHigh": 134800
+        "prevHigh": 124500
       },
       {
-        "apt": "주공5",
+        "apt": "우성",
+        "area": 127.2,
+        "date": "2026-07-13",
+        "amount": 143500,
+        "prevHigh": 127500
+      },
+      {
+        "apt": "청구3",
         "area": 84.8,
-        "amount": 124000,
-        "prevHigh": 118000
-      },
-      {
-        "apt": "풍림아이원",
-        "area": 84.3,
-        "amount": 109000,
-        "prevHigh": 92000
-      },
-      {
-        "apt": "월계센트럴아이파크",
-        "area": 60.0,
-        "amount": 108500,
-        "prevHigh": 107800
-      },
-      {
-        "apt": "두산힐스빌아파트",
-        "area": 114.7,
-        "amount": 107000,
-        "prevHigh": 105000
+        "date": "2026-07-11",
+        "amount": 143000,
+        "prevHigh": 141000
       }
     ],
     "actives": [

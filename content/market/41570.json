@@ -3,7 +3,7 @@
   "region": "경기 김포시",
   "sido": "경기",
   "group": "gyeonggi-si",
-  "updatedAt": "2026-09-08T20:31:31+09:00",
+  "updatedAt": "2026-09-08T21:24:03+09:00",
   "sparse": false,
   "trades3m": 1060,
   "trade": {
@@ -16,34 +16,39 @@
     "count": 1060,
     "highs": [
       {
+        "apt": "수기마을힐스테이트2단지",
+        "area": 152.1,
+        "date": "2026-06-09",
+        "amount": 95000,
+        "prevHigh": 87000
+      },
+      {
+        "apt": "풍무센트럴푸르지오",
+        "area": 112.8,
+        "date": "2026-06-17",
+        "amount": 94500,
+        "prevHigh": 87000
+      },
+      {
+        "apt": "초당마을래미안한강",
+        "area": 125.8,
+        "date": "2026-06-20",
+        "amount": 88000,
+        "prevHigh": 67300
+      },
+      {
         "apt": "풍무푸르지오센트레빌",
         "area": 109.0,
+        "date": "2026-09-04",
         "amount": 83000,
-        "prevHigh": 63900
+        "prevHigh": 77000
       },
       {
-        "apt": "캐슬앤파밀리에시티 2단지",
-        "area": 99.7,
-        "amount": 74000,
-        "prevHigh": 56500
-      },
-      {
-        "apt": "한강신도시롯데캐슬",
-        "area": 122.8,
-        "amount": 66500,
-        "prevHigh": 66300
-      },
-      {
-        "apt": "e편한세상캐널시티",
-        "area": 84.5,
-        "amount": 63000,
-        "prevHigh": 56500
-      },
-      {
-        "apt": "힐스테이트 리버시티 2단지",
-        "area": 84.9,
-        "amount": 62900,
-        "prevHigh": 62000
+        "apt": "한강메트로자이2단지",
+        "area": 99.8,
+        "date": "2026-06-11",
+        "amount": 82000,
+        "prevHigh": 76000
       }
     ],
     "actives": [

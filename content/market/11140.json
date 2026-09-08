@@ -3,7 +3,7 @@
   "region": "서울 중구",
   "sido": "서울",
   "group": "seoul",
-  "updatedAt": "2026-09-08T20:21:32+09:00",
+  "updatedAt": "2026-09-08T21:14:08+09:00",
   "sparse": false,
   "trades3m": 140,
   "trade": {
@@ -16,34 +16,39 @@
     "count": 140,
     "highs": [
       {
+        "apt": "남산롯데캐슬아이리스",
+        "area": 134.0,
+        "date": "2026-07-31",
+        "amount": 235000,
+        "prevHigh": 185000
+      },
+      {
+        "apt": "쌍용남산플래티넘",
+        "area": 159.0,
+        "date": "2026-06-09",
+        "amount": 226000,
+        "prevHigh": 215000
+      },
+      {
+        "apt": "서울역센트럴자이",
+        "area": 73.0,
+        "date": "2026-07-20",
+        "amount": 219000,
+        "prevHigh": 207000
+      },
+      {
         "apt": "청구e편한세상",
         "area": 85.0,
+        "date": "2026-08-14",
         "amount": 209300,
-        "prevHigh": 207000
+        "prevHigh": 195000
       },
       {
         "apt": "서울역센트럴자이",
         "area": 59.9,
+        "date": "2026-08-06",
         "amount": 205000,
-        "prevHigh": 204000
-      },
-      {
-        "apt": "래미안하이베르",
-        "area": 117.0,
-        "amount": 186000,
-        "prevHigh": 185000
-      },
-      {
-        "apt": "삼성사이버빌리지",
-        "area": 84.9,
-        "amount": 185000,
-        "prevHigh": 182000
-      },
-      {
-        "apt": "약수하이츠",
-        "area": 57.6,
-        "amount": 163000,
-        "prevHigh": 148000
+        "prevHigh": 194500
       }
     ],
     "actives": [

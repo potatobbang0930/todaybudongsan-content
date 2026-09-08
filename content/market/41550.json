@@ -3,7 +3,7 @@
   "region": "경기 안성시",
   "sido": "경기",
   "group": "gyeonggi-si",
-  "updatedAt": "2026-09-08T20:31:22+09:00",
+  "updatedAt": "2026-09-08T21:23:54+09:00",
   "sparse": false,
   "trades3m": 465,
   "trade": {
@@ -16,34 +16,39 @@
     "count": 465,
     "highs": [
       {
-        "apt": "안성공도서해그랑블아파트",
-        "area": 72.8,
-        "amount": 27000,
-        "prevHigh": 25500
+        "apt": "안성우방아이유쉘에스티지",
+        "area": 84.9,
+        "date": "2026-07-14",
+        "amount": 45085,
+        "prevHigh": 38800
       },
       {
-        "apt": "안성푸르지오",
-        "area": 60.0,
-        "amount": 24250,
-        "prevHigh": 23900
-      },
-      {
-        "apt": "우림루미아트",
+        "apt": "e편한세상안성그랑루체",
         "area": 85.0,
-        "amount": 23500,
-        "prevHigh": 21500
+        "date": "2026-08-11",
+        "amount": 44000,
+        "prevHigh": 40000
       },
       {
-        "apt": "대우1",
-        "area": 84.9,
-        "amount": 21500,
-        "prevHigh": 21000
+        "apt": "쌍용더플래티넘프리미어",
+        "area": 85.0,
+        "date": "2026-07-04",
+        "amount": 43000,
+        "prevHigh": 42500
       },
       {
-        "apt": "동광",
-        "area": 84.9,
-        "amount": 15000,
-        "prevHigh": 14500
+        "apt": "안성공도KCC스위첸",
+        "area": 171.0,
+        "date": "2026-07-13",
+        "amount": 42000,
+        "prevHigh": 39300
+      },
+      {
+        "apt": "안성아양시티프라디움",
+        "area": 85.0,
+        "date": "2026-07-07",
+        "amount": 40000,
+        "prevHigh": 37700
       }
     ],
     "actives": [

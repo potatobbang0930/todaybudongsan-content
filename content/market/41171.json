@@ -3,7 +3,7 @@
   "region": "경기 안양 만안구",
   "sido": "경기",
   "group": "gyeonggi-gu",
-  "updatedAt": "2026-09-08T20:27:02+09:00",
+  "updatedAt": "2026-09-08T21:19:41+09:00",
   "sparse": false,
   "trades3m": 758,
   "trade": {
@@ -17,33 +17,38 @@
     "highs": [
       {
         "apt": "래미안안양메가트리아",
+        "area": 139.6,
+        "date": "2026-07-10",
+        "amount": 133500,
+        "prevHigh": 120000
+      },
+      {
+        "apt": "래미안안양메가트리아",
+        "area": 84.7,
+        "date": "2026-07-28",
+        "amount": 120000,
+        "prevHigh": 109000
+      },
+      {
+        "apt": "래미안안양메가트리아",
         "area": 59.8,
+        "date": "2026-08-18",
         "amount": 105200,
-        "prevHigh": 101800
+        "prevHigh": 95000
       },
       {
-        "apt": "두산위브더아티움",
-        "area": 84.9,
-        "amount": 93500,
-        "prevHigh": 89500
+        "apt": "삼성래미안",
+        "area": 79.3,
+        "date": "2026-07-28",
+        "amount": 99000,
+        "prevHigh": 92000
       },
       {
-        "apt": "아르테자이",
-        "area": 76.7,
-        "amount": 87000,
-        "prevHigh": 85500
-      },
-      {
-        "apt": "두산위브더아티움",
-        "area": 74.9,
-        "amount": 84000,
-        "prevHigh": 80000
-      },
-      {
-        "apt": "아르테자이",
-        "area": 60.0,
-        "amount": 82000,
-        "prevHigh": 80000
+        "apt": "두산위브아파트",
+        "area": 85.0,
+        "date": "2026-07-05",
+        "amount": 98800,
+        "prevHigh": 90500
       }
     ],
     "actives": [

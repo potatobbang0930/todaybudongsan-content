@@ -3,7 +3,7 @@
   "region": "경기 의정부시",
   "sido": "경기",
   "group": "gyeonggi-si",
-  "updatedAt": "2026-09-08T20:28:54+09:00",
+  "updatedAt": "2026-09-08T21:21:32+09:00",
   "sparse": false,
   "trades3m": 1389,
   "trade": {
@@ -17,33 +17,38 @@
     "highs": [
       {
         "apt": "탑석센트럴자이",
-        "area": 76.0,
-        "amount": 67700,
-        "prevHigh": 66700
+        "area": 84.9,
+        "date": "2026-07-30",
+        "amount": 81000,
+        "prevHigh": 71500
       },
       {
-        "apt": "호반베르디움1차",
-        "area": 85.0,
-        "amount": 58000,
-        "prevHigh": 57500
+        "apt": "고산수자인디에스티지2단지",
+        "area": 125.9,
+        "date": "2026-06-30",
+        "amount": 77000,
+        "prevHigh": 68000
       },
       {
-        "apt": "회룡역풍림아이원",
-        "area": 85.0,
-        "amount": 55500,
-        "prevHigh": 53000
+        "apt": "수락리버시티2단지",
+        "area": 114.7,
+        "date": "2026-06-24",
+        "amount": 73500,
+        "prevHigh": 71000
       },
       {
-        "apt": "호원동한승미메이드",
-        "area": 84.6,
-        "amount": 55000,
-        "prevHigh": 52000
+        "apt": "의정부역푸르지오더센트럴",
+        "area": 72.8,
+        "date": "2026-06-16",
+        "amount": 70000,
+        "prevHigh": 69000
       },
       {
-        "apt": "의정부롯데캐슬골드파크2단지",
-        "area": 60.0,
-        "amount": 50500,
-        "prevHigh": 49000
+        "apt": "의정부역센트럴자이앤위브캐슬",
+        "area": 59.9,
+        "date": "2026-06-30",
+        "amount": 69000,
+        "prevHigh": 67000
       }
     ],
     "actives": [

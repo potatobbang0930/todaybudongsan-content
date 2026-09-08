@@ -3,7 +3,7 @@
   "region": "경기 성남 분당구",
   "sido": "경기",
   "group": "gyeonggi-gu",
-  "updatedAt": "2026-09-08T20:26:55+09:00",
+  "updatedAt": "2026-09-08T21:19:34+09:00",
   "sparse": false,
   "trades3m": 863,
   "trade": {
@@ -16,34 +16,39 @@
     "count": 863,
     "highs": [
       {
-        "apt": "판교푸르지오그랑블",
-        "area": 117.5,
-        "amount": 429000,
-        "prevHigh": 310000
+        "apt": "파크뷰",
+        "area": 199.8,
+        "date": "2026-07-01",
+        "amount": 395000,
+        "prevHigh": 371000
+      },
+      {
+        "apt": "산운마을14단지(경남아너스빌)",
+        "area": 184.6,
+        "date": "2026-07-02",
+        "amount": 347500,
+        "prevHigh": 170000
+      },
+      {
+        "apt": "봇들마을7단지",
+        "area": 108.3,
+        "date": "2026-07-22",
+        "amount": 335000,
+        "prevHigh": 325000
       },
       {
         "apt": "양지마을(금호1)",
         "area": 198.4,
+        "date": "2026-08-24",
         "amount": 330000,
-        "prevHigh": 290000
+        "prevHigh": 303000
       },
       {
         "apt": "현대I-PARK1",
         "area": 196.4,
+        "date": "2026-08-13",
         "amount": 300000,
-        "prevHigh": 235000
-      },
-      {
-        "apt": "시범한양",
-        "area": 134.9,
-        "amount": 268000,
-        "prevHigh": 228000
-      },
-      {
-        "apt": "청솔마을(대원)",
-        "area": 129.4,
-        "amount": 209000,
-        "prevHigh": 206000
+        "prevHigh": 246600
       }
     ],
     "actives": [

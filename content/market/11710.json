@@ -3,7 +3,7 @@
   "region": "서울 송파구",
   "sido": "서울",
   "group": "seoul",
-  "updatedAt": "2026-09-08T20:24:35+09:00",
+  "updatedAt": "2026-09-08T21:17:12+09:00",
   "sparse": false,
   "trades3m": 630,
   "trade": {
@@ -16,34 +16,39 @@
     "count": 630,
     "highs": [
       {
-        "apt": "파크리오",
-        "area": 60.0,
-        "amount": 280000,
-        "prevHigh": 267000
+        "apt": "아시아선수촌아파트",
+        "area": 178.3,
+        "date": "2026-07-15",
+        "amount": 650000,
+        "prevHigh": 560000
       },
       {
-        "apt": "레이크팰리스",
-        "area": 60.0,
-        "amount": 275000,
-        "prevHigh": 270000
+        "apt": "주공아파트 5단지",
+        "area": 82.6,
+        "date": "2026-07-25",
+        "amount": 457500,
+        "prevHigh": 434500
       },
       {
-        "apt": "극동",
-        "area": 149.7,
-        "amount": 249000,
-        "prevHigh": 236000
+        "apt": "리센츠",
+        "area": 124.2,
+        "date": "2026-06-24",
+        "amount": 449000,
+        "prevHigh": 400000
       },
       {
-        "apt": "송파시그니처롯데캐슬",
-        "area": 85.0,
-        "amount": 214000,
-        "prevHigh": 211000
+        "apt": "트리지움",
+        "area": 149.4,
+        "date": "2026-07-25",
+        "amount": 417000,
+        "prevHigh": 390000
       },
       {
-        "apt": "송파파인타운11단지",
-        "area": 84.9,
-        "amount": 185000,
-        "prevHigh": 182000
+        "apt": "주공아파트 5단지",
+        "area": 76.5,
+        "date": "2026-07-22",
+        "amount": 415200,
+        "prevHigh": 402700
       }
     ],
     "actives": [

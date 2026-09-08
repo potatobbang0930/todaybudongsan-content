@@ -3,7 +3,7 @@
   "region": "경기 용인 수지구",
   "sido": "경기",
   "group": "gyeonggi-gu",
-  "updatedAt": "2026-09-08T20:28:11+09:00",
+  "updatedAt": "2026-09-08T21:20:49+09:00",
   "sparse": false,
   "trades3m": 1363,
   "trade": {
@@ -16,34 +16,39 @@
     "count": 1363,
     "highs": [
       {
-        "apt": "성복역롯데캐슬골드타운",
-        "area": 100.0,
-        "amount": 204000,
-        "prevHigh": 194500
+        "apt": "e편한세상수지",
+        "area": 101.8,
+        "date": "2026-07-14",
+        "amount": 213000,
+        "prevHigh": 185000
       },
       {
         "apt": "성복역롯데캐슬골드타운",
         "area": 84.9,
+        "date": "2026-08-22",
         "amount": 190000,
-        "prevHigh": 187000
+        "prevHigh": 174700
       },
       {
-        "apt": "래미안이스트팰리스1단지",
-        "area": 173.0,
-        "amount": 158500,
-        "prevHigh": 135000
+        "apt": "e편한세상수지",
+        "area": 84.9,
+        "date": "2026-07-29",
+        "amount": 172000,
+        "prevHigh": 164000
       },
       {
-        "apt": "성복역롯데캐슬파크나인",
-        "area": 85.0,
-        "amount": 155000,
-        "prevHigh": 154500
+        "apt": "광교자이더클래스",
+        "area": 84.9,
+        "date": "2026-08-01",
+        "amount": 168500,
+        "prevHigh": 152500
       },
       {
-        "apt": "래미안이스트팰리스3단지",
-        "area": 172.9,
-        "amount": 144500,
-        "prevHigh": 140000
+        "apt": "동천센트럴자이",
+        "area": 104.5,
+        "date": "2026-08-08",
+        "amount": 163000,
+        "prevHigh": 143000
       }
     ],
     "actives": [

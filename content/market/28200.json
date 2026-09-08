@@ -3,7 +3,7 @@
   "region": "인천 남동구",
   "sido": "인천",
   "group": "incheon",
-  "updatedAt": "2026-09-08T20:25:23+09:00",
+  "updatedAt": "2026-09-08T21:18:01+09:00",
   "sparse": false,
   "trades3m": 897,
   "trade": {
@@ -16,34 +16,39 @@
     "count": 897,
     "highs": [
       {
-        "apt": "신영구월지웰시티푸르지오",
-        "area": 84.9,
-        "amount": 63000,
-        "prevHigh": 61500
+        "apt": "에코메트로9",
+        "area": 199.1,
+        "date": "2026-07-09",
+        "amount": 113000,
+        "prevHigh": 104500
       },
       {
-        "apt": "에코메트로5",
-        "area": 143.3,
-        "amount": 62500,
-        "prevHigh": 60000
-      },
-      {
-        "apt": "롯데캐슬골드",
-        "area": 115.7,
-        "amount": 61000,
-        "prevHigh": 60500
+        "apt": "구월힐스테이트1단지",
+        "area": 133.8,
+        "date": "2026-07-07",
+        "amount": 79000,
+        "prevHigh": 76000
       },
       {
         "apt": "간석래미안자이",
-        "area": 85.0,
-        "amount": 60000,
-        "prevHigh": 59200
+        "area": 143.2,
+        "date": "2026-06-24",
+        "amount": 69700,
+        "prevHigh": 67000
       },
       {
-        "apt": "인천시청역힐스테이트",
-        "area": 60.0,
-        "amount": 60000,
-        "prevHigh": 58500
+        "apt": "에코메트로11",
+        "area": 131.3,
+        "date": "2026-07-21",
+        "amount": 65000,
+        "prevHigh": 63000
+      },
+      {
+        "apt": "논현신일해피트리",
+        "area": 116.8,
+        "date": "2026-07-17",
+        "amount": 63000,
+        "prevHigh": 54500
       }
     ],
     "actives": [

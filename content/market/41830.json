@@ -3,7 +3,7 @@
   "region": "경기 양평군",
   "sido": "경기",
   "group": "gyeonggi-si",
-  "updatedAt": "2026-09-08T20:32:16+09:00",
+  "updatedAt": "2026-09-08T21:24:48+09:00",
   "sparse": false,
   "trades3m": 136,
   "trade": {
@@ -16,28 +16,39 @@
     "count": 136,
     "highs": [
       {
+        "apt": "현대성우오스타코아루주상복합",
+        "area": 153.2,
+        "date": "2026-08-11",
+        "amount": 70000,
+        "prevHigh": 53000
+      },
+      {
+        "apt": "센트럴파크써밋",
+        "area": 80.4,
+        "date": "2026-08-04",
+        "amount": 61500,
+        "prevHigh": 59000
+      },
+      {
         "apt": "양평역한라비발디",
         "area": 98.7,
+        "date": "2026-08-28",
         "amount": 58000,
-        "prevHigh": 43000
+        "prevHigh": 47500
       },
       {
-        "apt": "한진해모로",
-        "area": 85.0,
-        "amount": 35300,
-        "prevHigh": 34700
+        "apt": "양평휴먼빌리버파크어반",
+        "area": 84.9,
+        "date": "2026-06-20",
+        "amount": 57000,
+        "prevHigh": 49000
       },
       {
-        "apt": "한신휴플러스",
-        "area": 75.9,
-        "amount": 31000,
-        "prevHigh": 29000
-      },
-      {
-        "apt": "양평휴먼빌2차",
-        "area": 71.0,
-        "amount": 28700,
-        "prevHigh": 27500
+        "apt": "양평역한라비발디",
+        "area": 84.5,
+        "date": "2026-07-15",
+        "amount": 56700,
+        "prevHigh": 54300
       }
     ],
     "actives": [

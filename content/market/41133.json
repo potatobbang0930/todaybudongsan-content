@@ -3,7 +3,7 @@
   "region": "경기 성남 중원구",
   "sido": "경기",
   "group": "gyeonggi-gu",
-  "updatedAt": "2026-09-08T20:26:45+09:00",
+  "updatedAt": "2026-09-08T21:19:24+09:00",
   "sparse": false,
   "trades3m": 354,
   "trade": {
@@ -16,34 +16,39 @@
     "count": 354,
     "highs": [
       {
-        "apt": "e편한세상금빛그랑메종1단지",
+        "apt": "연꽃마을(4단지)",
+        "area": 121.0,
+        "date": "2026-08-11",
+        "amount": 160000,
+        "prevHigh": 154500
+      },
+      {
+        "apt": "신흥역하늘채랜더스원1단지",
+        "area": 85.0,
+        "date": "2026-06-19",
+        "amount": 150000,
+        "prevHigh": 135000
+      },
+      {
+        "apt": "센트럴타운(3단지)",
+        "area": 84.9,
+        "date": "2026-07-24",
+        "amount": 149000,
+        "prevHigh": 139000
+      },
+      {
+        "apt": "신흥역하늘채랜더스원1단지",
+        "area": 74.9,
+        "date": "2026-07-31",
+        "amount": 144500,
+        "prevHigh": 138000
+      },
+      {
+        "apt": "센트럴타운(3단지)",
         "area": 75.0,
-        "amount": 135000,
-        "prevHigh": 134700
-      },
-      {
-        "apt": "東분당파크뷰",
-        "area": 132.9,
-        "amount": 109000,
-        "prevHigh": 105000
-      },
-      {
-        "apt": "아튼빌",
-        "area": 59.9,
-        "amount": 76300,
-        "prevHigh": 75500
-      },
-      {
-        "apt": "성지",
-        "area": 39.6,
-        "amount": 34500,
-        "prevHigh": 31000
-      },
-      {
-        "apt": "상대원삼익",
-        "area": 34.0,
-        "amount": 24900,
-        "prevHigh": 24200
+        "date": "2026-07-18",
+        "amount": 143000,
+        "prevHigh": 131400
       }
     ],
     "actives": [

@@ -3,7 +3,7 @@
   "region": "인천 미추홀구",
   "sido": "인천",
   "group": "incheon",
-  "updatedAt": "2026-09-08T20:25:07+09:00",
+  "updatedAt": "2026-09-08T21:17:44+09:00",
   "sparse": false,
   "trades3m": 683,
   "trade": {
@@ -16,34 +16,39 @@
     "count": 683,
     "highs": [
       {
+        "apt": "더샵아르테",
+        "area": 84.9,
+        "date": "2026-08-14",
+        "amount": 73450,
+        "prevHigh": 70500
+      },
+      {
         "apt": "힐스테이트푸르지오주안",
         "area": 94.0,
+        "date": "2026-08-25",
         "amount": 71000,
         "prevHigh": 70000
       },
       {
-        "apt": "주안파크자이더플래티넘",
-        "area": 84.8,
-        "amount": 59750,
-        "prevHigh": 58250
-      },
-      {
-        "apt": "주안파크자이더플래티넘",
-        "area": 74.0,
-        "amount": 51500,
-        "prevHigh": 51200
-      },
-      {
-        "apt": "더샵인천스카이타워2단지",
-        "area": 75.0,
-        "amount": 50100,
-        "prevHigh": 49400
-      },
-      {
         "apt": "힐스테이트푸르지오주안",
-        "area": 60.0,
-        "amount": 50000,
-        "prevHigh": 49800
+        "area": 85.0,
+        "date": "2026-07-03",
+        "amount": 68600,
+        "prevHigh": 68500
+      },
+      {
+        "apt": "인천 SK Sky VIEW",
+        "area": 109.2,
+        "date": "2026-07-11",
+        "amount": 65500,
+        "prevHigh": 65000
+      },
+      {
+        "apt": "힐스테이트학익",
+        "area": 85.0,
+        "date": "2026-07-06",
+        "amount": 65500,
+        "prevHigh": 63000
       }
     ],
     "actives": [
