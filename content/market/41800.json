@@ -3,16 +3,17 @@
   "region": "경기 연천군",
   "sido": "경기",
   "group": "gyeonggi-si",
-  "updatedAt": "2026-09-07T18:54:13+09:00",
+  "updatedAt": "2026-09-08T20:32:04+09:00",
   "sparse": false,
   "trades3m": 33,
   "trade": {
     "week": "2026-09-1",
     "weeks": 4,
-    "pyeongPrice": 586,
-    "m84": 37800,
-    "m59": 7700,
-    "count": 6,
+    "statsDays": 92,
+    "pyeongPrice": 636,
+    "m84": 23500,
+    "m59": 9950,
+    "count": 33,
     "highs": [
       {
         "apt": "전곡예일세띠앙",
@@ -35,29 +36,29 @@
     ],
     "actives": [
       {
-        "apt": "강민",
-        "count": 1,
-        "median": 5000
+        "apt": "조흥",
+        "count": 5,
+        "median": 6000
       },
       {
-        "apt": "백의리아느칸빌",
-        "count": 1,
-        "median": 7700
-      },
-      {
-        "apt": "연천전곡코아루더클래스",
-        "count": 1,
-        "median": 22000
+        "apt": "e편한세상연천웰스하임",
+        "count": 4,
+        "median": 29575
       },
       {
         "apt": "전곡예일세띠앙",
-        "count": 1,
-        "median": 24900
+        "count": 4,
+        "median": 18775
       },
       {
-        "apt": "전곡제일풍경채리버파크",
-        "count": 1,
-        "median": 37800
+        "apt": "전곡석미한아름",
+        "count": 3,
+        "median": 14300
+      },
+      {
+        "apt": "강민",
+        "count": 2,
+        "median": 4775
       }
     ]
   },

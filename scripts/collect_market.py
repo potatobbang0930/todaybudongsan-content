@@ -26,7 +26,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from regions import REGIONS, BY_CODE, api_codes, label  # noqa: E402
+from regions import REGIONS, BY_CODE, api_codes, label, since  # noqa: E402
 
 KST = dt.timezone(dt.timedelta(hours=9))
 PYEONG = 3.305785  # 1평 = 3.3058㎡
@@ -39,6 +39,9 @@ AREA_BANDS = {"m84": (79.0, 86.5), "m59": (54.0, 62.0)}
 
 # 최근 3개월 매매가 이 수보다 적으면 숫자를 감춘다 (design.md 5절).
 SPARSE_MIN_TRADES = 20
+
+# 화면 대표 숫자(평당가·84·59·많이 팔린 곳)를 내는 창. 3개월이다 — 위 latest_detail 참고.
+STATS_DAYS = 92
 
 # 🔴 API 가 429 를 낸다 (2026-08-29 실측). 병렬로 부르면 절반이 실패한다. 직렬 + 간격.
 REQUEST_INTERVAL = 0.35
@@ -268,14 +271,22 @@ def recent_weeks(rows: list[dict], n: int) -> tuple[list[dict], list[str]]:
 def latest_detail(trades: list[dict], months3: list[dict]) -> dict:
     """화면 상단 숫자 + 신고가 5곳 + 많이 팔린 곳 5곳.
 
-    🔴 전부 최근 4주 기준이다. 한 주만 보면 84㎡ 거래가 아예 없는 지역이 흔하다
-    (2026-08-29 실측: 80곳 중 과천·마포·중구 등에서 최근 주 84㎡ 중간값이 비었다).
+    🔴 **대표 숫자(평당가·84·59)와 「많이 팔린 곳」은 최근 3개월 기준이다.**
+    4주로 내던 것을 2026-09-08에 넓혔다. 4주는 표본이 작아 **가격이 아니라 구성이**
+    중간값을 흔들었다 — 광진구 평당가가 6,774만(8월 2주) → 3,846만(8월 5주, 1건)으로
+    갔는데, 같은 화면이 전용 84㎡ 를 18억(= 평당 7,000만대)이라고 말하고 있었다.
+    같은 앱의 두 숫자가 서로를 부정하면 사용자는 앱이 고장 났다고 읽는다.
+    3개월이면 광진구 기준 21건 → 169건이라 구성 편차가 묻힌다.
+
+    🔴 **신고가만 최근 4주 창을 그대로 쓴다.** "직전 최고가"를 그 앞 기간에서 뽑아야 해서
+    창을 넓히면 비교 대상이 사라진다. 신고가는 "최근에 무슨 일이 있었나"라 짧은 게 맞다.
     """
     window, keys = recent_weeks(trades, WINDOW)
-    if not window:
-        return {"week": None, "weeks": WINDOW, "pyeongPrice": None, "m84": None, "m59": None,
+    if not months3:
+        return {"week": None, "weeks": WINDOW, "statsDays": STATS_DAYS,
+                "pyeongPrice": None, "m84": None, "m59": None,
                 "count": 0, "highs": [], "actives": []}
-    latest = keys[-1]
+    latest = keys[-1] if keys else None
 
     # 신고가: 같은 단지·같은 평형에서, 창 이전 3개월 안의 최고가를 넘긴 거래
     prev_high: dict[tuple, int] = {}
@@ -295,18 +306,22 @@ def latest_detail(trades: list[dict], months3: list[dict]) -> dict:
         if len(highs) == 5:
             break
 
+    # 많이 팔린 곳도 3개월로 센다. 4주 창에서는 1건짜리가 1위로 올라와
+    # "많이 팔린 곳"이라는 이름이 거짓이 됐다 (2026-09-08 강동구 실측: 1위가 3건).
     counts: dict[str, list[int]] = {}
-    for t in window:
+    for t in months3:
         counts.setdefault(t["apt"], []).append(t["amount"])
     actives = sorted(counts.items(), key=lambda kv: (-len(kv[1]), kv[0]))[:5]
 
     return {
         "week": latest,
         "weeks": WINDOW,
-        "pyeongPrice": round(median([t["pyeong"] for t in window])),
-        "m84": round(median([t["amount"] for t in window if t["band"] == "m84"]) or 0) or None,
-        "m59": round(median([t["amount"] for t in window if t["band"] == "m59"]) or 0) or None,
-        "count": len(window),
+        # 대표 숫자가 몇 일 창인지 밝힌다. 앱이 "최근 3개월 기준"을 이 값으로 적는다
+        "statsDays": STATS_DAYS,
+        "pyeongPrice": round(median([t["pyeong"] for t in months3])),
+        "m84": round(median([t["amount"] for t in months3 if t["band"] == "m84"]) or 0) or None,
+        "m59": round(median([t["amount"] for t in months3 if t["band"] == "m59"]) or 0) or None,
+        "count": len(months3),
         "highs": highs,
         "actives": [{"apt": a, "count": len(v), "median": round(median(v))} for a, v in actives],
     }
@@ -353,7 +368,22 @@ def collect_region(code: str, yms: list[str], verbose: bool) -> tuple[list[dict]
             time.sleep(REQUEST_INTERVAL)
     if verbose:
         print(f"    원본 매매 {len(trades_raw)} · 전월세 {len(rents_raw)}")
-    return normalize_trades(trades_raw), normalize_rents(rents_raw)
+
+    trades, rents = normalize_trades(trades_raw), normalize_rents(rents_raw)
+
+    # 🔴 행정구역이 신설된 지역은 그 전 거래를 버린다. 같은 코드가 그 전에는
+    #    훨씬 넓은 구역을 가리켰다 (regions.py SINCE 참고). 안 버리면 흐름 화면이
+    #    "n건 줄었어요" 라고 거짓말을 한다.
+    cut = since(code)
+    if cut:
+        floor = dt.date.fromisoformat(cut)
+        before = len(trades), len(rents)
+        trades = [t for t in trades if t["date"] >= floor]
+        rents = [r for r in rents if r["date"] >= floor]
+        print(f"    ⚠️ {cut} 신설 — 그 전 매매 {before[0] - len(trades)}건 · "
+              f"전월세 {before[1] - len(rents)}건 버림")
+
+    return trades, rents
 
 
 def main() -> int:
@@ -388,7 +418,7 @@ def main() -> int:
             failed.append(code)
             continue
 
-        cut3 = today - dt.timedelta(days=92)
+        cut3 = today - dt.timedelta(days=STATS_DAYS)
         trades3 = [t for t in trades if t["date"] >= cut3]
         sparse = len(trades3) < SPARSE_MIN_TRADES
 

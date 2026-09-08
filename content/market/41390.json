@@ -3,16 +3,17 @@
   "region": "경기 시흥시",
   "sido": "경기",
   "group": "gyeonggi-si",
-  "updatedAt": "2026-09-07T18:52:45+09:00",
+  "updatedAt": "2026-09-08T20:30:35+09:00",
   "sparse": false,
-  "trades3m": 1458,
+  "trades3m": 1476,
   "trade": {
     "week": "2026-09-1",
     "weeks": 4,
-    "pyeongPrice": 1964,
-    "m84": 55000,
-    "m59": 32250,
-    "count": 279,
+    "statsDays": 92,
+    "pyeongPrice": 1991,
+    "m84": 54800,
+    "m59": 29950,
+    "count": 1476,
     "highs": [
       {
         "apt": "시흥배곧C1호반써밋플레이스",
@@ -39,50 +40,50 @@
         "prevHigh": 61000
       },
       {
-        "apt": "호반베르디움센트로하임",
-        "area": 84.7,
-        "amount": 61000,
-        "prevHigh": 60000
+        "apt": "대야역두산위브더파크",
+        "area": 84.9,
+        "amount": 61500,
+        "prevHigh": 61000
       }
     ],
     "actives": [
       {
         "apt": "시흥센트럴푸르지오",
-        "count": 13,
-        "median": 71100
+        "count": 36,
+        "median": 71300
+      },
+      {
+        "apt": "대야역두산위브더파크",
+        "count": 35,
+        "median": 48500
+      },
+      {
+        "apt": "은계센트럴타운",
+        "count": 33,
+        "median": 50800
+      },
+      {
+        "apt": "은계어반리더스",
+        "count": 32,
+        "median": 55500
       },
       {
         "apt": "시흥능곡역모아미래도에듀포레",
-        "count": 10,
-        "median": 57150
-      },
-      {
-        "apt": "장현호반써밋",
-        "count": 8,
-        "median": 59945
-      },
-      {
-        "apt": "대우푸르지오3차",
-        "count": 7,
-        "median": 36000
-      },
-      {
-        "apt": "은계브리즈힐",
-        "count": 6,
-        "median": 58850
+        "count": 31,
+        "median": 56300
       }
     ]
   },
   "rent": {
     "week": "2026-09-1",
     "weeks": 4,
-    "jeonseM84": 34825,
+    "jeonseM84": 34575,
     "jeonseM59": 20000,
     "monthlyDeposit": 3000,
-    "monthlyRent": 80,
+    "monthlyRent": 74,
     "jeonseRatio": 74,
     "ratioDays": 92,
-    "count": 377
+    "count": 439
   },
   "window": 4,
   "weeks": [
@@ -196,32 +197,32 @@
       "pyeongPrice": 2016,
       "jeonseRatio": 72,
       "tradeCount": 144,
-      "rentCount": 206
+      "rentCount": 208
     },
     {
       "week": "2026-07-2",
-      "pyeongPrice": 2050,
+      "pyeongPrice": 2049,
       "jeonseRatio": 72,
-      "tradeCount": 136,
-      "rentCount": 218
+      "tradeCount": 135,
+      "rentCount": 219
     },
     {
       "week": "2026-07-3",
-      "pyeongPrice": 2088,
+      "pyeongPrice": 2087,
       "jeonseRatio": 72,
       "tradeCount": 113,
       "rentCount": 171
     },
     {
       "week": "2026-07-4",
-      "pyeongPrice": 2087,
+      "pyeongPrice": 2084,
       "jeonseRatio": 72,
       "tradeCount": 118,
-      "rentCount": 197
+      "rentCount": 198
     },
     {
       "week": "2026-07-5",
-      "pyeongPrice": 2097,
+      "pyeongPrice": 2093,
       "jeonseRatio": 72,
       "tradeCount": 45,
       "rentCount": 85
@@ -238,35 +239,35 @@
       "pyeongPrice": 1946,
       "jeonseRatio": 73,
       "tradeCount": 121,
-      "rentCount": 202
+      "rentCount": 205
     },
     {
       "week": "2026-08-3",
-      "pyeongPrice": 1985,
+      "pyeongPrice": 1984,
       "jeonseRatio": 73,
-      "tradeCount": 86,
-      "rentCount": 142
+      "tradeCount": 87,
+      "rentCount": 145
     },
     {
       "week": "2026-08-4",
-      "pyeongPrice": 1942,
+      "pyeongPrice": 1940,
       "jeonseRatio": 74,
-      "tradeCount": 98,
-      "rentCount": 125
+      "tradeCount": 100,
+      "rentCount": 127
     },
     {
       "week": "2026-08-5",
-      "pyeongPrice": 1952,
+      "pyeongPrice": 1954,
       "jeonseRatio": 74,
-      "tradeCount": 42,
-      "rentCount": 55
+      "tradeCount": 44,
+      "rentCount": 61
     },
     {
       "week": "2026-09-1",
-      "pyeongPrice": 1964,
+      "pyeongPrice": 1949,
       "jeonseRatio": 74,
-      "tradeCount": 53,
-      "rentCount": 55
+      "tradeCount": 71,
+      "rentCount": 106
     }
   ]
 }

@@ -3,16 +3,17 @@
   "region": "인천 계양구",
   "sido": "인천",
   "group": "incheon",
-  "updatedAt": "2026-09-07T18:47:55+09:00",
+  "updatedAt": "2026-09-08T20:25:40+09:00",
   "sparse": false,
-  "trades3m": 558,
+  "trades3m": 570,
   "trade": {
     "week": "2026-09-1",
     "weeks": 4,
-    "pyeongPrice": 1390,
-    "m84": 37800,
-    "m59": 27800,
-    "count": 109,
+    "statsDays": 92,
+    "pyeongPrice": 1337,
+    "m84": 35800,
+    "m59": 27000,
+    "count": 570,
     "highs": [
       {
         "apt": "계양효성해링턴플레이스",
@@ -39,50 +40,50 @@
         "prevHigh": 43900
       },
       {
-        "apt": "초정마을하나",
+        "apt": "한화꿈에그린",
         "area": 85.0,
-        "amount": 40400,
-        "prevHigh": 39000
+        "amount": 43000,
+        "prevHigh": 41250
       }
     ],
     "actives": [
       {
-        "apt": "까치마을태화",
-        "count": 7,
-        "median": 16000
+        "apt": "힐스테이트자이계양",
+        "count": 26,
+        "median": 54250
+      },
+      {
+        "apt": "e편한세상 계양 더프리미어",
+        "count": 20,
+        "median": 50500
       },
       {
         "apt": "학마을한진",
-        "count": 6,
-        "median": 22250
+        "count": 19,
+        "median": 21500
       },
       {
-        "apt": "까치마을한진",
-        "count": 5,
-        "median": 15350
+        "apt": "까치마을태화",
+        "count": 18,
+        "median": 15450
       },
       {
-        "apt": "도두리마을동남",
-        "count": 4,
-        "median": 27250
-      },
-      {
-        "apt": "도두리마을동보",
-        "count": 4,
-        "median": 29900
+        "apt": "학마을서해",
+        "count": 17,
+        "median": 11000
       }
     ]
   },
   "rent": {
     "week": "2026-09-1",
     "weeks": 4,
-    "jeonseM84": 30000,
+    "jeonseM84": 29000,
     "jeonseM59": 21000,
     "monthlyDeposit": 1000,
     "monthlyRent": 50,
     "jeonseRatio": 78,
     "ratioDays": 92,
-    "count": 112
+    "count": 128
   },
   "window": 4,
   "weeks": [
@@ -242,31 +243,31 @@
     },
     {
       "week": "2026-08-3",
-      "pyeongPrice": 1377,
+      "pyeongPrice": 1374,
       "jeonseRatio": 78,
-      "tradeCount": 33,
-      "rentCount": 43
+      "tradeCount": 34,
+      "rentCount": 44
     },
     {
       "week": "2026-08-4",
-      "pyeongPrice": 1360,
+      "pyeongPrice": 1358,
       "jeonseRatio": 78,
       "tradeCount": 46,
-      "rentCount": 41
+      "rentCount": 43
     },
     {
       "week": "2026-08-5",
-      "pyeongPrice": 1395,
+      "pyeongPrice": 1392,
       "jeonseRatio": 78,
-      "tradeCount": 18,
-      "rentCount": 14
+      "tradeCount": 19,
+      "rentCount": 16
     },
     {
       "week": "2026-09-1",
-      "pyeongPrice": 1390,
+      "pyeongPrice": 1358,
       "jeonseRatio": 78,
-      "tradeCount": 12,
-      "rentCount": 14
+      "tradeCount": 24,
+      "rentCount": 25
     }
   ]
 }
