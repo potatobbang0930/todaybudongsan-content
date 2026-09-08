@@ -3,22 +3,29 @@
   "region": "서울 용산구",
   "sido": "서울",
   "group": "seoul",
-  "updatedAt": "2026-09-07T18:43:54+09:00",
+  "updatedAt": "2026-09-08T20:21:39+09:00",
   "sparse": false,
-  "trades3m": 139,
+  "trades3m": 142,
   "trade": {
     "week": "2026-08-5",
     "weeks": 4,
-    "pyeongPrice": 7724,
-    "m84": 144100,
-    "m59": 188500,
-    "count": 15,
+    "statsDays": 92,
+    "pyeongPrice": 8175,
+    "m84": 190000,
+    "m59": 208000,
+    "count": 142,
     "highs": [
       {
         "apt": "나인원한남",
         "area": 273.4,
         "amount": 2550000,
         "prevHigh": 2500000
+      },
+      {
+        "apt": "우성",
+        "area": 58.2,
+        "amount": 227000,
+        "prevHigh": 215000
       },
       {
         "apt": "이촌코오롱(A)",
@@ -41,29 +48,29 @@
     ],
     "actives": [
       {
-        "apt": "나인원한남",
-        "count": 1,
-        "median": 2550000
+        "apt": "센트럴파크",
+        "count": 9,
+        "median": 370000
       },
       {
-        "apt": "동원베네스트",
-        "count": 1,
-        "median": 144100
-      },
-      {
-        "apt": "로얄카운티-3",
-        "count": 1,
-        "median": 144000
-      },
-      {
-        "apt": "리버뷰",
-        "count": 1,
-        "median": 170000
+        "apt": "강촌",
+        "count": 7,
+        "median": 250000
       },
       {
         "apt": "리버힐삼성",
-        "count": 1,
+        "count": 7,
         "median": 163000
+      },
+      {
+        "apt": "한가람",
+        "count": 7,
+        "median": 248000
+      },
+      {
+        "apt": "삼성래미안",
+        "count": 5,
+        "median": 169000
       }
     ]
   },
@@ -71,12 +78,12 @@
     "week": "2026-09-1",
     "weeks": 4,
     "jeonseM84": 82000,
-    "jeonseM59": 64000,
+    "jeonseM59": 63000,
     "monthlyDeposit": 10000,
-    "monthlyRent": 130,
-    "jeonseRatio": 39,
+    "monthlyRent": 145,
+    "jeonseRatio": 40,
     "ratioDays": 92,
-    "count": 178
+    "count": 204
   },
   "window": 4,
   "weeks": [
@@ -162,7 +169,7 @@
       "pyeongPrice": 8177,
       "jeonseRatio": 41,
       "tradeCount": 17,
-      "rentCount": 223
+      "rentCount": 224
     },
     {
       "week": "2026-06-3",
@@ -190,77 +197,77 @@
       "pyeongPrice": 7285,
       "jeonseRatio": 41,
       "tradeCount": 21,
-      "rentCount": 96
+      "rentCount": 97
     },
     {
       "week": "2026-07-2",
       "pyeongPrice": 7587,
       "jeonseRatio": 40,
       "tradeCount": 22,
-      "rentCount": 119
+      "rentCount": 120
     },
     {
       "week": "2026-07-3",
-      "pyeongPrice": 8685,
+      "pyeongPrice": 8327,
       "jeonseRatio": 40,
-      "tradeCount": 9,
+      "tradeCount": 10,
       "rentCount": 89
     },
     {
       "week": "2026-07-4",
-      "pyeongPrice": 8852,
+      "pyeongPrice": 8660,
       "jeonseRatio": 39,
       "tradeCount": 10,
       "rentCount": 81
     },
     {
       "week": "2026-07-5",
-      "pyeongPrice": 9633,
+      "pyeongPrice": 9630,
       "jeonseRatio": 41,
       "tradeCount": 6,
-      "rentCount": 37
+      "rentCount": 38
     },
     {
       "week": "2026-08-1",
-      "pyeongPrice": 9635,
+      "pyeongPrice": 9634,
       "jeonseRatio": 40,
       "tradeCount": 8,
-      "rentCount": 62
+      "rentCount": 63
     },
     {
       "week": "2026-08-2",
       "pyeongPrice": 9049,
       "jeonseRatio": 40,
       "tradeCount": 7,
-      "rentCount": 91
+      "rentCount": 94
     },
     {
       "week": "2026-08-3",
-      "pyeongPrice": 8162,
+      "pyeongPrice": 8152,
       "jeonseRatio": 39,
-      "tradeCount": 3,
-      "rentCount": 56
+      "tradeCount": 4,
+      "rentCount": 58
     },
     {
       "week": "2026-08-4",
       "pyeongPrice": 8030,
       "jeonseRatio": 38,
-      "tradeCount": 4,
-      "rentCount": 73
+      "tradeCount": 5,
+      "rentCount": 74
     },
     {
       "week": "2026-08-5",
       "pyeongPrice": 7724,
       "jeonseRatio": 39,
       "tradeCount": 1,
-      "rentCount": 18
+      "rentCount": 19
     },
     {
       "week": "2026-09-1",
-      "pyeongPrice": 5090,
-      "jeonseRatio": 39,
+      "pyeongPrice": 6284,
+      "jeonseRatio": 40,
       "tradeCount": 0,
-      "rentCount": 31
+      "rentCount": 53
     }
   ]
 }

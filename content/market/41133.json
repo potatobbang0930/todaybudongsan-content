@@ -3,34 +3,23 @@
   "region": "경기 성남 중원구",
   "sido": "경기",
   "group": "gyeonggi-gu",
-  "updatedAt": "2026-09-07T18:49:01+09:00",
+  "updatedAt": "2026-09-08T20:26:45+09:00",
   "sparse": false,
-  "trades3m": 351,
+  "trades3m": 354,
   "trade": {
-    "week": "2026-08-5",
+    "week": "2026-09-1",
     "weeks": 4,
-    "pyeongPrice": 4111,
-    "m84": 83000,
-    "m59": 109500,
-    "count": 49,
+    "statsDays": 92,
+    "pyeongPrice": 3982,
+    "m84": 90000,
+    "m59": 106000,
+    "count": 354,
     "highs": [
-      {
-        "apt": "연꽃마을(4단지)",
-        "area": 121.0,
-        "amount": 160000,
-        "prevHigh": 150000
-      },
       {
         "apt": "e편한세상금빛그랑메종1단지",
         "area": 75.0,
         "amount": 135000,
         "prevHigh": 134700
-      },
-      {
-        "apt": "e편한세상금빛그랑메종1단지",
-        "area": 60.0,
-        "amount": 131000,
-        "prevHigh": 127700
       },
       {
         "apt": "東분당파크뷰",
@@ -43,33 +32,45 @@
         "area": 59.9,
         "amount": 76300,
         "prevHigh": 75500
+      },
+      {
+        "apt": "성지",
+        "area": 39.6,
+        "amount": 34500,
+        "prevHigh": 31000
+      },
+      {
+        "apt": "상대원삼익",
+        "area": 34.0,
+        "amount": 24900,
+        "prevHigh": 24200
       }
     ],
     "actives": [
       {
-        "apt": "선경2차",
-        "count": 6,
-        "median": 54900
-      },
-      {
         "apt": "산들마을2단지",
-        "count": 5,
-        "median": 97000
+        "count": 32,
+        "median": 94850
       },
       {
-        "apt": "e편한세상금빛그랑메종1단지",
-        "count": 4,
-        "median": 130250
+        "apt": "현대",
+        "count": 24,
+        "median": 89998
       },
       {
-        "apt": "e편한세상금빛그랑메종3단지",
-        "count": 3,
-        "median": 111500
+        "apt": "선경2차",
+        "count": 23,
+        "median": 53500
+      },
+      {
+        "apt": "은행주공",
+        "count": 22,
+        "median": 74750
       },
       {
         "apt": "신흥역하늘채랜더스원1단지",
-        "count": 3,
-        "median": 132300
+        "count": 18,
+        "median": 142000
       }
     ]
   },
@@ -82,7 +83,7 @@
     "monthlyRent": 90,
     "jeonseRatio": 54,
     "ratioDays": 92,
-    "count": 126
+    "count": 144
   },
   "window": 4,
   "weeks": [
@@ -132,19 +133,19 @@
       "week": "2026-05-2",
       "pyeongPrice": 3755,
       "jeonseRatio": 58,
-      "tradeCount": 77,
+      "tradeCount": 78,
       "rentCount": 55
     },
     {
       "week": "2026-05-3",
-      "pyeongPrice": 3791,
+      "pyeongPrice": 3789,
       "jeonseRatio": 57,
       "tradeCount": 42,
       "rentCount": 52
     },
     {
       "week": "2026-05-4",
-      "pyeongPrice": 3835,
+      "pyeongPrice": 3833,
       "jeonseRatio": 57,
       "tradeCount": 44,
       "rentCount": 55
@@ -230,43 +231,43 @@
       "week": "2026-08-1",
       "pyeongPrice": 4474,
       "jeonseRatio": 57,
-      "tradeCount": 32,
+      "tradeCount": 33,
       "rentCount": 47
     },
     {
       "week": "2026-08-2",
-      "pyeongPrice": 4726,
+      "pyeongPrice": 4590,
       "jeonseRatio": 55,
       "tradeCount": 29,
       "rentCount": 39
     },
     {
       "week": "2026-08-3",
-      "pyeongPrice": 4147,
+      "pyeongPrice": 4129,
       "jeonseRatio": 54,
       "tradeCount": 13,
       "rentCount": 42
     },
     {
       "week": "2026-08-4",
-      "pyeongPrice": 4113,
+      "pyeongPrice": 3969,
       "jeonseRatio": 54,
-      "tradeCount": 6,
-      "rentCount": 46
+      "tradeCount": 8,
+      "rentCount": 48
     },
     {
       "week": "2026-08-5",
-      "pyeongPrice": 4111,
+      "pyeongPrice": 3907,
       "jeonseRatio": 54,
-      "tradeCount": 1,
-      "rentCount": 16
+      "tradeCount": 2,
+      "rentCount": 19
     },
     {
       "week": "2026-09-1",
-      "pyeongPrice": 3669,
+      "pyeongPrice": 3702,
       "jeonseRatio": 54,
-      "tradeCount": 0,
-      "rentCount": 22
+      "tradeCount": 1,
+      "rentCount": 35
     }
   ]
 }

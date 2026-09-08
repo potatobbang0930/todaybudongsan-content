@@ -3,55 +3,69 @@
   "region": "경기 가평군",
   "sido": "경기",
   "group": "gyeonggi-si",
-  "updatedAt": "2026-09-07T18:54:19+09:00",
+  "updatedAt": "2026-09-08T20:32:10+09:00",
   "sparse": false,
-  "trades3m": 53,
+  "trades3m": 57,
   "trade": {
-    "week": "2026-08-3",
+    "week": "2026-09-1",
     "weeks": 4,
-    "pyeongPrice": 1288,
-    "m84": 27500,
-    "m59": 29700,
-    "count": 19,
-    "highs": [],
-    "actives": [
-      {
-        "apt": "디엘본가평설악아파트",
-        "count": 3,
-        "median": 32000
-      },
+    "statsDays": 92,
+    "pyeongPrice": 1088,
+    "m84": 25200,
+    "m59": 24650,
+    "count": 57,
+    "highs": [
       {
         "apt": "힐스테이트가평더뉴클래스",
-        "count": 3,
-        "median": 36000
+        "area": 60.0,
+        "amount": 36700,
+        "prevHigh": 30000
+      },
+      {
+        "apt": "청평삼성쉐르빌",
+        "area": 84.7,
+        "amount": 25200,
+        "prevHigh": 22800
+      }
+    ],
+    "actives": [
+      {
+        "apt": "가평자이",
+        "count": 7,
+        "median": 30000
       },
       {
         "apt": "e편한세상가평퍼스트원",
-        "count": 2,
-        "median": 27750
+        "count": 5,
+        "median": 31800
       },
       {
-        "apt": "가평자이",
-        "count": 2,
-        "median": 35350
+        "apt": "청평삼성쉐르빌",
+        "count": 5,
+        "median": 23000
       },
       {
-        "apt": "에이원파란채",
-        "count": 2,
-        "median": 17750
+        "apt": "디엘본가평설악아파트",
+        "count": 4,
+        "median": 33000
+      },
+      {
+        "apt": "이안지안스청평",
+        "count": 4,
+        "median": 19500
       }
     ]
   },
   "rent": {
     "week": "2026-09-1",
     "weeks": 4,
-    "jeonseM84": null,
+    "jeonseM84": 22000,
     "jeonseM59": null,
     "monthlyDeposit": 2500,
     "monthlyRent": 95,
-    "jeonseRatio": 73,
+    "jeonseRatio": 72,
     "ratioDays": 92,
-    "count": 8
+    "count": 9
   },
   "window": 4,
   "weeks": [
@@ -213,7 +227,7 @@
       "week": "2026-08-3",
       "pyeongPrice": 1288,
       "jeonseRatio": 74,
-      "tradeCount": 5,
+      "tradeCount": 7,
       "rentCount": 3
     },
     {
@@ -232,10 +246,10 @@
     },
     {
       "week": "2026-09-1",
-      "pyeongPrice": 737,
-      "jeonseRatio": 73,
-      "tradeCount": 0,
-      "rentCount": 1
+      "pyeongPrice": 1215,
+      "jeonseRatio": 72,
+      "tradeCount": 2,
+      "rentCount": 2
     }
   ]
 }

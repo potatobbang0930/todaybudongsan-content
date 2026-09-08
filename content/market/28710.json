@@ -3,42 +3,43 @@
   "region": "인천 강화군",
   "sido": "인천",
   "group": "incheon",
-  "updatedAt": "2026-09-07T18:48:17+09:00",
+  "updatedAt": "2026-09-08T20:26:00+09:00",
   "sparse": false,
   "trades3m": 23,
   "trade": {
     "week": "2026-09-1",
     "weeks": 4,
-    "pyeongPrice": 605,
-    "m84": 20000,
-    "m59": 24000,
-    "count": 6,
+    "statsDays": 92,
+    "pyeongPrice": 592,
+    "m84": 15350,
+    "m59": 21000,
+    "count": 23,
     "highs": [],
     "actives": [
       {
-        "apt": "강화2차세광엔리치빌",
-        "count": 1,
-        "median": 20000
+        "apt": "세광엔리치빌1차",
+        "count": 4,
+        "median": 15350
       },
       {
         "apt": "강화서희스타힐스1단지",
-        "count": 1,
-        "median": 24000
-      },
-      {
-        "apt": "용진2",
-        "count": 1,
-        "median": 7500
+        "count": 3,
+        "median": 24500
       },
       {
         "apt": "유성1",
-        "count": 1,
+        "count": 3,
         "median": 6800
       },
       {
-        "apt": "유성2",
-        "count": 1,
-        "median": 10200
+        "apt": "강화2차세광엔리치빌",
+        "count": 2,
+        "median": 20000
+      },
+      {
+        "apt": "이지미래지향",
+        "count": 2,
+        "median": 29850
       }
     ]
   },
@@ -48,10 +49,10 @@
     "jeonseM84": null,
     "jeonseM59": null,
     "monthlyDeposit": 2000,
-    "monthlyRent": 72,
+    "monthlyRent": 70,
     "jeonseRatio": 82,
     "ratioDays": 92,
-    "count": 10
+    "count": 11
   },
   "window": 4,
   "weeks": [
@@ -213,7 +214,7 @@
       "week": "2026-08-3",
       "pyeongPrice": 778,
       "jeonseRatio": 88,
-      "tradeCount": 1,
+      "tradeCount": 2,
       "rentCount": 4
     },
     {
@@ -221,11 +222,11 @@
       "pyeongPrice": 778,
       "jeonseRatio": 88,
       "tradeCount": 1,
-      "rentCount": 3
+      "rentCount": 4
     },
     {
       "week": "2026-08-5",
-      "pyeongPrice": 432,
+      "pyeongPrice": 605,
       "jeonseRatio": 79,
       "tradeCount": 0,
       "rentCount": 2

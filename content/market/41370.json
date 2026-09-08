@@ -3,22 +3,29 @@
   "region": "경기 오산시",
   "sido": "경기",
   "group": "gyeonggi-si",
-  "updatedAt": "2026-09-07T18:52:35+09:00",
+  "updatedAt": "2026-09-08T20:30:25+09:00",
   "sparse": false,
-  "trades3m": 964,
+  "trades3m": 986,
   "trade": {
     "week": "2026-09-1",
     "weeks": 4,
-    "pyeongPrice": 1692,
-    "m84": 45000,
-    "m59": 30300,
-    "count": 169,
+    "statsDays": 92,
+    "pyeongPrice": 1671,
+    "m84": 43500,
+    "m59": 29450,
+    "count": 986,
     "highs": [
       {
         "apt": "서동탄역더샵파크시티",
         "area": 101.9,
         "amount": 82900,
         "prevHigh": 78000
+      },
+      {
+        "apt": "더샵오산센트럴",
+        "area": 77.9,
+        "amount": 66000,
+        "prevHigh": 65000
       },
       {
         "apt": "오산대역호반써밋",
@@ -37,52 +44,46 @@
         "area": 75.0,
         "amount": 55700,
         "prevHigh": 55000
-      },
-      {
-        "apt": "오산대역호반써밋",
-        "area": 85.0,
-        "amount": 55500,
-        "prevHigh": 55000
       }
     ],
     "actives": [
       {
         "apt": "서동탄역더샵파크시티",
-        "count": 12,
-        "median": 57650
-      },
-      {
-        "apt": "오산세마e편한세상",
-        "count": 11,
-        "median": 50900
-      },
-      {
-        "apt": "호반써밋라프리미어",
-        "count": 11,
-        "median": 39000
+        "count": 79,
+        "median": 57300
       },
       {
         "apt": "e편한세상오산세교",
-        "count": 10,
-        "median": 30050
+        "count": 41,
+        "median": 32000
       },
       {
         "apt": "오산롯데캐슬스카이파크",
-        "count": 10,
-        "median": 48000
+        "count": 39,
+        "median": 47000
+      },
+      {
+        "apt": "오산세마e편한세상",
+        "count": 36,
+        "median": 45750
+      },
+      {
+        "apt": "주공3",
+        "count": 34,
+        "median": 25900
       }
     ]
   },
   "rent": {
     "week": "2026-09-1",
     "weeks": 4,
-    "jeonseM84": 31290,
-    "jeonseM59": 21000,
+    "jeonseM84": 31500,
+    "jeonseM59": 22000,
     "monthlyDeposit": 4000,
     "monthlyRent": 63,
-    "jeonseRatio": 75,
+    "jeonseRatio": 74,
     "ratioDays": 92,
-    "count": 163
+    "count": 190
   },
   "window": 4,
   "weeks": [
@@ -147,7 +148,7 @@
       "pyeongPrice": 1417,
       "jeonseRatio": 75,
       "tradeCount": 47,
-      "rentCount": 265
+      "rentCount": 266
     },
     {
       "week": "2026-05-5",
@@ -210,7 +211,7 @@
       "pyeongPrice": 1677,
       "jeonseRatio": 74,
       "tradeCount": 93,
-      "rentCount": 97
+      "rentCount": 98
     },
     {
       "week": "2026-07-4",
@@ -238,35 +239,35 @@
       "pyeongPrice": 1694,
       "jeonseRatio": 75,
       "tradeCount": 69,
-      "rentCount": 62
+      "rentCount": 65
     },
     {
       "week": "2026-08-3",
-      "pyeongPrice": 1691,
+      "pyeongPrice": 1690,
       "jeonseRatio": 75,
-      "tradeCount": 61,
-      "rentCount": 63
+      "tradeCount": 62,
+      "rentCount": 64
     },
     {
       "week": "2026-08-4",
       "pyeongPrice": 1690,
       "jeonseRatio": 74,
-      "tradeCount": 62,
-      "rentCount": 54
+      "tradeCount": 65,
+      "rentCount": 58
     },
     {
       "week": "2026-08-5",
-      "pyeongPrice": 1713,
+      "pyeongPrice": 1717,
       "jeonseRatio": 74,
-      "tradeCount": 23,
-      "rentCount": 18
+      "tradeCount": 27,
+      "rentCount": 20
     },
     {
       "week": "2026-09-1",
-      "pyeongPrice": 1692,
-      "jeonseRatio": 75,
-      "tradeCount": 23,
-      "rentCount": 28
+      "pyeongPrice": 1714,
+      "jeonseRatio": 74,
+      "tradeCount": 37,
+      "rentCount": 48
     }
   ]
 }
