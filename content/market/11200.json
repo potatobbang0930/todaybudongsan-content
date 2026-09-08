@@ -3,7 +3,7 @@
   "region": "서울 성동구",
   "sido": "서울",
   "group": "seoul",
-  "updatedAt": "2026-09-08T20:21:46+09:00",
+  "updatedAt": "2026-09-08T21:14:23+09:00",
   "sparse": false,
   "trades3m": 242,
   "trade": {
@@ -16,34 +16,39 @@
     "count": 242,
     "highs": [
       {
-        "apt": "서울숲푸르지오",
-        "area": 84.9,
-        "amount": 246000,
-        "prevHigh": 232000
+        "apt": "한남하이츠",
+        "area": 177.1,
+        "date": "2026-07-21",
+        "amount": 480000,
+        "prevHigh": 385000
       },
       {
-        "apt": "텐즈힐(1단지)",
+        "apt": "강변금호타운",
+        "area": 59.7,
+        "date": "2026-07-11",
+        "amount": 290000,
+        "prevHigh": 285000
+      },
+      {
+        "apt": "서울숲리버뷰자이",
         "area": 85.0,
-        "amount": 229000,
-        "prevHigh": 226000
+        "date": "2026-07-09",
+        "amount": 274000,
+        "prevHigh": 269000
       },
       {
-        "apt": "옥수삼성",
-        "area": 59.7,
-        "amount": 199500,
-        "prevHigh": 199000
+        "apt": "동아",
+        "area": 96.2,
+        "date": "2026-06-18",
+        "amount": 273000,
+        "prevHigh": 240000
       },
       {
-        "apt": "금호자이2차",
-        "area": 60.0,
-        "amount": 170000,
-        "prevHigh": 169000
-      },
-      {
-        "apt": "서울숲행당푸르지오",
-        "area": 59.7,
-        "amount": 168000,
-        "prevHigh": 160000
+        "apt": "래미안 옥수 리버젠",
+        "area": 84.8,
+        "date": "2026-08-09",
+        "amount": 269000,
+        "prevHigh": 260000
       }
     ],
     "actives": [

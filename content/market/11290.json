@@ -3,7 +3,7 @@
   "region": "서울 성북구",
   "sido": "서울",
   "group": "seoul",
-  "updatedAt": "2026-09-08T20:22:16+09:00",
+  "updatedAt": "2026-09-08T21:14:52+09:00",
   "sparse": false,
   "trades3m": 705,
   "trade": {
@@ -16,34 +16,39 @@
     "count": 705,
     "highs": [
       {
-        "apt": "길음뉴타운6단지(래미안)",
-        "area": 113.2,
-        "amount": 168500,
-        "prevHigh": 167000
-      },
-      {
-        "apt": "삼선에스케이뷰",
-        "area": 122.4,
-        "amount": 167000,
-        "prevHigh": 165000
+        "apt": "래미안길음센터피스",
+        "area": 85.0,
+        "date": "2026-07-20",
+        "amount": 200000,
+        "prevHigh": 185000
       },
       {
         "apt": "롯데캐슬클라시아",
-        "area": 59.9,
-        "amount": 159000,
-        "prevHigh": 155000
+        "area": 84.8,
+        "date": "2026-06-25",
+        "amount": 191000,
+        "prevHigh": 175000
       },
       {
-        "apt": "길음동동부센트레빌(1278-0)",
-        "area": 114.9,
-        "amount": 136000,
-        "prevHigh": 133300
+        "apt": "길음뉴타운6단지(래미안)",
+        "area": 113.2,
+        "date": "2026-08-18",
+        "amount": 168500,
+        "prevHigh": 165000
       },
       {
-        "apt": "래미안크리시엘",
+        "apt": "길음뉴타운8단지(래미안)",
         "area": 115.0,
-        "amount": 125000,
-        "prevHigh": 119500
+        "date": "2026-07-29",
+        "amount": 165000,
+        "prevHigh": 160000
+      },
+      {
+        "apt": "꿈의숲아이파크",
+        "area": 84.5,
+        "date": "2026-06-20",
+        "amount": 162000,
+        "prevHigh": 150000
       }
     ],
     "actives": [

@@ -3,7 +3,7 @@
   "region": "경기 안산 단원구",
   "sido": "경기",
   "group": "gyeonggi-gu",
-  "updatedAt": "2026-09-08T20:27:24+09:00",
+  "updatedAt": "2026-09-08T21:20:02+09:00",
   "sparse": false,
   "trades3m": 629,
   "trade": {
@@ -16,34 +16,39 @@
     "count": 629,
     "highs": [
       {
-        "apt": "e편한세상초지역센트럴포레",
+        "apt": "안산레이크타운푸르지오",
+        "area": 98.8,
+        "date": "2026-07-10",
+        "amount": 124000,
+        "prevHigh": 123000
+      },
+      {
+        "apt": "호수공원(대림1)",
+        "area": 163.5,
+        "date": "2026-06-10",
+        "amount": 119000,
+        "prevHigh": 112000
+      },
+      {
+        "apt": "센트럴푸르지오",
+        "area": 115.4,
+        "date": "2026-06-27",
+        "amount": 113000,
+        "prevHigh": 99000
+      },
+      {
+        "apt": "안산레이크타운푸르지오",
+        "area": 84.7,
+        "date": "2026-08-12",
+        "amount": 110000,
+        "prevHigh": 104500
+      },
+      {
+        "apt": "센트럴푸르지오",
         "area": 85.0,
-        "amount": 78800,
-        "prevHigh": 78000
-      },
-      {
-        "apt": "힐스테이트중앙",
-        "area": 60.0,
-        "amount": 74500,
-        "prevHigh": 74200
-      },
-      {
-        "apt": "초지역메이저타운푸르지오파크단지",
-        "area": 72.8,
-        "amount": 72000,
-        "prevHigh": 68000
-      },
-      {
-        "apt": "보네르빌리지",
-        "area": 116.8,
-        "amount": 61800,
-        "prevHigh": 60800
-      },
-      {
-        "apt": "주공그린빌8",
-        "area": 75.6,
-        "amount": 53000,
-        "prevHigh": 50500
+        "date": "2026-07-25",
+        "amount": 96000,
+        "prevHigh": 89000
       }
     ],
     "actives": [

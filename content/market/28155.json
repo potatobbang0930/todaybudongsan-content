@@ -3,7 +3,7 @@
   "region": "인천 영종구",
   "sido": "인천",
   "group": "incheon",
-  "updatedAt": "2026-09-08T20:24:59+09:00",
+  "updatedAt": "2026-09-08T21:17:36+09:00",
   "sparse": false,
   "trades3m": 283,
   "trade": {
@@ -16,34 +16,39 @@
     "count": 283,
     "highs": [
       {
+        "apt": "영종하늘도시한라비발디",
+        "area": 186.0,
+        "date": "2026-06-15",
+        "amount": 113000,
+        "prevHigh": 57000
+      },
+      {
         "apt": "스카이시티자이",
         "area": 99.0,
+        "date": "2026-08-29",
         "amount": 62000,
-        "prevHigh": 57200
+        "prevHigh": 56500
+      },
+      {
+        "apt": "영종자이",
+        "area": 138.6,
+        "date": "2026-07-18",
+        "amount": 55000,
+        "prevHigh": 49000
       },
       {
         "apt": "e편한세상영종국제도시센텀베뉴",
-        "area": 98.0,
-        "amount": 57000,
-        "prevHigh": 54500
+        "area": 85.0,
+        "date": "2026-07-08",
+        "amount": 54500,
+        "prevHigh": 54000
       },
       {
-        "apt": "호반써밋스카이센트럴",
+        "apt": "운서역반도유보라퍼스티지",
         "area": 85.0,
-        "amount": 47000,
-        "prevHigh": 45500
-      },
-      {
-        "apt": "영종국제도시동원로얄듀크마리나포레",
-        "area": 85.0,
-        "amount": 45500,
-        "prevHigh": 41500
-      },
-      {
-        "apt": "인천영종동보노빌리티",
-        "area": 85.0,
-        "amount": 38100,
-        "prevHigh": 35000
+        "date": "2026-06-26",
+        "amount": 50500,
+        "prevHigh": 49000
       }
     ],
     "actives": [

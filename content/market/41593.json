@@ -3,7 +3,7 @@
   "region": "경기 화성 봉담구",
   "sido": "경기",
   "group": "gyeonggi-gu",
-  "updatedAt": "2026-09-08T20:28:25+09:00",
+  "updatedAt": "2026-09-08T21:21:03+09:00",
   "sparse": false,
   "trades3m": 365,
   "trade": {
@@ -14,38 +14,7 @@
     "m84": 37000,
     "m59": 40500,
     "count": 365,
-    "highs": [
-      {
-        "apt": "중흥에스클래스에듀파크",
-        "area": 84.7,
-        "amount": 64000,
-        "prevHigh": 63000
-      },
-      {
-        "apt": "봉담자이라피네",
-        "area": 85.0,
-        "amount": 59800,
-        "prevHigh": 58000
-      },
-      {
-        "apt": "동화마을동일하이빌",
-        "area": 115.3,
-        "amount": 50000,
-        "prevHigh": 47000
-      },
-      {
-        "apt": "중흥에스클래스에듀시티",
-        "area": 59.9,
-        "amount": 49500,
-        "prevHigh": 49000
-      },
-      {
-        "apt": "한울마을신창비바패밀리1단지",
-        "area": 124.4,
-        "amount": 44500,
-        "prevHigh": 36500
-      }
-    ],
+    "highs": [],
     "actives": [
       {
         "apt": "중흥에스클래스에듀파크",

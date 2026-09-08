@@ -3,7 +3,7 @@
   "region": "인천 강화군",
   "sido": "인천",
   "group": "incheon",
-  "updatedAt": "2026-09-08T20:26:00+09:00",
+  "updatedAt": "2026-09-08T21:18:39+09:00",
   "sparse": false,
   "trades3m": 23,
   "trade": {
@@ -14,7 +14,36 @@
     "m84": 15350,
     "m59": 21000,
     "count": 23,
-    "highs": [],
+    "highs": [
+      {
+        "apt": "이지미래지향",
+        "area": 103.3,
+        "date": "2026-06-12",
+        "amount": 30000,
+        "prevHigh": 27500
+      },
+      {
+        "apt": "세광엔리치빌1차",
+        "area": 85.0,
+        "date": "2026-08-04",
+        "amount": 20000,
+        "prevHigh": 15000
+      },
+      {
+        "apt": "베이힐",
+        "area": 60.2,
+        "date": "2026-07-21",
+        "amount": 18000,
+        "prevHigh": 17200
+      },
+      {
+        "apt": "설호",
+        "area": 75.7,
+        "date": "2026-06-13",
+        "amount": 8500,
+        "prevHigh": 8300
+      }
+    ],
     "actives": [
       {
         "apt": "세광엔리치빌1차",

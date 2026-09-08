@@ -3,7 +3,7 @@
   "region": "경기 용인 처인구",
   "sido": "경기",
   "group": "gyeonggi-gu",
-  "updatedAt": "2026-09-08T20:27:54+09:00",
+  "updatedAt": "2026-09-08T21:20:33+09:00",
   "sparse": false,
   "trades3m": 670,
   "trade": {
@@ -16,34 +16,39 @@
     "count": 670,
     "highs": [
       {
-        "apt": "힐스테이트용인고진역1단지",
+        "apt": "힐스테이트몬테로이3단지",
+        "area": 143.8,
+        "date": "2026-07-30",
+        "amount": 115000,
+        "prevHigh": 54000
+      },
+      {
+        "apt": "용인드마크데시앙",
         "area": 85.0,
-        "amount": 69500,
-        "prevHigh": 69000
+        "date": "2026-06-26",
+        "amount": 76000,
+        "prevHigh": 75000
+      },
+      {
+        "apt": "용인명지대역동원로얄듀크",
+        "area": 85.0,
+        "date": "2026-06-13",
+        "amount": 72000,
+        "prevHigh": 65000
+      },
+      {
+        "apt": "우미린센트럴파크",
+        "area": 85.0,
+        "date": "2026-07-15",
+        "amount": 70000,
+        "prevHigh": 67500
       },
       {
         "apt": "힐스테이트용인고진역2단지",
         "area": 85.0,
+        "date": "2026-08-31",
         "amount": 69000,
-        "prevHigh": 66000
-      },
-      {
-        "apt": "힐스테이트용인고진역1단지",
-        "area": 70.9,
-        "amount": 63000,
-        "prevHigh": 62900
-      },
-      {
-        "apt": "힐스테이트용인고진역1단지",
-        "area": 60.0,
-        "amount": 57000,
-        "prevHigh": 56000
-      },
-      {
-        "apt": "역북지웰푸르지오",
-        "area": 59.9,
-        "amount": 55200,
-        "prevHigh": 53000
+        "prevHigh": 68000
       }
     ],
     "actives": [

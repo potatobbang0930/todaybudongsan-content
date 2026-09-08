@@ -3,7 +3,7 @@
   "region": "서울 양천구",
   "sido": "서울",
   "group": "seoul",
-  "updatedAt": "2026-09-08T20:23:13+09:00",
+  "updatedAt": "2026-09-08T21:15:48+09:00",
   "sparse": false,
   "trades3m": 484,
   "trade": {
@@ -16,34 +16,39 @@
     "count": 484,
     "highs": [
       {
+        "apt": "하이페리온2",
+        "area": 133.4,
+        "date": "2026-08-01",
+        "amount": 352000,
+        "prevHigh": 348000
+      },
+      {
+        "apt": "목동신시가지13",
+        "area": 151.8,
+        "date": "2026-07-04",
+        "amount": 335000,
+        "prevHigh": 258000
+      },
+      {
+        "apt": "목동신시가지7",
+        "area": 101.2,
+        "date": "2026-07-11",
+        "amount": 330000,
+        "prevHigh": 320000
+      },
+      {
         "apt": "목동신시가지1",
         "area": 123.2,
+        "date": "2026-08-24",
         "amount": 327000,
-        "prevHigh": 290000
+        "prevHigh": 297000
       },
       {
-        "apt": "목동신시가지12",
-        "area": 71.6,
-        "amount": 229000,
-        "prevHigh": 199000
-      },
-      {
-        "apt": "목동신시가지11",
-        "area": 66.2,
-        "amount": 205000,
-        "prevHigh": 204500
-      },
-      {
-        "apt": "목동힐스테이트",
-        "area": 60.0,
-        "amount": 186000,
-        "prevHigh": 185000
-      },
-      {
-        "apt": "목동2삼성래미안",
-        "area": 84.7,
-        "amount": 173000,
-        "prevHigh": 157000
+        "apt": "목동신시가지10",
+        "area": 127.2,
+        "date": "2026-07-04",
+        "amount": 310000,
+        "prevHigh": 215000
       }
     ],
     "actives": [

@@ -3,7 +3,7 @@
   "region": "서울 영등포구",
   "sido": "서울",
   "group": "seoul",
-  "updatedAt": "2026-09-08T20:23:45+09:00",
+  "updatedAt": "2026-09-08T21:16:23+09:00",
   "sparse": false,
   "trades3m": 560,
   "trade": {
@@ -16,34 +16,39 @@
     "count": 560,
     "highs": [
       {
-        "apt": "삼익",
-        "area": 123.3,
-        "amount": 299900,
-        "prevHigh": 290000
+        "apt": "삼부",
+        "area": 177.1,
+        "date": "2026-08-06",
+        "amount": 545000,
+        "prevHigh": 450000
       },
       {
-        "apt": "유원제일2차",
-        "area": 123.8,
-        "amount": 228000,
-        "prevHigh": 225000
+        "apt": "롯데캐슬엠파이어",
+        "area": 240.3,
+        "date": "2026-07-02",
+        "amount": 450000,
+        "prevHigh": 245000
       },
       {
-        "apt": "보라매에스케이뷰",
-        "area": 85.0,
-        "amount": 204000,
-        "prevHigh": 202000
+        "apt": "리첸시아",
+        "area": 137.8,
+        "date": "2026-06-26",
+        "amount": 325000,
+        "prevHigh": 271000
       },
       {
-        "apt": "당산반도유보라팰리스",
-        "area": 127.1,
-        "amount": 199500,
-        "prevHigh": 195000
+        "apt": "롯데캐슬아이비",
+        "area": 187.2,
+        "date": "2026-07-31",
+        "amount": 310000,
+        "prevHigh": 261000
       },
       {
-        "apt": "영등포푸르지오",
-        "area": 73.1,
-        "amount": 162000,
-        "prevHigh": 159000
+        "apt": "시범",
+        "area": 79.2,
+        "date": "2026-07-24",
+        "amount": 301000,
+        "prevHigh": 277000
       }
     ],
     "actives": [

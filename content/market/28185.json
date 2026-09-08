@@ -3,7 +3,7 @@
   "region": "인천 연수구",
   "sido": "인천",
   "group": "incheon",
-  "updatedAt": "2026-09-08T20:25:16+09:00",
+  "updatedAt": "2026-09-08T21:17:53+09:00",
   "sparse": false,
   "trades3m": 1309,
   "trade": {
@@ -16,34 +16,39 @@
     "count": 1309,
     "highs": [
       {
-        "apt": "힐스테이트송도더스카이",
-        "area": 120.3,
-        "amount": 188000,
-        "prevHigh": 171500
+        "apt": "송도웰카운티2단지",
+        "area": 182.1,
+        "date": "2026-06-18",
+        "amount": 165000,
+        "prevHigh": 86000
       },
       {
-        "apt": "송도더샵하버뷰(D13)",
-        "area": 116.3,
-        "amount": 129000,
-        "prevHigh": 125000
+        "apt": "더샵송도프라임뷰20BL",
+        "area": 114.3,
+        "date": "2026-07-25",
+        "amount": 150000,
+        "prevHigh": 120000
       },
       {
-        "apt": "송도센트럴파크푸르지오",
-        "area": 84.9,
-        "amount": 126500,
-        "prevHigh": 125000
+        "apt": "더샵송도아크베이",
+        "area": 121.1,
+        "date": "2026-08-17",
+        "amount": 149000,
+        "prevHigh": 137000
       },
       {
-        "apt": "송도더샵퍼스트파크F14BL",
-        "area": 95.9,
-        "amount": 125000,
-        "prevHigh": 124700
+        "apt": "송도더샵파크애비뉴",
+        "area": 84.0,
+        "date": "2026-07-09",
+        "amount": 141000,
+        "prevHigh": 131500
       },
       {
-        "apt": "더샵송도센터니얼",
-        "area": 85.0,
-        "amount": 103800,
-        "prevHigh": 102500
+        "apt": "송도자이더스타",
+        "area": 99.8,
+        "date": "2026-07-13",
+        "amount": 139000,
+        "prevHigh": 114000
       }
     ],
     "actives": [

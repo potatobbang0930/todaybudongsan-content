@@ -3,7 +3,7 @@
   "region": "경기 화성 병점구",
   "sido": "경기",
   "group": "gyeonggi-gu",
-  "updatedAt": "2026-09-08T20:28:32+09:00",
+  "updatedAt": "2026-09-08T21:21:11+09:00",
   "sparse": false,
   "trades3m": 768,
   "trade": {
@@ -14,38 +14,7 @@
     "m84": 44500,
     "m59": 35500,
     "count": 768,
-    "highs": [
-      {
-        "apt": "반정아이파크캐슬5단지",
-        "area": 84.7,
-        "amount": 99000,
-        "prevHigh": 94500
-      },
-      {
-        "apt": "신동탄포레자이",
-        "area": 74.8,
-        "amount": 96000,
-        "prevHigh": 89700
-      },
-      {
-        "apt": "나노시티역롯데캐슬",
-        "area": 85.0,
-        "amount": 95000,
-        "prevHigh": 90000
-      },
-      {
-        "apt": "반정아이파크캐슬4단지",
-        "area": 84.3,
-        "amount": 95000,
-        "prevHigh": 91000
-      },
-      {
-        "apt": "병점역아이파크캐슬",
-        "area": 85.0,
-        "amount": 93800,
-        "prevHigh": 92500
-      }
-    ],
+    "highs": [],
     "actives": [
       {
         "apt": "병점역아이파크캐슬",

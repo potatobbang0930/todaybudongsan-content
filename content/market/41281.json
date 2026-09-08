@@ -3,7 +3,7 @@
   "region": "경기 고양 덕양구",
   "sido": "경기",
   "group": "gyeonggi-gu",
-  "updatedAt": "2026-09-08T20:27:33+09:00",
+  "updatedAt": "2026-09-08T21:20:11+09:00",
   "sparse": false,
   "trades3m": 1297,
   "trade": {
@@ -16,34 +16,39 @@
     "count": 1297,
     "highs": [
       {
-        "apt": "DMC한강숲중흥S-CLASS",
+        "apt": "DMC한강자이더헤리티지",
+        "area": 99.7,
+        "date": "2026-08-24",
+        "amount": 150000,
+        "prevHigh": 139000
+      },
+      {
+        "apt": "DMC한강삼정그린코아더베스트",
+        "area": 91.3,
+        "date": "2026-07-06",
+        "amount": 149000,
+        "prevHigh": 144500
+      },
+      {
+        "apt": "DMC한강에일린의뜰",
+        "area": 107.0,
+        "date": "2026-06-08",
+        "amount": 142000,
+        "prevHigh": 115000
+      },
+      {
+        "apt": "DMC자이더리버",
         "area": 85.0,
-        "amount": 117000,
-        "prevHigh": 114800
+        "date": "2026-08-01",
+        "amount": 136000,
+        "prevHigh": 130500
       },
       {
-        "apt": "지축역센트럴푸르지오",
-        "area": 84.9,
-        "amount": 112500,
-        "prevHigh": 109000
-      },
-      {
-        "apt": "DMC호반베르디움더포레3단지",
-        "area": 84.9,
-        "amount": 94000,
-        "prevHigh": 91500
-      },
-      {
-        "apt": "도래울파크뷰",
-        "area": 84.9,
-        "amount": 87200,
-        "prevHigh": 86500
-      },
-      {
-        "apt": "지축역중흥S-클래스북한산파크뷰",
+        "apt": "DMC한강자이더헤리티지",
         "area": 85.0,
-        "amount": 87000,
-        "prevHigh": 86800
+        "date": "2026-07-15",
+        "amount": 124300,
+        "prevHigh": 124000
       }
     ],
     "actives": [
