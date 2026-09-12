@@ -3,17 +3,17 @@
   "region": "경기 가평군",
   "sido": "경기",
   "group": "gyeonggi-si",
-  "updatedAt": "2026-09-08T21:24:42+09:00",
+  "updatedAt": "2026-09-12T09:29:22+09:00",
   "sparse": false,
-  "trades3m": 57,
+  "trades3m": 58,
   "trade": {
-    "week": "2026-09-1",
+    "week": "2026-09-2",
     "weeks": 4,
     "statsDays": 92,
-    "pyeongPrice": 1088,
-    "m84": 25200,
-    "m59": 24650,
-    "count": 57,
+    "pyeongPrice": 1065,
+    "m84": 25100,
+    "m59": 22800,
+    "count": 58,
     "highs": [
       {
         "apt": "청평삼성쉐르빌",
@@ -44,18 +44,18 @@
         "prevHigh": 29400
       },
       {
-        "apt": "청평세양청마루",
-        "area": 85.0,
-        "date": "2026-07-13",
-        "amount": 28500,
-        "prevHigh": 24000
+        "apt": "가평코아루",
+        "area": 84.8,
+        "date": "2026-07-07",
+        "amount": 29800,
+        "prevHigh": 28000
       }
     ],
     "actives": [
       {
         "apt": "가평자이",
         "count": 7,
-        "median": 30000
+        "median": 37900
       },
       {
         "apt": "e편한세상가평퍼스트원",
@@ -80,25 +80,18 @@
     ]
   },
   "rent": {
-    "week": "2026-09-1",
+    "week": "2026-09-2",
     "weeks": 4,
-    "jeonseM84": 22000,
-    "jeonseM59": null,
-    "monthlyDeposit": 2500,
-    "monthlyRent": 95,
-    "jeonseRatio": 72,
+    "jeonseM84": 20500,
+    "jeonseM59": 19500,
+    "monthlyDeposit": 2000,
+    "monthlyRent": 90,
+    "jeonseRatio": 73,
     "ratioDays": 92,
-    "count": 9
+    "count": 13
   },
   "window": 4,
   "weeks": [
-    {
-      "week": "2026-04-1",
-      "pyeongPrice": 1116,
-      "jeonseRatio": null,
-      "tradeCount": 6,
-      "rentCount": 10
-    },
     {
       "week": "2026-04-2",
       "pyeongPrice": 994,
@@ -223,7 +216,7 @@
       "pyeongPrice": 1015,
       "jeonseRatio": 75,
       "tradeCount": 3,
-      "rentCount": 7
+      "rentCount": 8
     },
     {
       "week": "2026-07-5",
@@ -237,7 +230,7 @@
       "pyeongPrice": 1062,
       "jeonseRatio": 74,
       "tradeCount": 4,
-      "rentCount": 5
+      "rentCount": 6
     },
     {
       "week": "2026-08-2",
@@ -258,7 +251,7 @@
       "pyeongPrice": 1266,
       "jeonseRatio": 74,
       "tradeCount": 0,
-      "rentCount": 3
+      "rentCount": 6
     },
     {
       "week": "2026-08-5",
@@ -269,10 +262,17 @@
     },
     {
       "week": "2026-09-1",
-      "pyeongPrice": 1215,
-      "jeonseRatio": 72,
-      "tradeCount": 2,
-      "rentCount": 2
+      "pyeongPrice": 1148,
+      "jeonseRatio": 73,
+      "tradeCount": 5,
+      "rentCount": 5
+    },
+    {
+      "week": "2026-09-2",
+      "pyeongPrice": 1037,
+      "jeonseRatio": 73,
+      "tradeCount": 1,
+      "rentCount": 1
     }
   ]
 }

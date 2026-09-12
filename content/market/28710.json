@@ -3,7 +3,7 @@
   "region": "인천 강화군",
   "sido": "인천",
   "group": "incheon",
-  "updatedAt": "2026-09-08T21:18:39+09:00",
+  "updatedAt": "2026-09-12T09:11:24+09:00",
   "sparse": false,
   "trades3m": 23,
   "trade": {
@@ -73,25 +73,18 @@
     ]
   },
   "rent": {
-    "week": "2026-09-1",
+    "week": "2026-09-2",
     "weeks": 4,
     "jeonseM84": null,
     "jeonseM59": null,
     "monthlyDeposit": 2000,
-    "monthlyRent": 70,
+    "monthlyRent": 68,
     "jeonseRatio": 82,
     "ratioDays": 92,
-    "count": 11
+    "count": 10
   },
   "window": 4,
   "weeks": [
-    {
-      "week": "2026-04-1",
-      "pyeongPrice": null,
-      "jeonseRatio": null,
-      "tradeCount": 2,
-      "rentCount": 2
-    },
     {
       "week": "2026-04-2",
       "pyeongPrice": null,
@@ -251,7 +244,7 @@
       "pyeongPrice": 778,
       "jeonseRatio": 88,
       "tradeCount": 1,
-      "rentCount": 4
+      "rentCount": 5
     },
     {
       "week": "2026-08-5",
@@ -265,6 +258,13 @@
       "pyeongPrice": null,
       "jeonseRatio": 82,
       "tradeCount": 1,
+      "rentCount": 2
+    },
+    {
+      "week": "2026-09-2",
+      "pyeongPrice": null,
+      "jeonseRatio": 82,
+      "tradeCount": 0,
       "rentCount": 1
     }
   ]
