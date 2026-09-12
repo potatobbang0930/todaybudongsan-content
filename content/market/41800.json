@@ -3,17 +3,17 @@
   "region": "경기 연천군",
   "sido": "경기",
   "group": "gyeonggi-si",
-  "updatedAt": "2026-09-08T21:24:36+09:00",
+  "updatedAt": "2026-09-12T09:29:10+09:00",
   "sparse": false,
-  "trades3m": 33,
+  "trades3m": 30,
   "trade": {
-    "week": "2026-09-1",
+    "week": "2026-09-2",
     "weeks": 4,
     "statsDays": 92,
-    "pyeongPrice": 636,
+    "pyeongPrice": 555,
     "m84": 23500,
-    "m59": 9950,
-    "count": 33,
+    "m59": 9500,
+    "count": 30,
     "highs": [
       {
         "apt": "전곡제일풍경채리버파크",
@@ -23,6 +23,13 @@
         "prevHigh": 32000
       },
       {
+        "apt": "전곡예일세띠앙",
+        "area": 116.8,
+        "date": "2026-09-01",
+        "amount": 24900,
+        "prevHigh": 14900
+      },
+      {
         "apt": "연천전곡코아루더클래스",
         "area": 75.0,
         "date": "2026-08-15",
@@ -30,47 +37,40 @@
         "prevHigh": 21500
       },
       {
-        "apt": "전곡예일세띠앙",
-        "area": 84.9,
-        "date": "2026-06-11",
-        "amount": 21200,
-        "prevHigh": 17200
+        "apt": "가람채아파트",
+        "area": 58.7,
+        "date": "2026-06-30",
+        "amount": 10100,
+        "prevHigh": 7500
       },
       {
-        "apt": "전곡석미한아름",
-        "area": 84.6,
-        "date": "2026-06-11",
-        "amount": 19500,
-        "prevHigh": 19000
-      },
-      {
-        "apt": "명정",
-        "area": 60.0,
-        "date": "2026-06-10",
-        "amount": 11000,
-        "prevHigh": 9500
+        "apt": "청와",
+        "area": 66.5,
+        "date": "2026-08-26",
+        "amount": 9000,
+        "prevHigh": 6200
       }
     ],
     "actives": [
       {
+        "apt": "전곡석미한아름",
+        "count": 4,
+        "median": 11650
+      },
+      {
         "apt": "조흥",
-        "count": 5,
-        "median": 6000
+        "count": 4,
+        "median": 6875
       },
       {
         "apt": "e편한세상연천웰스하임",
-        "count": 4,
-        "median": 29575
-      },
-      {
-        "apt": "전곡예일세띠앙",
-        "count": 4,
-        "median": 18775
-      },
-      {
-        "apt": "전곡석미한아름",
         "count": 3,
-        "median": 14300
+        "median": 30000
+      },
+      {
+        "apt": "가람채아파트",
+        "count": 2,
+        "median": 8750
       },
       {
         "apt": "강민",
@@ -80,25 +80,18 @@
     ]
   },
   "rent": {
-    "week": "2026-08-5",
+    "week": "2026-09-2",
     "weeks": 4,
     "jeonseM84": null,
     "jeonseM59": null,
-    "monthlyDeposit": 500,
+    "monthlyDeposit": 750,
     "monthlyRent": 40,
     "jeonseRatio": 61,
     "ratioDays": 92,
-    "count": 12
+    "count": 6
   },
   "window": 4,
   "weeks": [
-    {
-      "week": "2026-04-1",
-      "pyeongPrice": null,
-      "jeonseRatio": null,
-      "tradeCount": 2,
-      "rentCount": 8
-    },
     {
       "week": "2026-04-2",
       "pyeongPrice": 965,
@@ -244,14 +237,14 @@
       "pyeongPrice": 503,
       "jeonseRatio": 73,
       "tradeCount": 2,
-      "rentCount": 3
+      "rentCount": 4
     },
     {
       "week": "2026-08-3",
       "pyeongPrice": 540,
       "jeonseRatio": 73,
       "tradeCount": 1,
-      "rentCount": 6
+      "rentCount": 7
     },
     {
       "week": "2026-08-4",
@@ -262,17 +255,24 @@
     },
     {
       "week": "2026-08-5",
-      "pyeongPrice": 503,
+      "pyeongPrice": 540,
       "jeonseRatio": null,
-      "tradeCount": 1,
+      "tradeCount": 2,
       "rentCount": 1
     },
     {
       "week": "2026-09-1",
-      "pyeongPrice": 586,
+      "pyeongPrice": 467,
+      "jeonseRatio": 61,
+      "tradeCount": 4,
+      "rentCount": 1
+    },
+    {
+      "week": "2026-09-2",
+      "pyeongPrice": 457,
       "jeonseRatio": 61,
       "tradeCount": 2,
-      "rentCount": 0
+      "rentCount": 2
     }
   ]
 }
