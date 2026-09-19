@@ -1,125 +1,13 @@
 {
-  "date": "2026-09-12",
-  "updatedAt": "2026-09-12T08:58:18+09:00",
+  "date": "2026-09-19",
+  "updatedAt": "2026-09-19T08:59:12+09:00",
   "area": [
     "서울",
     "경기",
     "인천"
   ],
-  "count": 11,
+  "count": 10,
   "items": [
-    {
-      "name": "의정부우정 A2블록 공공분양주택(본청약)",
-      "area": "경기",
-      "address": "경기도 의정부시 녹양동 일원 의정부우정 공공주택지구 내 A-2블록",
-      "households": 463,
-      "receiptBegin": "2026-09-07",
-      "receiptEnd": "2026-09-17",
-      "state": "open",
-      "dday": 5,
-      "announceDate": "2026-08-26",
-      "winnerDate": "2026-10-08",
-      "specialBegin": null,
-      "specialEnd": null,
-      "rank1": {
-        "local": "2026-09-07",
-        "other": "2026-09-07",
-        "gyeonggi": null
-      },
-      "rank2": {
-        "local": "2026-09-16",
-        "other": "2026-09-16",
-        "gyeonggi": null
-      },
-      "contractBegin": "2026-12-10",
-      "contractEnd": "2026-12-15",
-      "houseType": "국민",
-      "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000409&pblancNo=2026000409"
-    },
-    {
-      "name": "더샵 여주역더퍼스트",
-      "area": "경기",
-      "address": "경기도 여주시 홍문동 332-2번지 일원",
-      "households": 696,
-      "receiptBegin": "2026-09-14",
-      "receiptEnd": "2026-09-16",
-      "state": "upcoming",
-      "dday": 2,
-      "announceDate": "2026-09-03",
-      "winnerDate": "2026-09-22",
-      "specialBegin": "2026-09-14",
-      "specialEnd": "2026-09-14",
-      "rank1": {
-        "local": "2026-09-15",
-        "other": "2026-09-15",
-        "gyeonggi": null
-      },
-      "rank2": {
-        "local": "2026-09-16",
-        "other": "2026-09-16",
-        "gyeonggi": null
-      },
-      "contractBegin": "2026-10-06",
-      "contractEnd": "2026-10-08",
-      "houseType": "민영",
-      "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000394&pblancNo=2026000394"
-    },
-    {
-      "name": "양주회천지구 A-26블록 공공분양주택",
-      "area": "경기",
-      "address": "경기도 양주시 덕정동 일원 양주신도시 택지개발지구 내 A-26블록",
-      "households": 792,
-      "receiptBegin": "2026-09-14",
-      "receiptEnd": "2026-09-17",
-      "state": "upcoming",
-      "dday": 2,
-      "announceDate": "2026-08-27",
-      "winnerDate": "2026-10-07",
-      "specialBegin": null,
-      "specialEnd": null,
-      "rank1": {
-        "local": "2026-09-14",
-        "other": "2026-09-14",
-        "gyeonggi": "2026-09-14"
-      },
-      "rank2": {
-        "local": "2026-09-16",
-        "other": "2026-09-16",
-        "gyeonggi": "2026-09-16"
-      },
-      "contractBegin": "2026-12-10",
-      "contractEnd": "2026-12-15",
-      "houseType": "국민",
-      "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000416&pblancNo=2026000416"
-    },
-    {
-      "name": "시흥 은계 에피트(조합원 취소분)",
-      "area": "경기",
-      "address": "경기도 시흥시 은행동 289-31번지 일원",
-      "households": 24,
-      "receiptBegin": "2026-09-15",
-      "receiptEnd": "2026-09-17",
-      "state": "upcoming",
-      "dday": 3,
-      "announceDate": "2026-09-04",
-      "winnerDate": "2026-09-23",
-      "specialBegin": "2026-09-15",
-      "specialEnd": "2026-09-15",
-      "rank1": {
-        "local": "2026-09-16",
-        "other": "2026-09-16",
-        "gyeonggi": null
-      },
-      "rank2": {
-        "local": "2026-09-17",
-        "other": "2026-09-17",
-        "gyeonggi": null
-      },
-      "contractBegin": "2026-10-04",
-      "contractEnd": "2026-10-06",
-      "houseType": "민영",
-      "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000393&pblancNo=2026000393"
-    },
     {
       "name": "인천계양지구 A6블록 공공분양주택(본청약)",
       "area": "인천",
@@ -127,8 +15,8 @@
       "households": 663,
       "receiptBegin": "2026-09-17",
       "receiptEnd": "2026-10-02",
-      "state": "upcoming",
-      "dday": 5,
+      "state": "open",
+      "dday": 13,
       "announceDate": "2026-08-31",
       "winnerDate": "2026-10-21",
       "specialBegin": null,
@@ -156,7 +44,7 @@
       "receiptBegin": "2026-09-21",
       "receiptEnd": "2026-09-28",
       "state": "upcoming",
-      "dday": 9,
+      "dday": 2,
       "announceDate": "2026-09-11",
       "winnerDate": "2026-10-02",
       "specialBegin": "2026-09-21",
@@ -184,7 +72,7 @@
       "receiptBegin": "2026-09-21",
       "receiptEnd": "2026-09-23",
       "state": "upcoming",
-      "dday": 9,
+      "dday": 2,
       "announceDate": "2026-09-09",
       "winnerDate": "2026-10-06",
       "specialBegin": "2026-09-21",
@@ -212,7 +100,7 @@
       "receiptBegin": "2026-09-21",
       "receiptEnd": "2026-09-23",
       "state": "upcoming",
-      "dday": 9,
+      "dday": 2,
       "announceDate": "2026-09-10",
       "winnerDate": "2026-10-08",
       "specialBegin": "2026-09-21",
@@ -240,7 +128,7 @@
       "receiptBegin": "2026-09-21",
       "receiptEnd": "2026-09-23",
       "state": "upcoming",
-      "dday": 9,
+      "dday": 2,
       "announceDate": "2026-09-11",
       "winnerDate": "2026-10-01",
       "specialBegin": "2026-09-21",
@@ -268,7 +156,7 @@
       "receiptBegin": "2026-09-21",
       "receiptEnd": "2026-09-23",
       "state": "upcoming",
-      "dday": 9,
+      "dday": 2,
       "announceDate": "2026-09-11",
       "winnerDate": "2026-10-01",
       "specialBegin": "2026-09-21",
@@ -296,7 +184,7 @@
       "receiptBegin": "2026-09-21",
       "receiptEnd": "2026-09-23",
       "state": "upcoming",
-      "dday": 9,
+      "dday": 2,
       "announceDate": "2026-09-11",
       "winnerDate": "2026-10-02",
       "specialBegin": "2026-09-21",
@@ -315,6 +203,90 @@
       "contractEnd": "2026-11-11",
       "houseType": "국민",
       "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000438&pblancNo=2026000438"
+    },
+    {
+      "name": "숭의역 노르웨이숲 더 스카이",
+      "area": "인천",
+      "address": "인천광역시 미추홀구 숭의동 350-1번지 일원",
+      "households": 35,
+      "receiptBegin": "2026-09-28",
+      "receiptEnd": "2026-09-30",
+      "state": "upcoming",
+      "dday": 9,
+      "announceDate": "2026-09-18",
+      "winnerDate": "2026-10-07",
+      "specialBegin": "2026-09-28",
+      "specialEnd": "2026-09-28",
+      "rank1": {
+        "local": "2026-09-29",
+        "other": "2026-09-29",
+        "gyeonggi": null
+      },
+      "rank2": {
+        "local": "2026-09-30",
+        "other": "2026-09-30",
+        "gyeonggi": null
+      },
+      "contractBegin": "2026-10-19",
+      "contractEnd": "2026-10-21",
+      "houseType": "민영",
+      "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000448&pblancNo=2026000448"
+    },
+    {
+      "name": "시흥하중지구 A-4블록 신혼희망타운(공공분양) 추가입주자모집",
+      "area": "경기",
+      "address": "경기도 시흥시 하중동 일원 (시흥하중 공공주택지구 내 A-4블록)",
+      "households": 61,
+      "receiptBegin": "2026-09-28",
+      "receiptEnd": "2026-09-29",
+      "state": "upcoming",
+      "dday": 9,
+      "announceDate": "2026-09-18",
+      "winnerDate": "2026-10-08",
+      "specialBegin": null,
+      "specialEnd": null,
+      "rank1": {
+        "local": "2026-09-28",
+        "other": "2026-09-28",
+        "gyeonggi": null
+      },
+      "rank2": {
+        "local": "2026-09-29",
+        "other": "2026-09-29",
+        "gyeonggi": null
+      },
+      "contractBegin": "2026-12-29",
+      "contractEnd": "2026-12-30",
+      "houseType": "국민",
+      "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026820011&pblancNo=2026820011"
+    },
+    {
+      "name": "광명 시티프라디움 에듀하임",
+      "area": "경기",
+      "address": "경기도 광명시 소하동 광명 구름산지구 도시개발사업지구 A6BL",
+      "households": 426,
+      "receiptBegin": "2026-09-29",
+      "receiptEnd": "2026-10-02",
+      "state": "upcoming",
+      "dday": 10,
+      "announceDate": "2026-09-18",
+      "winnerDate": "2026-10-12",
+      "specialBegin": "2026-09-29",
+      "specialEnd": "2026-09-29",
+      "rank1": {
+        "local": "2026-09-30",
+        "other": "2026-10-01",
+        "gyeonggi": null
+      },
+      "rank2": {
+        "local": "2026-10-02",
+        "other": "2026-10-02",
+        "gyeonggi": null
+      },
+      "contractBegin": "2026-10-24",
+      "contractEnd": "2026-10-26",
+      "houseType": "민영",
+      "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000453&pblancNo=2026000453"
     }
   ]
 }
