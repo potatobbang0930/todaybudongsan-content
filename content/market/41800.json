@@ -3,17 +3,17 @@
   "region": "경기 연천군",
   "sido": "경기",
   "group": "gyeonggi-si",
-  "updatedAt": "2026-09-12T09:29:10+09:00",
+  "updatedAt": "2026-09-19T09:25:53+09:00",
   "sparse": false,
-  "trades3m": 30,
+  "trades3m": 28,
   "trade": {
     "week": "2026-09-2",
     "weeks": 4,
     "statsDays": 92,
     "pyeongPrice": 555,
-    "m84": 23500,
-    "m59": 9500,
-    "count": 30,
+    "m84": 24250,
+    "m59": 7700,
+    "count": 28,
     "highs": [
       {
         "apt": "전곡제일풍경채리버파크",
@@ -60,7 +60,7 @@
       {
         "apt": "조흥",
         "count": 4,
-        "median": 6875
+        "median": 5000
       },
       {
         "apt": "e편한세상연천웰스하임",
@@ -73,9 +73,9 @@
         "median": 8750
       },
       {
-        "apt": "강민",
+        "apt": "백의리아느칸빌",
         "count": 2,
-        "median": 4775
+        "median": 6500
       }
     ]
   },
@@ -84,11 +84,11 @@
     "weeks": 4,
     "jeonseM84": null,
     "jeonseM59": null,
-    "monthlyDeposit": 750,
-    "monthlyRent": 40,
+    "monthlyDeposit": 1000,
+    "monthlyRent": 50,
     "jeonseRatio": 61,
     "ratioDays": 92,
-    "count": 6
+    "count": 10
   },
   "window": 4,
   "weeks": [
@@ -244,7 +244,7 @@
       "pyeongPrice": 540,
       "jeonseRatio": 73,
       "tradeCount": 1,
-      "rentCount": 7
+      "rentCount": 9
     },
     {
       "week": "2026-08-4",
@@ -258,21 +258,21 @@
       "pyeongPrice": 540,
       "jeonseRatio": null,
       "tradeCount": 2,
-      "rentCount": 1
+      "rentCount": 2
     },
     {
       "week": "2026-09-1",
-      "pyeongPrice": 467,
+      "pyeongPrice": 457,
       "jeonseRatio": 61,
-      "tradeCount": 4,
-      "rentCount": 1
+      "tradeCount": 5,
+      "rentCount": 3
     },
     {
       "week": "2026-09-2",
-      "pyeongPrice": 457,
+      "pyeongPrice": 447,
       "jeonseRatio": 61,
       "tradeCount": 2,
-      "rentCount": 2
+      "rentCount": 3
     }
   ]
 }
