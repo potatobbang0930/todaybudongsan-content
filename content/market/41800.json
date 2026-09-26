@@ -3,17 +3,17 @@
   "region": "경기 연천군",
   "sido": "경기",
   "group": "gyeonggi-si",
-  "updatedAt": "2026-09-19T09:25:53+09:00",
+  "updatedAt": "2026-09-26T09:50:16+09:00",
   "sparse": false,
-  "trades3m": 28,
+  "trades3m": 27,
   "trade": {
     "week": "2026-09-2",
     "weeks": 4,
     "statsDays": 92,
-    "pyeongPrice": 555,
+    "pyeongPrice": 540,
     "m84": 24250,
     "m59": 7700,
-    "count": 28,
+    "count": 27,
     "highs": [
       {
         "apt": "전곡제일풍경채리버파크",
@@ -64,7 +64,7 @@
       },
       {
         "apt": "e편한세상연천웰스하임",
-        "count": 3,
+        "count": 2,
         "median": 30000
       },
       {
@@ -80,25 +80,18 @@
     ]
   },
   "rent": {
-    "week": "2026-09-2",
+    "week": "2026-09-3",
     "weeks": 4,
-    "jeonseM84": null,
+    "jeonseM84": 11000,
     "jeonseM59": null,
-    "monthlyDeposit": 1000,
-    "monthlyRent": 50,
-    "jeonseRatio": 61,
+    "monthlyDeposit": 3000,
+    "monthlyRent": 90,
+    "jeonseRatio": 62,
     "ratioDays": 92,
-    "count": 10
+    "count": 9
   },
   "window": 4,
   "weeks": [
-    {
-      "week": "2026-04-2",
-      "pyeongPrice": 965,
-      "jeonseRatio": null,
-      "tradeCount": 7,
-      "rentCount": 1
-    },
     {
       "week": "2026-04-3",
       "pyeongPrice": 956,
@@ -244,7 +237,7 @@
       "pyeongPrice": 540,
       "jeonseRatio": 73,
       "tradeCount": 1,
-      "rentCount": 9
+      "rentCount": 10
     },
     {
       "week": "2026-08-4",
@@ -255,24 +248,31 @@
     },
     {
       "week": "2026-08-5",
-      "pyeongPrice": 540,
+      "pyeongPrice": 631,
       "jeonseRatio": null,
-      "tradeCount": 2,
+      "tradeCount": 3,
       "rentCount": 2
     },
     {
       "week": "2026-09-1",
-      "pyeongPrice": 457,
+      "pyeongPrice": 467,
       "jeonseRatio": 61,
       "tradeCount": 5,
       "rentCount": 3
     },
     {
       "week": "2026-09-2",
-      "pyeongPrice": 447,
+      "pyeongPrice": 457,
       "jeonseRatio": 61,
       "tradeCount": 2,
       "rentCount": 3
+    },
+    {
+      "week": "2026-09-3",
+      "pyeongPrice": 567,
+      "jeonseRatio": 62,
+      "tradeCount": 0,
+      "rentCount": 1
     }
   ]
 }

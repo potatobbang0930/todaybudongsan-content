@@ -8,10 +8,18 @@
 # (8/12에 `.go.kr` 이 막힌다고 적어뒀던 것은 지금 유효하지 않다)
 name: 주간 수집 (시세·청약)
 
+# 🔴 2026-09-27: 주말 예약을 껐다. 사용자 요청.
+#    수집 자체는 3주 연속(9/12·9/19·9/26) 정상이었는데 마지막 `gh pr create` 가
+#    "GitHub Actions is not permitted to create or approve pull requests" 로 막혀
+#    매주 run 이 실패로 끝났다. 저장소 설정(Workflow permissions)을 켜면 풀리지만,
+#    그때까지 매주 실패 메일이 오고 사람이 브랜치를 찾아 PR 을 열어야 했다.
+#    일일 수집도 2026-09-01 에 같은 이유(러너 환경 문제)로 예약을 껐다.
+#
+#    ⚠️ 이제 토요일에 아무것도 돌지 않는다. 시세·청약은 사람이 로컬에서 받는다
+#       (로컬은 429 없이 4주 내내 성공했다). 수동 실행은 아래 workflow_dispatch 로 남긴다.
 on:
-  schedule:
-    # 토요일 07:00 KST = 금요일 22:00 UTC
-    - cron: '0 22 * * 5'
+  # schedule:
+  #   - cron: '0 22 * * 5'   # 토요일 07:00 KST
   workflow_dispatch:
 
 # 같은 워크플로가 겹쳐 돌면 PR 이 서로를 덮는다
