@@ -3,17 +3,17 @@
   "region": "경기 안성시",
   "sido": "경기",
   "group": "gyeonggi-si",
-  "updatedAt": "2026-09-19T09:24:19+09:00",
+  "updatedAt": "2026-09-26T09:48:15+09:00",
   "sparse": false,
-  "trades3m": 479,
+  "trades3m": 464,
   "trade": {
-    "week": "2026-09-3",
+    "week": "2026-09-4",
     "weeks": 4,
     "statsDays": 92,
-    "pyeongPrice": 817,
-    "m84": 24400,
-    "m59": 14500,
-    "count": 479,
+    "pyeongPrice": 824,
+    "m84": 24600,
+    "m59": 14200,
+    "count": 464,
     "highs": [
       {
         "apt": "안성우방아이유쉘에스티지",
@@ -54,51 +54,44 @@
     "actives": [
       {
         "apt": "주은풍림",
-        "count": 44,
+        "count": 41,
         "median": 11500
       },
       {
         "apt": "주은청설",
-        "count": 30,
+        "count": 27,
         "median": 8500
       },
       {
         "apt": "삼정그린코아더베스트",
-        "count": 24,
-        "median": 29150
+        "count": 23,
+        "median": 31000
       },
       {
         "apt": "쌍용더플래티넘프리미어",
-        "count": 21,
-        "median": 35300
+        "count": 18,
+        "median": 35750
       },
       {
         "apt": "안성롯데캐슬",
-        "count": 21,
-        "median": 22200
+        "count": 18,
+        "median": 21500
       }
     ]
   },
   "rent": {
-    "week": "2026-09-3",
+    "week": "2026-09-4",
     "weeks": 4,
     "jeonseM84": 20000,
-    "jeonseM59": 14638,
-    "monthlyDeposit": 1994,
-    "monthlyRent": 14,
-    "jeonseRatio": 82,
+    "jeonseM59": 13000,
+    "monthlyDeposit": 1846,
+    "monthlyRent": 16,
+    "jeonseRatio": 80,
     "ratioDays": 92,
-    "count": 507
+    "count": 501
   },
   "window": 4,
   "weeks": [
-    {
-      "week": "2026-04-3",
-      "pyeongPrice": 790,
-      "jeonseRatio": 83,
-      "tradeCount": 45,
-      "rentCount": 112
-    },
     {
       "week": "2026-04-4",
       "pyeongPrice": 797,
@@ -139,7 +132,7 @@
       "pyeongPrice": 875,
       "jeonseRatio": 84,
       "tradeCount": 37,
-      "rentCount": 96
+      "rentCount": 97
     },
     {
       "week": "2026-05-5",
@@ -195,7 +188,7 @@
       "pyeongPrice": 830,
       "jeonseRatio": 83,
       "tradeCount": 29,
-      "rentCount": 98
+      "rentCount": 99
     },
     {
       "week": "2026-07-3",
@@ -209,7 +202,7 @@
       "pyeongPrice": 833,
       "jeonseRatio": 83,
       "tradeCount": 30,
-      "rentCount": 123
+      "rentCount": 124
     },
     {
       "week": "2026-07-5",
@@ -223,56 +216,63 @@
       "pyeongPrice": 824,
       "jeonseRatio": 83,
       "tradeCount": 32,
-      "rentCount": 117
+      "rentCount": 119
     },
     {
       "week": "2026-08-2",
       "pyeongPrice": 790,
       "jeonseRatio": 83,
       "tradeCount": 51,
-      "rentCount": 107
+      "rentCount": 108
     },
     {
       "week": "2026-08-3",
       "pyeongPrice": 778,
       "jeonseRatio": 82,
       "tradeCount": 33,
-      "rentCount": 106
+      "rentCount": 108
     },
     {
       "week": "2026-08-4",
       "pyeongPrice": 797,
       "jeonseRatio": 81,
       "tradeCount": 43,
-      "rentCount": 107
+      "rentCount": 115
     },
     {
       "week": "2026-08-5",
       "pyeongPrice": 784,
       "jeonseRatio": 80,
       "tradeCount": 10,
-      "rentCount": 85
+      "rentCount": 88
     },
     {
       "week": "2026-09-1",
-      "pyeongPrice": 820,
+      "pyeongPrice": 823,
       "jeonseRatio": 81,
-      "tradeCount": 32,
-      "rentCount": 203
+      "tradeCount": 34,
+      "rentCount": 209
     },
     {
       "week": "2026-09-2",
-      "pyeongPrice": 840,
+      "pyeongPrice": 837,
       "jeonseRatio": 81,
-      "tradeCount": 43,
-      "rentCount": 146
+      "tradeCount": 46,
+      "rentCount": 158
     },
     {
       "week": "2026-09-3",
-      "pyeongPrice": 865,
-      "jeonseRatio": 82,
-      "tradeCount": 16,
-      "rentCount": 73
+      "pyeongPrice": 900,
+      "jeonseRatio": 81,
+      "tradeCount": 30,
+      "rentCount": 118
+    },
+    {
+      "week": "2026-09-4",
+      "pyeongPrice": 873,
+      "jeonseRatio": 80,
+      "tradeCount": 4,
+      "rentCount": 16
     }
   ]
 }

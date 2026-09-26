@@ -1,41 +1,13 @@
 {
-  "date": "2026-09-19",
-  "updatedAt": "2026-09-19T08:59:12+09:00",
+  "date": "2026-09-26",
+  "updatedAt": "2026-09-26T09:25:49+09:00",
   "area": [
     "서울",
     "경기",
     "인천"
   ],
-  "count": 10,
+  "count": 5,
   "items": [
-    {
-      "name": "인천계양지구 A6블록 공공분양주택(본청약)",
-      "area": "인천",
-      "address": "인천광역시 계양구 귤현동, 동양동, 박촌동, 병방동, 상야동 및 경기도 부천시 대장동, 서울특별시 강서구 오곡동 일원 인천계양 테크노밸리 공공주택지구 내 A6블록",
-      "households": 663,
-      "receiptBegin": "2026-09-17",
-      "receiptEnd": "2026-10-02",
-      "state": "open",
-      "dday": 13,
-      "announceDate": "2026-08-31",
-      "winnerDate": "2026-10-21",
-      "specialBegin": null,
-      "specialEnd": null,
-      "rank1": {
-        "local": "2026-09-17",
-        "other": "2026-09-17",
-        "gyeonggi": null
-      },
-      "rank2": {
-        "local": "2026-10-01",
-        "other": "2026-10-01",
-        "gyeonggi": null
-      },
-      "contractBegin": "2026-12-15",
-      "contractEnd": "2026-12-18",
-      "houseType": "국민",
-      "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000414&pblancNo=2026000414"
-    },
     {
       "name": "더샵 분당하이스트",
       "area": "경기",
@@ -43,7 +15,7 @@
       "households": 143,
       "receiptBegin": "2026-09-21",
       "receiptEnd": "2026-09-28",
-      "state": "upcoming",
+      "state": "open",
       "dday": 2,
       "announceDate": "2026-09-11",
       "winnerDate": "2026-10-02",
@@ -65,144 +37,32 @@
       "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000103&pblancNo=2026000103"
     },
     {
-      "name": "오남역 서희스타힐스 여의재 3단지 (조합원 취소분)",
-      "area": "경기",
-      "address": "경기도 남양주시 오남읍 양지리 186-10번지 일원",
-      "households": 133,
-      "receiptBegin": "2026-09-21",
-      "receiptEnd": "2026-09-23",
-      "state": "upcoming",
-      "dday": 2,
-      "announceDate": "2026-09-09",
-      "winnerDate": "2026-10-06",
-      "specialBegin": "2026-09-21",
-      "specialEnd": "2026-09-21",
+      "name": "인천계양지구 A6블록 공공분양주택(본청약)",
+      "area": "인천",
+      "address": "인천광역시 계양구 귤현동, 동양동, 박촌동, 병방동, 상야동 및 경기도 부천시 대장동, 서울특별시 강서구 오곡동 일원 인천계양 테크노밸리 공공주택지구 내 A6블록",
+      "households": 663,
+      "receiptBegin": "2026-09-17",
+      "receiptEnd": "2026-10-02",
+      "state": "open",
+      "dday": 6,
+      "announceDate": "2026-08-31",
+      "winnerDate": "2026-10-21",
+      "specialBegin": null,
+      "specialEnd": null,
       "rank1": {
-        "local": "2026-09-22",
-        "other": "2026-09-22",
+        "local": "2026-09-17",
+        "other": "2026-09-17",
         "gyeonggi": null
       },
       "rank2": {
-        "local": "2026-09-23",
-        "other": "2026-09-23",
+        "local": "2026-10-01",
+        "other": "2026-10-01",
         "gyeonggi": null
       },
-      "contractBegin": "2026-10-17",
-      "contractEnd": "2026-10-19",
-      "houseType": "민영",
-      "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000431&pblancNo=2026000431"
-    },
-    {
-      "name": "중동역 다채로움 더원",
-      "area": "경기",
-      "address": "경기도 부천시 소사구 송내동 365-1번지 일원",
-      "households": 39,
-      "receiptBegin": "2026-09-21",
-      "receiptEnd": "2026-09-23",
-      "state": "upcoming",
-      "dday": 2,
-      "announceDate": "2026-09-10",
-      "winnerDate": "2026-10-08",
-      "specialBegin": "2026-09-21",
-      "specialEnd": "2026-09-21",
-      "rank1": {
-        "local": "2026-09-22",
-        "other": "2026-09-22",
-        "gyeonggi": null
-      },
-      "rank2": {
-        "local": "2026-09-23",
-        "other": "2026-09-23",
-        "gyeonggi": null
-      },
-      "contractBegin": "2026-10-19",
-      "contractEnd": "2026-10-21",
-      "houseType": "민영",
-      "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000314&pblancNo=2026000314"
-    },
-    {
-      "name": "화서역 호수공원 아너스빌",
-      "area": "경기",
-      "address": "경기도 수원시 권선구 서둔동 212-1번지 일원",
-      "households": 476,
-      "receiptBegin": "2026-09-21",
-      "receiptEnd": "2026-09-23",
-      "state": "upcoming",
-      "dday": 2,
-      "announceDate": "2026-09-11",
-      "winnerDate": "2026-10-01",
-      "specialBegin": "2026-09-21",
-      "specialEnd": "2026-09-21",
-      "rank1": {
-        "local": "2026-09-22",
-        "other": "2026-09-22",
-        "gyeonggi": null
-      },
-      "rank2": {
-        "local": "2026-09-23",
-        "other": "2026-09-23",
-        "gyeonggi": null
-      },
-      "contractBegin": "2026-10-12",
-      "contractEnd": "2026-10-14",
-      "houseType": "민영",
-      "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000449&pblancNo=2026000449"
-    },
-    {
-      "name": "힐스테이트 고덕엘리스트 A12BL 공공분양주택",
-      "area": "경기",
-      "address": "경기도 평택시 고덕동 고덕면 일원(평택고덕국제화계획지구 A12BL)",
-      "households": 942,
-      "receiptBegin": "2026-09-21",
-      "receiptEnd": "2026-09-23",
-      "state": "upcoming",
-      "dday": 2,
-      "announceDate": "2026-09-11",
-      "winnerDate": "2026-10-01",
-      "specialBegin": "2026-09-21",
-      "specialEnd": "2026-09-21",
-      "rank1": {
-        "local": "2026-09-22",
-        "other": "2026-09-22",
-        "gyeonggi": "2026-09-22"
-      },
-      "rank2": {
-        "local": "2026-09-23",
-        "other": "2026-09-23",
-        "gyeonggi": "2026-09-23"
-      },
-      "contractBegin": "2026-11-09",
-      "contractEnd": "2026-11-11",
+      "contractBegin": "2026-12-15",
+      "contractEnd": "2026-12-18",
       "houseType": "국민",
-      "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000437&pblancNo=2026000437"
-    },
-    {
-      "name": "힐스테이트 고덕엘리스트 A65BL 공공분양주택",
-      "area": "경기",
-      "address": "경기도 평택시 고덕동 고덕면 일원(평택고덕국제화계획지구 A65BL)",
-      "households": 837,
-      "receiptBegin": "2026-09-21",
-      "receiptEnd": "2026-09-23",
-      "state": "upcoming",
-      "dday": 2,
-      "announceDate": "2026-09-11",
-      "winnerDate": "2026-10-02",
-      "specialBegin": "2026-09-21",
-      "specialEnd": "2026-09-21",
-      "rank1": {
-        "local": "2026-09-22",
-        "other": "2026-09-22",
-        "gyeonggi": "2026-09-22"
-      },
-      "rank2": {
-        "local": "2026-09-23",
-        "other": "2026-09-23",
-        "gyeonggi": "2026-09-23"
-      },
-      "contractBegin": "2026-11-09",
-      "contractEnd": "2026-11-11",
-      "houseType": "국민",
-      "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000438&pblancNo=2026000438"
+      "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000414&pblancNo=2026000414"
     },
     {
       "name": "숭의역 노르웨이숲 더 스카이",
@@ -212,7 +72,7 @@
       "receiptBegin": "2026-09-28",
       "receiptEnd": "2026-09-30",
       "state": "upcoming",
-      "dday": 9,
+      "dday": 2,
       "announceDate": "2026-09-18",
       "winnerDate": "2026-10-07",
       "specialBegin": "2026-09-28",
@@ -240,7 +100,7 @@
       "receiptBegin": "2026-09-28",
       "receiptEnd": "2026-09-29",
       "state": "upcoming",
-      "dday": 9,
+      "dday": 2,
       "announceDate": "2026-09-18",
       "winnerDate": "2026-10-08",
       "specialBegin": null,
@@ -268,7 +128,7 @@
       "receiptBegin": "2026-09-29",
       "receiptEnd": "2026-10-02",
       "state": "upcoming",
-      "dday": 10,
+      "dday": 3,
       "announceDate": "2026-09-18",
       "winnerDate": "2026-10-12",
       "specialBegin": "2026-09-29",
