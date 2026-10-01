@@ -3,19 +3,24 @@
   "region": "경기 화성 동탄구",
   "sido": "경기",
   "group": "gyeonggi-gu",
-  "updatedAt": "2026-09-26T09:43:04+09:00",
+  "updatedAt": "2026-10-01T20:37:54+09:00",
   "sparse": false,
-  "trades3m": 445,
+  "trades3m": 480,
   "trade": {
-    "week": "2026-09-4",
+    "week": "2026-09-5",
     "weeks": 4,
     "statsDays": 92,
-    "pyeongPrice": 3223,
+    "pyeongPrice": 3231,
     "m84": 83000,
-    "m59": 65750,
-    "count": 445,
+    "m59": 67250,
+    "count": 480,
     "highs": [],
     "actives": [
+      {
+        "apt": "동탄파크한양수자인",
+        "count": 16,
+        "median": 46500
+      },
       {
         "apt": "그린힐 반도유보라 아이비파크 10(1단지)",
         "count": 15,
@@ -27,32 +32,27 @@
         "median": 53500
       },
       {
-        "apt": "동탄파크한양수자인",
-        "count": 14,
-        "median": 46000
-      },
-      {
         "apt": "이편한세상동탄",
-        "count": 13,
-        "median": 75000
+        "count": 14,
+        "median": 74500
       },
       {
-        "apt": "동탄호수자이파밀리에",
-        "count": 12,
-        "median": 76500
+        "apt": "동탄2하우스디더레이크",
+        "count": 13,
+        "median": 93500
       }
     ]
   },
   "rent": {
-    "week": "2026-09-4",
+    "week": "2026-09-5",
     "weeks": 4,
-    "jeonseM84": 47000,
-    "jeonseM59": 37000,
-    "monthlyDeposit": 4989,
+    "jeonseM84": 46200,
+    "jeonseM59": 37500,
+    "monthlyDeposit": 4752,
     "monthlyRent": 20,
-    "jeonseRatio": 50,
+    "jeonseRatio": 49,
     "ratioDays": 92,
-    "count": 1737
+    "count": 1644
   },
   "window": 4,
   "weeks": [
@@ -68,91 +68,98 @@
       "pyeongPrice": 3188,
       "jeonseRatio": 48,
       "tradeCount": 1,
-      "rentCount": 331
+      "rentCount": 332
     },
     {
       "week": "2026-07-3",
       "pyeongPrice": 3180,
       "jeonseRatio": 48,
       "tradeCount": 3,
-      "rentCount": 289
+      "rentCount": 290
     },
     {
       "week": "2026-07-4",
       "pyeongPrice": 3077,
       "jeonseRatio": 49,
       "tradeCount": 24,
-      "rentCount": 329
+      "rentCount": 330
     },
     {
       "week": "2026-07-5",
       "pyeongPrice": 2872,
       "jeonseRatio": 50,
       "tradeCount": 24,
-      "rentCount": 152
+      "rentCount": 153
     },
     {
       "week": "2026-08-1",
       "pyeongPrice": 2940,
       "jeonseRatio": 50,
       "tradeCount": 24,
-      "rentCount": 174
+      "rentCount": 176
     },
     {
       "week": "2026-08-2",
       "pyeongPrice": 3024,
       "jeonseRatio": 49,
       "tradeCount": 33,
-      "rentCount": 472
+      "rentCount": 476
     },
     {
       "week": "2026-08-3",
       "pyeongPrice": 3042,
       "jeonseRatio": 49,
       "tradeCount": 31,
-      "rentCount": 400
+      "rentCount": 406
     },
     {
       "week": "2026-08-4",
       "pyeongPrice": 3195,
       "jeonseRatio": 50,
       "tradeCount": 30,
-      "rentCount": 288
+      "rentCount": 291
     },
     {
       "week": "2026-08-5",
       "pyeongPrice": 3223,
       "jeonseRatio": 50,
       "tradeCount": 21,
-      "rentCount": 130
+      "rentCount": 134
     },
     {
       "week": "2026-09-1",
-      "pyeongPrice": 3248,
+      "pyeongPrice": 3261,
       "jeonseRatio": 50,
-      "tradeCount": 43,
-      "rentCount": 322
+      "tradeCount": 46,
+      "rentCount": 332
     },
     {
       "week": "2026-09-2",
-      "pyeongPrice": 3321,
+      "pyeongPrice": 3324,
       "jeonseRatio": 50,
-      "tradeCount": 46,
-      "rentCount": 311
+      "tradeCount": 48,
+      "rentCount": 322
     },
     {
       "week": "2026-09-3",
       "pyeongPrice": 3324,
       "jeonseRatio": 50,
-      "tradeCount": 59,
-      "rentCount": 996
+      "tradeCount": 69,
+      "rentCount": 1011
     },
     {
       "week": "2026-09-4",
-      "pyeongPrice": 3324,
-      "jeonseRatio": 50,
-      "tradeCount": 5,
-      "rentCount": 108
+      "pyeongPrice": 3327,
+      "jeonseRatio": 49,
+      "tradeCount": 21,
+      "rentCount": 230
+    },
+    {
+      "week": "2026-09-5",
+      "pyeongPrice": 3327,
+      "jeonseRatio": 49,
+      "tradeCount": 4,
+      "rentCount": 81
     }
   ]
 }
