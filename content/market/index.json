@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-18T00:44:40+09:00",
+  "updatedAt": "2026-10-30T14:38:16+09:00",
   "count": 80,
   "regions": [
     {
@@ -339,6 +339,14 @@
       "sparse": false
     },
     {
+      "code": "41150",
+      "region": "경기 의정부시",
+      "sido": "경기",
+      "name": "의정부시",
+      "group": "gyeonggi-si",
+      "sparse": false
+    },
+    {
       "code": "41171",
       "region": "경기 안양 만안구",
       "sido": "경기",
@@ -352,6 +360,38 @@
       "sido": "경기",
       "name": "안양 동안구",
       "group": "gyeonggi-gu",
+      "sparse": false
+    },
+    {
+      "code": "41192",
+      "region": "경기 부천시",
+      "sido": "경기",
+      "name": "부천시",
+      "group": "gyeonggi-si",
+      "sparse": false
+    },
+    {
+      "code": "41210",
+      "region": "경기 광명시",
+      "sido": "경기",
+      "name": "광명시",
+      "group": "gyeonggi-si",
+      "sparse": false
+    },
+    {
+      "code": "41220",
+      "region": "경기 평택시",
+      "sido": "경기",
+      "name": "평택시",
+      "group": "gyeonggi-si",
+      "sparse": false
+    },
+    {
+      "code": "41250",
+      "region": "경기 동두천시",
+      "sido": "경기",
+      "name": "동두천시",
+      "group": "gyeonggi-si",
       "sparse": false
     },
     {
@@ -392,102 +432,6 @@
       "sido": "경기",
       "name": "고양 일산서구",
       "group": "gyeonggi-gu",
-      "sparse": false
-    },
-    {
-      "code": "41461",
-      "region": "경기 용인 처인구",
-      "sido": "경기",
-      "name": "용인 처인구",
-      "group": "gyeonggi-gu",
-      "sparse": false
-    },
-    {
-      "code": "41463",
-      "region": "경기 용인 기흥구",
-      "sido": "경기",
-      "name": "용인 기흥구",
-      "group": "gyeonggi-gu",
-      "sparse": false
-    },
-    {
-      "code": "41465",
-      "region": "경기 용인 수지구",
-      "sido": "경기",
-      "name": "용인 수지구",
-      "group": "gyeonggi-gu",
-      "sparse": false
-    },
-    {
-      "code": "41591",
-      "region": "경기 화성 남양구",
-      "sido": "경기",
-      "name": "화성 남양구",
-      "group": "gyeonggi-gu",
-      "sparse": false
-    },
-    {
-      "code": "41593",
-      "region": "경기 화성 봉담구",
-      "sido": "경기",
-      "name": "화성 봉담구",
-      "group": "gyeonggi-gu",
-      "sparse": false
-    },
-    {
-      "code": "41595",
-      "region": "경기 화성 병점구",
-      "sido": "경기",
-      "name": "화성 병점구",
-      "group": "gyeonggi-gu",
-      "sparse": false
-    },
-    {
-      "code": "41597",
-      "region": "경기 화성 동탄구",
-      "sido": "경기",
-      "name": "화성 동탄구",
-      "group": "gyeonggi-gu",
-      "sparse": false
-    },
-    {
-      "code": "41150",
-      "region": "경기 의정부시",
-      "sido": "경기",
-      "name": "의정부시",
-      "group": "gyeonggi-si",
-      "sparse": false
-    },
-    {
-      "code": "41192",
-      "region": "경기 부천시",
-      "sido": "경기",
-      "name": "부천시",
-      "group": "gyeonggi-si",
-      "sparse": false
-    },
-    {
-      "code": "41210",
-      "region": "경기 광명시",
-      "sido": "경기",
-      "name": "광명시",
-      "group": "gyeonggi-si",
-      "sparse": false
-    },
-    {
-      "code": "41220",
-      "region": "경기 평택시",
-      "sido": "경기",
-      "name": "평택시",
-      "group": "gyeonggi-si",
-      "sparse": false
-    },
-    {
-      "code": "41250",
-      "region": "경기 동두천시",
-      "sido": "경기",
-      "name": "동두천시",
-      "group": "gyeonggi-si",
       "sparse": false
     },
     {
@@ -555,6 +499,30 @@
       "sparse": false
     },
     {
+      "code": "41461",
+      "region": "경기 용인 처인구",
+      "sido": "경기",
+      "name": "용인 처인구",
+      "group": "gyeonggi-gu",
+      "sparse": false
+    },
+    {
+      "code": "41463",
+      "region": "경기 용인 기흥구",
+      "sido": "경기",
+      "name": "용인 기흥구",
+      "group": "gyeonggi-gu",
+      "sparse": false
+    },
+    {
+      "code": "41465",
+      "region": "경기 용인 수지구",
+      "sido": "경기",
+      "name": "용인 수지구",
+      "group": "gyeonggi-gu",
+      "sparse": false
+    },
+    {
       "code": "41480",
       "region": "경기 파주시",
       "sido": "경기",
@@ -584,6 +552,38 @@
       "sido": "경기",
       "name": "김포시",
       "group": "gyeonggi-si",
+      "sparse": false
+    },
+    {
+      "code": "41591",
+      "region": "경기 화성 남양구",
+      "sido": "경기",
+      "name": "화성 남양구",
+      "group": "gyeonggi-gu",
+      "sparse": false
+    },
+    {
+      "code": "41593",
+      "region": "경기 화성 봉담구",
+      "sido": "경기",
+      "name": "화성 봉담구",
+      "group": "gyeonggi-gu",
+      "sparse": false
+    },
+    {
+      "code": "41595",
+      "region": "경기 화성 병점구",
+      "sido": "경기",
+      "name": "화성 병점구",
+      "group": "gyeonggi-gu",
+      "sparse": false
+    },
+    {
+      "code": "41597",
+      "region": "경기 화성 동탄구",
+      "sido": "경기",
+      "name": "화성 동탄구",
+      "group": "gyeonggi-gu",
       "sparse": false
     },
     {

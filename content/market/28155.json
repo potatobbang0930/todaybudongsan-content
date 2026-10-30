@@ -3,17 +3,17 @@
   "region": "인천 영종구",
   "sido": "인천",
   "group": "incheon",
-  "updatedAt": "2026-10-18T00:37:23+09:00",
+  "updatedAt": "2026-10-30T14:21:57+09:00",
   "sparse": false,
-  "trades3m": 277,
+  "trades3m": 265,
   "trade": {
-    "week": "2026-10-3",
+    "week": "2026-10-4",
     "weeks": 4,
     "statsDays": 92,
     "pyeongPrice": 1595,
     "m84": 40000,
     "m59": 27500,
-    "count": 277,
+    "count": 265,
     "highs": [
       {
         "apt": "스카이시티자이",
@@ -23,25 +23,11 @@
         "prevHigh": 57200
       },
       {
-        "apt": "영종자이",
-        "area": 138.6,
-        "date": "2026-07-18",
-        "amount": 55000,
-        "prevHigh": 47000
-      },
-      {
-        "apt": "영종오션파크모아엘가그랑데",
-        "area": 84.9,
-        "date": "2026-07-18",
-        "amount": 48270,
-        "prevHigh": 43000
-      },
-      {
         "apt": "영종국제도시화성파크드림",
-        "area": 84.9,
-        "date": "2026-07-29",
-        "amount": 48000,
-        "prevHigh": 44000
+        "area": 84.7,
+        "date": "2026-10-24",
+        "amount": 48500,
+        "prevHigh": 48000
       },
       {
         "apt": "운서SKVIEWSkycity",
@@ -49,12 +35,26 @@
         "date": "2026-08-01",
         "amount": 47700,
         "prevHigh": 47200
+      },
+      {
+        "apt": "영종하늘도시KCC스위첸",
+        "area": 84.7,
+        "date": "2026-10-10",
+        "amount": 47500,
+        "prevHigh": 45500
+      },
+      {
+        "apt": "호반써밋스카이센트럴",
+        "area": 85.0,
+        "date": "2026-08-22",
+        "amount": 47000,
+        "prevHigh": 46300
       }
     ],
     "actives": [
       {
         "apt": "하늘도시우미린1단지",
-        "count": 23,
+        "count": 25,
         "median": 28000
       },
       {
@@ -65,47 +65,33 @@
       {
         "apt": "영종힐스테이트",
         "count": 20,
-        "median": 37500
+        "median": 37750
       },
       {
         "apt": "영종신명스카이뷰주얼리",
-        "count": 18,
-        "median": 25475
+        "count": 14,
+        "median": 25750
       },
       {
-        "apt": "인천영종한양수자인",
-        "count": 16,
-        "median": 28500
+        "apt": "영종2차금호베스트빌",
+        "count": 13,
+        "median": 29800
       }
     ]
   },
   "rent": {
-    "week": "2026-10-3",
+    "week": "2026-10-5",
     "weeks": 4,
     "jeonseM84": 28000,
-    "jeonseM59": 22050,
+    "jeonseM59": 20000,
     "monthlyDeposit": 3000,
-    "monthlyRent": 87,
-    "jeonseRatio": 70,
+    "monthlyRent": 67,
+    "jeonseRatio": 68,
     "ratioDays": 92,
-    "count": 128
+    "count": 232
   },
   "window": 4,
   "weeks": [
-    {
-      "week": "2026-05-3",
-      "pyeongPrice": 1610,
-      "jeonseRatio": 68,
-      "tradeCount": 19,
-      "rentCount": 127
-    },
-    {
-      "week": "2026-05-4",
-      "pyeongPrice": 1626,
-      "jeonseRatio": 67,
-      "tradeCount": 25,
-      "rentCount": 90
-    },
     {
       "week": "2026-05-5",
       "pyeongPrice": 1631,
@@ -139,7 +125,7 @@
       "pyeongPrice": 1634,
       "jeonseRatio": 69,
       "tradeCount": 27,
-      "rentCount": 67
+      "rentCount": 68
     },
     {
       "week": "2026-06-5",
@@ -174,7 +160,7 @@
       "pyeongPrice": 1632,
       "jeonseRatio": 71,
       "tradeCount": 23,
-      "rentCount": 136
+      "rentCount": 138
     },
     {
       "week": "2026-07-5",
@@ -195,12 +181,12 @@
       "pyeongPrice": 1589,
       "jeonseRatio": 71,
       "tradeCount": 18,
-      "rentCount": 69
+      "rentCount": 71
     },
     {
       "week": "2026-08-3",
       "pyeongPrice": 1589,
-      "jeonseRatio": 70,
+      "jeonseRatio": 71,
       "tradeCount": 15,
       "rentCount": 74
     },
@@ -216,7 +202,7 @@
       "pyeongPrice": 1572,
       "jeonseRatio": 71,
       "tradeCount": 16,
-      "rentCount": 32
+      "rentCount": 33
     },
     {
       "week": "2026-09-1",
@@ -228,51 +214,65 @@
     {
       "week": "2026-09-2",
       "pyeongPrice": 1563,
-      "jeonseRatio": 71,
+      "jeonseRatio": 72,
       "tradeCount": 26,
-      "rentCount": 67
+      "rentCount": 68
     },
     {
       "week": "2026-09-3",
       "pyeongPrice": 1554,
       "jeonseRatio": 72,
-      "tradeCount": 20,
-      "rentCount": 72
+      "tradeCount": 21,
+      "rentCount": 74
     },
     {
       "week": "2026-09-4",
-      "pyeongPrice": 1555,
+      "pyeongPrice": 1554,
       "jeonseRatio": 70,
-      "tradeCount": 17,
-      "rentCount": 35
+      "tradeCount": 18,
+      "rentCount": 36
     },
     {
       "week": "2026-09-5",
-      "pyeongPrice": 1565,
+      "pyeongPrice": 1556,
       "jeonseRatio": 70,
       "tradeCount": 4,
-      "rentCount": 14
+      "rentCount": 15
     },
     {
       "week": "2026-10-1",
-      "pyeongPrice": 1595,
+      "pyeongPrice": 1594,
       "jeonseRatio": 70,
-      "tradeCount": 22,
-      "rentCount": 55
+      "tradeCount": 25,
+      "rentCount": 58
     },
     {
       "week": "2026-10-2",
-      "pyeongPrice": 1605,
+      "pyeongPrice": 1602,
       "jeonseRatio": 70,
-      "tradeCount": 22,
-      "rentCount": 53
+      "tradeCount": 25,
+      "rentCount": 63
     },
     {
       "week": "2026-10-3",
       "pyeongPrice": 1606,
-      "jeonseRatio": 70,
-      "tradeCount": 3,
-      "rentCount": 6
+      "jeonseRatio": 69,
+      "tradeCount": 14,
+      "rentCount": 79
+    },
+    {
+      "week": "2026-10-4",
+      "pyeongPrice": 1606,
+      "jeonseRatio": 69,
+      "tradeCount": 14,
+      "rentCount": 87
+    },
+    {
+      "week": "2026-10-5",
+      "pyeongPrice": 1626,
+      "jeonseRatio": 68,
+      "tradeCount": 0,
+      "rentCount": 3
     }
   ]
 }
