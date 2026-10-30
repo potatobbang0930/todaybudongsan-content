@@ -3,17 +3,17 @@
   "region": "경기 가평군",
   "sido": "경기",
   "group": "gyeonggi-si",
-  "updatedAt": "2026-10-18T00:44:34+09:00",
+  "updatedAt": "2026-10-30T14:28:45+09:00",
   "sparse": false,
-  "trades3m": 57,
+  "trades3m": 63,
   "trade": {
-    "week": "2026-10-2",
+    "week": "2026-10-4",
     "weeks": 4,
     "statsDays": 92,
     "pyeongPrice": 1088,
-    "m84": 25200,
-    "m59": 25250,
-    "count": 57,
+    "m84": 25350,
+    "m59": 24000,
+    "count": 63,
     "highs": [
       {
         "apt": "디엘본가평설악아파트",
@@ -21,6 +21,13 @@
         "date": "2026-09-15",
         "amount": 51000,
         "prevHigh": 50880
+      },
+      {
+        "apt": "청평삼성쉐르빌",
+        "area": 119.8,
+        "date": "2026-10-02",
+        "amount": 39000,
+        "prevHigh": 37500
       },
       {
         "apt": "디엘본가평설악아파트",
@@ -42,20 +49,23 @@
         "date": "2026-10-09",
         "amount": 35000,
         "prevHigh": 32600
-      },
-      {
-        "apt": "가평자이",
-        "area": 60.0,
-        "date": "2026-07-25",
-        "amount": 30000,
-        "prevHigh": 29400
       }
     ],
     "actives": [
       {
         "apt": "가평자이",
-        "count": 8,
-        "median": 38750
+        "count": 9,
+        "median": 41000
+      },
+      {
+        "apt": "힐스테이트가평더뉴클래스",
+        "count": 6,
+        "median": 36600
+      },
+      {
+        "apt": "e편한세상가평퍼스트원",
+        "count": 5,
+        "median": 28750
       },
       {
         "apt": "가평센트럴파크더스카이",
@@ -66,39 +76,22 @@
         "apt": "디엘본가평설악아파트",
         "count": 5,
         "median": 34000
-      },
-      {
-        "apt": "힐스테이트가평더뉴클래스",
-        "count": 5,
-        "median": 36700
-      },
-      {
-        "apt": "e편한세상가평퍼스트원",
-        "count": 4,
-        "median": 28875
       }
     ]
   },
   "rent": {
-    "week": "2026-10-3",
+    "week": "2026-10-4",
     "weeks": 4,
     "jeonseM84": null,
-    "jeonseM59": 19700,
-    "monthlyDeposit": 1743,
-    "monthlyRent": 14,
-    "jeonseRatio": 74,
+    "jeonseM59": 17000,
+    "monthlyDeposit": 1872,
+    "monthlyRent": 42,
+    "jeonseRatio": 77,
     "ratioDays": 92,
-    "count": 11
+    "count": 17
   },
   "window": 4,
   "weeks": [
-    {
-      "week": "2026-05-3",
-      "pyeongPrice": 976,
-      "jeonseRatio": null,
-      "tradeCount": 3,
-      "rentCount": 8
-    },
     {
       "week": "2026-05-4",
       "pyeongPrice": 976,
@@ -237,42 +230,49 @@
       "pyeongPrice": 994,
       "jeonseRatio": 72,
       "tradeCount": 6,
-      "rentCount": 5
+      "rentCount": 6
     },
     {
       "week": "2026-09-4",
-      "pyeongPrice": 1000,
+      "pyeongPrice": 994,
       "jeonseRatio": 76,
-      "tradeCount": 3,
+      "tradeCount": 4,
       "rentCount": 1
     },
     {
       "week": "2026-09-5",
-      "pyeongPrice": 1000,
+      "pyeongPrice": 994,
       "jeonseRatio": 76,
       "tradeCount": 0,
       "rentCount": 5
     },
     {
       "week": "2026-10-1",
-      "pyeongPrice": 1132,
+      "pyeongPrice": 1041,
       "jeonseRatio": 80,
-      "tradeCount": 5,
+      "tradeCount": 8,
       "rentCount": 1
     },
     {
       "week": "2026-10-2",
-      "pyeongPrice": 1293,
-      "jeonseRatio": 77,
-      "tradeCount": 4,
-      "rentCount": 4
+      "pyeongPrice": 1076,
+      "jeonseRatio": 74,
+      "tradeCount": 5,
+      "rentCount": 8
     },
     {
       "week": "2026-10-3",
-      "pyeongPrice": 1147,
-      "jeonseRatio": 74,
-      "tradeCount": 0,
-      "rentCount": 1
+      "pyeongPrice": 1112,
+      "jeonseRatio": 73,
+      "tradeCount": 3,
+      "rentCount": 5
+    },
+    {
+      "week": "2026-10-4",
+      "pyeongPrice": 1112,
+      "jeonseRatio": 77,
+      "tradeCount": 2,
+      "rentCount": 3
     }
   ]
 }

@@ -3,102 +3,95 @@
   "region": "인천 제물포구",
   "sido": "인천",
   "group": "incheon",
-  "updatedAt": "2026-10-18T00:37:16+09:00",
+  "updatedAt": "2026-10-30T14:21:51+09:00",
   "sparse": false,
-  "trades3m": 163,
+  "trades3m": 164,
   "trade": {
-    "week": "2026-10-3",
+    "week": "2026-10-4",
     "weeks": 4,
     "statsDays": 92,
-    "pyeongPrice": 1185,
-    "m84": 29000,
-    "m59": 22000,
-    "count": 163,
+    "pyeongPrice": 1191,
+    "m84": 28300,
+    "m59": 22700,
+    "count": 164,
     "highs": [
+      {
+        "apt": "동인천역파크푸르지오",
+        "area": 59.9,
+        "date": "2026-08-19",
+        "amount": 42000,
+        "prevHigh": 40100
+      },
+      {
+        "apt": "풍림아이원",
+        "area": 114.5,
+        "date": "2026-10-16",
+        "amount": 39000,
+        "prevHigh": 38000
+      },
+      {
+        "apt": "송림휴먼시아1단지",
+        "area": 114.8,
+        "date": "2026-10-03",
+        "amount": 38800,
+        "prevHigh": 37700
+      },
+      {
+        "apt": "풍림아이원",
+        "area": 84.9,
+        "date": "2026-10-28",
+        "amount": 34250,
+        "prevHigh": 32800
+      },
       {
         "apt": "신포스카이타워",
         "area": 114.2,
         "date": "2026-10-09",
         "amount": 33000,
         "prevHigh": 29500
-      },
-      {
-        "apt": "동산휴먼시아2단지",
-        "area": 84.9,
-        "date": "2026-09-20",
-        "amount": 32900,
-        "prevHigh": 32400
-      },
-      {
-        "apt": "주공2",
-        "area": 59.9,
-        "date": "2026-10-13",
-        "amount": 29200,
-        "prevHigh": 26500
-      },
-      {
-        "apt": "신흥아이파크",
-        "area": 85.0,
-        "date": "2026-10-08",
-        "amount": 29000,
-        "prevHigh": 28100
-      },
-      {
-        "apt": "영풍",
-        "area": 85.0,
-        "date": "2026-08-25",
-        "amount": 28500,
-        "prevHigh": 28000
       }
     ],
     "actives": [
       {
-        "apt": "송현주공솔빛마을(154)",
-        "count": 18,
-        "median": 22200
+        "apt": "풍림아이원",
+        "count": 17,
+        "median": 25800
       },
       {
-        "apt": "신흥아이파크",
-        "count": 14,
+        "apt": "송현주공솔빛마을(154)",
+        "count": 16,
         "median": 22000
       },
       {
-        "apt": "풍림아이원",
-        "count": 14,
-        "median": 25300
+        "apt": "신흥아이파크",
+        "count": 16,
+        "median": 22000
       },
       {
         "apt": "송림휴먼시아1단지",
         "count": 11,
-        "median": 30000
+        "median": 24500
       },
       {
-        "apt": "만석비치타운 주공아파트",
-        "count": 9,
-        "median": 19000
+        "apt": "엘에이치브리즈힐",
+        "count": 8,
+        "median": 33400
       }
     ]
   },
   "rent": {
-    "week": "2026-10-3",
+    "week": "2026-10-4",
     "weeks": 4,
-    "jeonseM84": null,
-    "jeonseM59": 18000,
-    "monthlyDeposit": 8500,
-    "monthlyRent": 63,
-    "jeonseRatio": 84,
+    "jeonseM84": 13000,
+    "jeonseM59": 17250,
+    "monthlyDeposit": 5750,
+    "monthlyRent": 66,
+    "jeonseRatio": 82,
     "ratioDays": 92,
-    "count": 46
+    "count": 68
   },
   "window": 4,
   "weeks": [
-    {
-      "week": "2026-05-3",
-      "pyeongPrice": 1257,
-      "jeonseRatio": 83,
-      "tradeCount": 11,
-      "rentCount": 26
-    },
     {
       "week": "2026-05-4",
       "pyeongPrice": 1242,
@@ -153,7 +146,7 @@
       "pyeongPrice": 1265,
       "jeonseRatio": 82,
       "tradeCount": 16,
-      "rentCount": 20
+      "rentCount": 21
     },
     {
       "week": "2026-07-2",
@@ -188,19 +181,19 @@
       "pyeongPrice": 1184,
       "jeonseRatio": 84,
       "tradeCount": 11,
-      "rentCount": 20
+      "rentCount": 21
     },
     {
       "week": "2026-08-2",
       "pyeongPrice": 1192,
       "jeonseRatio": 84,
       "tradeCount": 6,
-      "rentCount": 23
+      "rentCount": 25
     },
     {
       "week": "2026-08-3",
       "pyeongPrice": 1188,
-      "jeonseRatio": 82,
+      "jeonseRatio": 84,
       "tradeCount": 16,
       "rentCount": 31
     },
@@ -209,7 +202,7 @@
       "pyeongPrice": 1132,
       "jeonseRatio": 81,
       "tradeCount": 13,
-      "rentCount": 25
+      "rentCount": 30
     },
     {
       "week": "2026-08-5",
@@ -230,49 +223,56 @@
       "pyeongPrice": 1201,
       "jeonseRatio": 81,
       "tradeCount": 14,
-      "rentCount": 19
+      "rentCount": 21
     },
     {
       "week": "2026-09-3",
       "pyeongPrice": 1208,
       "jeonseRatio": 84,
       "tradeCount": 21,
-      "rentCount": 24
+      "rentCount": 27
     },
     {
       "week": "2026-09-4",
       "pyeongPrice": 1214,
-      "jeonseRatio": 84,
+      "jeonseRatio": 83,
       "tradeCount": 5,
-      "rentCount": 15
+      "rentCount": 19
     },
     {
       "week": "2026-09-5",
       "pyeongPrice": 1223,
       "jeonseRatio": 84,
       "tradeCount": 2,
-      "rentCount": 12
+      "rentCount": 13
     },
     {
       "week": "2026-10-1",
-      "pyeongPrice": 1204,
+      "pyeongPrice": 1201,
       "jeonseRatio": 84,
-      "tradeCount": 10,
-      "rentCount": 17
+      "tradeCount": 12,
+      "rentCount": 26
     },
     {
       "week": "2026-10-2",
-      "pyeongPrice": 1132,
-      "jeonseRatio": 84,
-      "tradeCount": 13,
-      "rentCount": 9
+      "pyeongPrice": 1120,
+      "jeonseRatio": 83,
+      "tradeCount": 20,
+      "rentCount": 13
     },
     {
       "week": "2026-10-3",
-      "pyeongPrice": 1117,
+      "pyeongPrice": 1127,
       "jeonseRatio": 84,
-      "tradeCount": 2,
-      "rentCount": 8
+      "tradeCount": 14,
+      "rentCount": 20
+    },
+    {
+      "week": "2026-10-4",
+      "pyeongPrice": 1128,
+      "jeonseRatio": 82,
+      "tradeCount": 9,
+      "rentCount": 9
     }
   ]
 }
