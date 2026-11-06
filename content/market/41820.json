@@ -3,17 +3,17 @@
   "region": "경기 가평군",
   "sido": "경기",
   "group": "gyeonggi-si",
-  "updatedAt": "2026-10-30T14:28:45+09:00",
+  "updatedAt": "2026-11-06T18:11:38+09:00",
   "sparse": false,
-  "trades3m": 63,
+  "trades3m": 62,
   "trade": {
-    "week": "2026-10-4",
+    "week": "2026-10-5",
     "weeks": 4,
     "statsDays": 92,
-    "pyeongPrice": 1088,
-    "m84": 25350,
-    "m59": 24000,
-    "count": 63,
+    "pyeongPrice": 1041,
+    "m84": 25200,
+    "m59": 22800,
+    "count": 62,
     "highs": [
       {
         "apt": "디엘본가평설악아파트",
@@ -58,11 +58,6 @@
         "median": 41000
       },
       {
-        "apt": "힐스테이트가평더뉴클래스",
-        "count": 6,
-        "median": 36600
-      },
-      {
         "apt": "e편한세상가평퍼스트원",
         "count": 5,
         "median": 28750
@@ -73,17 +68,22 @@
         "median": 22800
       },
       {
-        "apt": "디엘본가평설악아파트",
+        "apt": "힐스테이트가평더뉴클래스",
         "count": 5,
-        "median": 34000
+        "median": 36700
+      },
+      {
+        "apt": "가평블루핀",
+        "count": 4,
+        "median": 19000
       }
     ]
   },
   "rent": {
-    "week": "2026-10-4",
+    "week": "2026-10-5",
     "weeks": 4,
     "jeonseM84": null,
-    "jeonseM59": 17000,
+    "jeonseM59": null,
     "monthlyDeposit": 1872,
     "monthlyRent": 42,
     "jeonseRatio": 77,
@@ -93,65 +93,51 @@
   "window": 4,
   "weeks": [
     {
-      "week": "2026-05-4",
-      "pyeongPrice": 976,
-      "jeonseRatio": 81,
-      "tradeCount": 3,
-      "rentCount": 9
-    },
-    {
-      "week": "2026-05-5",
-      "pyeongPrice": 1200,
-      "jeonseRatio": 81,
-      "tradeCount": 0,
-      "rentCount": 2
-    },
-    {
       "week": "2026-06-1",
-      "pyeongPrice": 1393,
-      "jeonseRatio": 78,
+      "pyeongPrice": 931,
+      "jeonseRatio": null,
       "tradeCount": 9,
       "rentCount": 5
     },
     {
       "week": "2026-06-2",
-      "pyeongPrice": 1243,
-      "jeonseRatio": 77,
+      "pyeongPrice": 1092,
+      "jeonseRatio": null,
       "tradeCount": 4,
       "rentCount": 6
     },
     {
       "week": "2026-06-3",
       "pyeongPrice": 963,
-      "jeonseRatio": 77,
+      "jeonseRatio": null,
       "tradeCount": 7,
       "rentCount": 9
     },
     {
       "week": "2026-06-4",
       "pyeongPrice": 994,
-      "jeonseRatio": 78,
+      "jeonseRatio": 89,
       "tradeCount": 3,
       "rentCount": 9
     },
     {
       "week": "2026-06-5",
       "pyeongPrice": 984,
-      "jeonseRatio": 78,
+      "jeonseRatio": 89,
       "tradeCount": 2,
       "rentCount": 1
     },
     {
       "week": "2026-07-1",
       "pyeongPrice": 952,
-      "jeonseRatio": 78,
+      "jeonseRatio": 89,
       "tradeCount": 8,
       "rentCount": 2
     },
     {
       "week": "2026-07-2",
       "pyeongPrice": 1022,
-      "jeonseRatio": 81,
+      "jeonseRatio": 80,
       "tradeCount": 5,
       "rentCount": 7
     },
@@ -165,14 +151,14 @@
     {
       "week": "2026-07-4",
       "pyeongPrice": 1015,
-      "jeonseRatio": 75,
+      "jeonseRatio": 69,
       "tradeCount": 3,
       "rentCount": 8
     },
     {
       "week": "2026-07-5",
       "pyeongPrice": 1109,
-      "jeonseRatio": 75,
+      "jeonseRatio": 72,
       "tradeCount": 1,
       "rentCount": 1
     },
@@ -209,7 +195,7 @@
       "pyeongPrice": 1291,
       "jeonseRatio": 74,
       "tradeCount": 0,
-      "rentCount": 1
+      "rentCount": 2
     },
     {
       "week": "2026-09-1",
@@ -255,24 +241,31 @@
     },
     {
       "week": "2026-10-2",
-      "pyeongPrice": 1076,
+      "pyeongPrice": 1038,
       "jeonseRatio": 74,
-      "tradeCount": 5,
+      "tradeCount": 6,
       "rentCount": 8
     },
     {
       "week": "2026-10-3",
-      "pyeongPrice": 1112,
+      "pyeongPrice": 1076,
       "jeonseRatio": 73,
       "tradeCount": 3,
       "rentCount": 5
     },
     {
       "week": "2026-10-4",
-      "pyeongPrice": 1112,
+      "pyeongPrice": 1076,
       "jeonseRatio": 77,
       "tradeCount": 2,
       "rentCount": 3
+    },
+    {
+      "week": "2026-10-5",
+      "pyeongPrice": 1073,
+      "jeonseRatio": 77,
+      "tradeCount": 1,
+      "rentCount": 1
     }
   ]
 }
