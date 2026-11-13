@@ -3,17 +3,17 @@
   "region": "인천 계양구",
   "sido": "인천",
   "group": "incheon",
-  "updatedAt": "2026-11-06T18:05:29+09:00",
+  "updatedAt": "2026-11-13T20:12:38+09:00",
   "sparse": false,
-  "trades3m": 610,
+  "trades3m": 605,
   "trade": {
-    "week": "2026-11-1",
+    "week": "2026-11-2",
     "weeks": 4,
     "statsDays": 92,
     "pyeongPrice": 1356,
-    "m84": 37100,
-    "m59": 28200,
-    "count": 610,
+    "m84": 37200,
+    "m59": 27900,
+    "count": 605,
     "highs": [
       {
         "apt": "힐스테이트자이계양",
@@ -48,57 +48,50 @@
         "area": 74.9,
         "date": "2026-11-02",
         "amount": 59500,
-        "prevHigh": 58300
+        "prevHigh": 58900
       }
     ],
     "actives": [
       {
-        "apt": "e편한세상 계양 더프리미어",
-        "count": 25,
-        "median": 50000
-      },
-      {
         "apt": "도두리마을대동",
-        "count": 24,
+        "count": 26,
         "median": 27800
       },
       {
-        "apt": "태산",
-        "count": 22,
-        "median": 21500
+        "apt": "e편한세상 계양 더프리미어",
+        "count": 23,
+        "median": 50300
       },
       {
-        "apt": "힐스테이트자이계양",
+        "apt": "태산",
         "count": 21,
-        "median": 62500
+        "median": 21500
       },
       {
         "apt": "학마을한진",
         "count": 17,
         "median": 21500
+      },
+      {
+        "apt": "힐스테이트자이계양",
+        "count": 17,
+        "median": 64700
       }
     ]
   },
   "rent": {
-    "week": "2026-11-1",
+    "week": "2026-11-2",
     "weeks": 4,
-    "jeonseM84": 28000,
+    "jeonseM84": 27500,
     "jeonseM59": 21500,
-    "monthlyDeposit": 2000,
-    "monthlyRent": 50,
+    "monthlyDeposit": 1000,
+    "monthlyRent": 55,
     "jeonseRatio": 78,
     "ratioDays": 92,
-    "count": 160
+    "count": 171
   },
   "window": 4,
   "weeks": [
-    {
-      "week": "2026-06-1",
-      "pyeongPrice": 1417,
-      "jeonseRatio": null,
-      "tradeCount": 53,
-      "rentCount": 88
-    },
     {
       "week": "2026-06-2",
       "pyeongPrice": 1407,
@@ -146,7 +139,7 @@
       "pyeongPrice": 1323,
       "jeonseRatio": 78,
       "tradeCount": 44,
-      "rentCount": 78
+      "rentCount": 79
     },
     {
       "week": "2026-07-4",
@@ -174,7 +167,7 @@
       "pyeongPrice": 1339,
       "jeonseRatio": 78,
       "tradeCount": 43,
-      "rentCount": 88
+      "rentCount": 89
     },
     {
       "week": "2026-08-3",
@@ -209,7 +202,7 @@
       "pyeongPrice": 1356,
       "jeonseRatio": 79,
       "tradeCount": 55,
-      "rentCount": 90
+      "rentCount": 91
     },
     {
       "week": "2026-09-3",
@@ -230,49 +223,56 @@
       "pyeongPrice": 1296,
       "jeonseRatio": 78,
       "tradeCount": 18,
-      "rentCount": 23
+      "rentCount": 24
     },
     {
       "week": "2026-10-1",
       "pyeongPrice": 1339,
-      "jeonseRatio": 78,
+      "jeonseRatio": 79,
       "tradeCount": 61,
-      "rentCount": 72
+      "rentCount": 74
     },
     {
       "week": "2026-10-2",
       "pyeongPrice": 1354,
       "jeonseRatio": 79,
-      "tradeCount": 42,
-      "rentCount": 61
+      "tradeCount": 44,
+      "rentCount": 69
     },
     {
       "week": "2026-10-3",
-      "pyeongPrice": 1376,
+      "pyeongPrice": 1368,
       "jeonseRatio": 79,
-      "tradeCount": 43,
-      "rentCount": 59
+      "tradeCount": 45,
+      "rentCount": 66
     },
     {
       "week": "2026-10-4",
       "pyeongPrice": 1361,
       "jeonseRatio": 79,
-      "tradeCount": 45,
-      "rentCount": 46
+      "tradeCount": 49,
+      "rentCount": 51
     },
     {
       "week": "2026-10-5",
       "pyeongPrice": 1361,
       "jeonseRatio": 78,
-      "tradeCount": 13,
-      "rentCount": 32
+      "tradeCount": 16,
+      "rentCount": 42
     },
     {
       "week": "2026-11-1",
-      "pyeongPrice": 1368,
+      "pyeongPrice": 1382,
       "jeonseRatio": 78,
-      "tradeCount": 17,
-      "rentCount": 23
+      "tradeCount": 32,
+      "rentCount": 60
+    },
+    {
+      "week": "2026-11-2",
+      "pyeongPrice": 1400,
+      "jeonseRatio": 78,
+      "tradeCount": 13,
+      "rentCount": 18
     }
   ]
 }

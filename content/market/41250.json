@@ -3,18 +3,25 @@
   "region": "경기 동두천시",
   "sido": "경기",
   "group": "gyeonggi-si",
-  "updatedAt": "2026-11-06T18:09:20+09:00",
+  "updatedAt": "2026-11-13T20:16:34+09:00",
   "sparse": false,
-  "trades3m": 212,
+  "trades3m": 208,
   "trade": {
-    "week": "2026-11-1",
+    "week": "2026-11-2",
     "weeks": 4,
     "statsDays": 92,
     "pyeongPrice": 801,
-    "m84": 19650,
+    "m84": 20000,
     "m59": 15300,
-    "count": 212,
+    "count": 208,
     "highs": [
+      {
+        "apt": "동두천센트레빌",
+        "area": 74.8,
+        "date": "2026-09-29",
+        "amount": 26300,
+        "prevHigh": 24700
+      },
       {
         "apt": "아이파크",
         "area": 84.8,
@@ -37,13 +44,6 @@
         "prevHigh": 24400
       },
       {
-        "apt": "송내주공1단지",
-        "area": 84.8,
-        "date": "2026-08-10",
-        "amount": 23000,
-        "prevHigh": 22300
-      },
-      {
         "apt": "부영아파트(1단지)",
         "area": 85.0,
         "date": "2026-10-26",
@@ -54,13 +54,18 @@
     "actives": [
       {
         "apt": "송내주공1단지",
-        "count": 23,
-        "median": 19000
+        "count": 22,
+        "median": 18625
       },
       {
         "apt": "송내주공4단지",
-        "count": 22,
-        "median": 14900
+        "count": 21,
+        "median": 14800
+      },
+      {
+        "apt": "부영아파트(1단지)",
+        "count": 10,
+        "median": 18750
       },
       {
         "apt": "상패주공",
@@ -68,37 +73,25 @@
         "median": 7900
       },
       {
-        "apt": "부영아파트(1단지)",
-        "count": 9,
-        "median": 19000
-      },
-      {
         "apt": "대방노블랜드(7단지)",
-        "count": 7,
-        "median": 15000
+        "count": 8,
+        "median": 15450
       }
     ]
   },
   "rent": {
-    "week": "2026-11-1",
+    "week": "2026-11-2",
     "weeks": 4,
-    "jeonseM84": 17000,
-    "jeonseM59": 11500,
-    "monthlyDeposit": 1750,
-    "monthlyRent": 50,
-    "jeonseRatio": 87,
+    "jeonseM84": 18000,
+    "jeonseM59": 12750,
+    "monthlyDeposit": 2000,
+    "monthlyRent": 37,
+    "jeonseRatio": 85,
     "ratioDays": 92,
-    "count": 38
+    "count": 50
   },
   "window": 4,
   "weeks": [
-    {
-      "week": "2026-06-1",
-      "pyeongPrice": 800,
-      "jeonseRatio": null,
-      "tradeCount": 15,
-      "rentCount": 19
-    },
     {
       "week": "2026-06-2",
       "pyeongPrice": 800,
@@ -153,7 +146,7 @@
       "pyeongPrice": 801,
       "jeonseRatio": 85,
       "tradeCount": 17,
-      "rentCount": 23
+      "rentCount": 24
     },
     {
       "week": "2026-07-5",
@@ -188,14 +181,14 @@
       "pyeongPrice": 778,
       "jeonseRatio": 84,
       "tradeCount": 21,
-      "rentCount": 21
+      "rentCount": 22
     },
     {
       "week": "2026-08-5",
       "pyeongPrice": 801,
       "jeonseRatio": 84,
       "tradeCount": 8,
-      "rentCount": 5
+      "rentCount": 6
     },
     {
       "week": "2026-09-1",
@@ -237,42 +230,49 @@
       "pyeongPrice": 847,
       "jeonseRatio": 82,
       "tradeCount": 17,
-      "rentCount": 24
+      "rentCount": 25
     },
     {
       "week": "2026-10-2",
       "pyeongPrice": 823,
       "jeonseRatio": 82,
       "tradeCount": 25,
-      "rentCount": 19
+      "rentCount": 22
     },
     {
       "week": "2026-10-3",
       "pyeongPrice": 796,
       "jeonseRatio": 83,
       "tradeCount": 19,
-      "rentCount": 10
+      "rentCount": 11
     },
     {
       "week": "2026-10-4",
       "pyeongPrice": 796,
       "jeonseRatio": 82,
-      "tradeCount": 19,
+      "tradeCount": 20,
       "rentCount": 20
     },
     {
       "week": "2026-10-5",
-      "pyeongPrice": 800,
+      "pyeongPrice": 801,
       "jeonseRatio": 82,
       "tradeCount": 7,
       "rentCount": 4
     },
     {
       "week": "2026-11-1",
-      "pyeongPrice": 797,
+      "pyeongPrice": 796,
       "jeonseRatio": 87,
-      "tradeCount": 3,
-      "rentCount": 4
+      "tradeCount": 7,
+      "rentCount": 14
+    },
+    {
+      "week": "2026-11-2",
+      "pyeongPrice": 792,
+      "jeonseRatio": 85,
+      "tradeCount": 10,
+      "rentCount": 12
     }
   ]
 }
