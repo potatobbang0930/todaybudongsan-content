@@ -3,31 +3,31 @@
   "region": "서울 강서구",
   "sido": "서울",
   "group": "seoul",
-  "updatedAt": "2026-11-06T18:03:20+09:00",
+  "updatedAt": "2026-11-13T20:10:28+09:00",
   "sparse": false,
-  "trades3m": 696,
+  "trades3m": 670,
   "trade": {
-    "week": "2026-11-1",
+    "week": "2026-11-2",
     "weeks": 4,
     "statsDays": 92,
-    "pyeongPrice": 4822,
+    "pyeongPrice": 4809,
     "m84": 114850,
-    "m59": 104250,
-    "count": 696,
+    "m59": 105250,
+    "count": 670,
     "highs": [
       {
-        "apt": "마곡13단지힐스테이트마스터",
-        "area": 85.0,
-        "date": "2026-08-10",
-        "amount": 190000,
-        "prevHigh": 183000
+        "apt": "우장산힐스테이트",
+        "area": 126.7,
+        "date": "2026-10-26",
+        "amount": 192000,
+        "prevHigh": 188000
       },
       {
         "apt": "강서힐스테이트",
         "area": 152.1,
         "date": "2026-10-21",
         "amount": 185000,
-        "prevHigh": 175500
+        "prevHigh": 178500
       },
       {
         "apt": "마곡엠밸리5단지",
@@ -37,18 +37,18 @@
         "prevHigh": 174000
       },
       {
+        "apt": "우장산힐스테이트",
+        "area": 85.0,
+        "date": "2026-10-30",
+        "amount": 180500,
+        "prevHigh": 173500
+      },
+      {
         "apt": "마곡엠밸리9단지",
         "area": 84.8,
         "date": "2026-10-09",
         "amount": 176000,
         "prevHigh": 174000
-      },
-      {
-        "apt": "강서힐스테이트",
-        "area": 85.0,
-        "date": "2026-10-16",
-        "amount": 169500,
-        "prevHigh": 160000
       }
     ],
     "actives": [
@@ -59,70 +59,63 @@
       },
       {
         "apt": "더트루엘마곡HQ",
-        "count": 35,
-        "median": 64200
-      },
-      {
-        "apt": "강서힐스테이트",
-        "count": 19,
-        "median": 165000
+        "count": 34,
+        "median": 65000
       },
       {
         "apt": "방화그린",
-        "count": 19,
-        "median": 56300
+        "count": 20,
+        "median": 56350
       },
       {
-        "apt": "우장산아이파크,이편한세상",
-        "count": 19,
-        "median": 154000
+        "apt": "강서힐스테이트",
+        "count": 18,
+        "median": 164650
+      },
+      {
+        "apt": "방화5",
+        "count": 16,
+        "median": 57400
       }
     ]
   },
   "rent": {
-    "week": "2026-11-1",
+    "week": "2026-11-2",
     "weeks": 4,
-    "jeonseM84": 60996,
-    "jeonseM59": 48000,
-    "monthlyDeposit": 11000,
-    "monthlyRent": 51,
+    "jeonseM84": 60600,
+    "jeonseM59": 36024,
+    "monthlyDeposit": 10000,
+    "monthlyRent": 25,
     "jeonseRatio": 50,
     "ratioDays": 92,
-    "count": 572
+    "count": 791
   },
   "window": 4,
   "weeks": [
     {
-      "week": "2026-06-1",
-      "pyeongPrice": 4061,
-      "jeonseRatio": 58,
-      "tradeCount": 90,
-      "rentCount": 182
-    },
-    {
       "week": "2026-06-2",
       "pyeongPrice": 4115,
-      "jeonseRatio": 47,
-      "tradeCount": 87,
-      "rentCount": 326
+      "jeonseRatio": 48,
+      "tradeCount": 88,
+      "rentCount": 327
     },
     {
       "week": "2026-06-3",
-      "pyeongPrice": 4204,
-      "jeonseRatio": 47,
+      "pyeongPrice": 4143,
+      "jeonseRatio": 48,
       "tradeCount": 77,
       "rentCount": 209
     },
     {
       "week": "2026-06-4",
-      "pyeongPrice": 4365,
+      "pyeongPrice": 4350,
       "jeonseRatio": 48,
       "tradeCount": 88,
       "rentCount": 239
     },
     {
       "week": "2026-06-5",
-      "pyeongPrice": 4434,
+      "pyeongPrice": 4430,
       "jeonseRatio": 49,
       "tradeCount": 27,
       "rentCount": 70
@@ -139,7 +132,7 @@
       "pyeongPrice": 4527,
       "jeonseRatio": 49,
       "tradeCount": 98,
-      "rentCount": 482
+      "rentCount": 483
     },
     {
       "week": "2026-07-3",
@@ -178,101 +171,108 @@
     },
     {
       "week": "2026-08-3",
-      "pyeongPrice": 4546,
+      "pyeongPrice": 4535,
       "jeonseRatio": 53,
-      "tradeCount": 52,
-      "rentCount": 274
+      "tradeCount": 54,
+      "rentCount": 275
     },
     {
       "week": "2026-08-4",
-      "pyeongPrice": 4475,
+      "pyeongPrice": 4472,
       "jeonseRatio": 53,
-      "tradeCount": 42,
-      "rentCount": 272
+      "tradeCount": 41,
+      "rentCount": 274
     },
     {
       "week": "2026-08-5",
-      "pyeongPrice": 4435,
+      "pyeongPrice": 4417,
       "jeonseRatio": 53,
       "tradeCount": 20,
-      "rentCount": 69
+      "rentCount": 70
     },
     {
       "week": "2026-09-1",
-      "pyeongPrice": 4105,
+      "pyeongPrice": 4112,
       "jeonseRatio": 52,
       "tradeCount": 40,
-      "rentCount": 183
+      "rentCount": 184
     },
     {
       "week": "2026-09-2",
-      "pyeongPrice": 4831,
+      "pyeongPrice": 4853,
       "jeonseRatio": 51,
       "tradeCount": 95,
-      "rentCount": 260
+      "rentCount": 263
     },
     {
       "week": "2026-09-3",
       "pyeongPrice": 5034,
       "jeonseRatio": 51,
       "tradeCount": 77,
-      "rentCount": 184
+      "rentCount": 187
     },
     {
       "week": "2026-09-4",
       "pyeongPrice": 5067,
       "jeonseRatio": 51,
       "tradeCount": 36,
-      "rentCount": 95
+      "rentCount": 98
     },
     {
       "week": "2026-09-5",
       "pyeongPrice": 5131,
       "jeonseRatio": 51,
       "tradeCount": 10,
-      "rentCount": 46
+      "rentCount": 47
     },
     {
       "week": "2026-10-1",
       "pyeongPrice": 4943,
       "jeonseRatio": 51,
-      "tradeCount": 51,
-      "rentCount": 200
+      "tradeCount": 52,
+      "rentCount": 205
     },
     {
       "week": "2026-10-2",
-      "pyeongPrice": 4962,
+      "pyeongPrice": 4974,
       "jeonseRatio": 51,
       "tradeCount": 61,
-      "rentCount": 298
+      "rentCount": 303
     },
     {
       "week": "2026-10-3",
-      "pyeongPrice": 4870,
+      "pyeongPrice": 4919,
       "jeonseRatio": 50,
-      "tradeCount": 48,
-      "rentCount": 245
+      "tradeCount": 62,
+      "rentCount": 263
     },
     {
       "week": "2026-10-4",
-      "pyeongPrice": 4870,
-      "jeonseRatio": 49,
-      "tradeCount": 20,
-      "rentCount": 172
+      "pyeongPrice": 4935,
+      "jeonseRatio": 50,
+      "tradeCount": 33,
+      "rentCount": 187
     },
     {
       "week": "2026-10-5",
-      "pyeongPrice": 4950,
+      "pyeongPrice": 4957,
       "jeonseRatio": 50,
-      "tradeCount": 16,
-      "rentCount": 60
+      "tradeCount": 28,
+      "rentCount": 73
     },
     {
       "week": "2026-11-1",
-      "pyeongPrice": 4714,
+      "pyeongPrice": 4670,
       "jeonseRatio": 50,
-      "tradeCount": 3,
-      "rentCount": 95
+      "tradeCount": 31,
+      "rentCount": 327
+    },
+    {
+      "week": "2026-11-2",
+      "pyeongPrice": 4473,
+      "jeonseRatio": 50,
+      "tradeCount": 7,
+      "rentCount": 204
     }
   ]
 }

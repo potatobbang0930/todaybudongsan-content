@@ -3,17 +3,17 @@
   "region": "인천 강화군",
   "sido": "인천",
   "group": "incheon",
-  "updatedAt": "2026-11-06T18:05:49+09:00",
+  "updatedAt": "2026-11-13T20:12:58+09:00",
   "sparse": false,
-  "trades3m": 29,
+  "trades3m": 30,
   "trade": {
     "week": "2026-11-1",
     "weeks": 4,
     "statsDays": 92,
-    "pyeongPrice": 751,
-    "m84": 16500,
-    "m59": 23650,
-    "count": 29,
+    "pyeongPrice": 778,
+    "m84": 16000,
+    "m59": 23300,
+    "count": 30,
     "highs": [
       {
         "apt": "강화서희스타힐스1단지",
@@ -43,13 +43,13 @@
       },
       {
         "apt": "강화2차세광엔리치빌",
-        "count": 4,
-        "median": 18300
+        "count": 3,
+        "median": 16600
       },
       {
         "apt": "베이힐",
-        "count": 2,
-        "median": 17700
+        "count": 3,
+        "median": 18000
       },
       {
         "apt": "용진2",
@@ -59,25 +59,18 @@
     ]
   },
   "rent": {
-    "week": "2026-10-5",
+    "week": "2026-11-2",
     "weeks": 4,
     "jeonseM84": 13000,
-    "jeonseM59": null,
-    "monthlyDeposit": 2500,
+    "jeonseM59": 15800,
+    "monthlyDeposit": 2000,
     "monthlyRent": 75,
-    "jeonseRatio": 79,
+    "jeonseRatio": 80,
     "ratioDays": 92,
-    "count": 17
+    "count": 16
   },
   "window": 4,
   "weeks": [
-    {
-      "week": "2026-06-1",
-      "pyeongPrice": null,
-      "jeonseRatio": null,
-      "tradeCount": 4,
-      "rentCount": 5
-    },
     {
       "week": "2026-06-2",
       "pyeongPrice": 516,
@@ -241,17 +234,24 @@
     },
     {
       "week": "2026-10-5",
-      "pyeongPrice": 737,
-      "jeonseRatio": 79,
-      "tradeCount": 0,
-      "rentCount": 2
+      "pyeongPrice": 805,
+      "jeonseRatio": 80,
+      "tradeCount": 1,
+      "rentCount": 3
     },
     {
       "week": "2026-11-1",
-      "pyeongPrice": null,
-      "jeonseRatio": 79,
-      "tradeCount": 1,
+      "pyeongPrice": 1051,
+      "jeonseRatio": 81,
+      "tradeCount": 2,
       "rentCount": 0
+    },
+    {
+      "week": "2026-11-2",
+      "pyeongPrice": null,
+      "jeonseRatio": 80,
+      "tradeCount": 0,
+      "rentCount": 4
     }
   ]
 }
