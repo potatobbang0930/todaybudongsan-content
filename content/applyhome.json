@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-13",
-  "updatedAt": "2026-11-13T20:08:29+09:00",
+  "date": "2026-11-24",
+  "updatedAt": "2026-11-24T16:07:13+09:00",
   "area": [
     "서울",
     "경기",
@@ -9,98 +9,14 @@
   "count": 9,
   "items": [
     {
-      "name": "시흥거모지구 S-1블록 공공분양(본청약)",
-      "area": "경기",
-      "address": "경기도 시흥시 거모동, 군자동 일원 시흥거모 공공주택지구 내 S-1블록",
-      "households": 300,
-      "receiptBegin": "2026-11-02",
-      "receiptEnd": "2026-11-17",
-      "state": "open",
-      "dday": 4,
-      "announceDate": "2026-10-23",
-      "winnerDate": "2026-11-26",
-      "specialBegin": null,
-      "specialEnd": null,
-      "rank1": {
-        "local": "2026-11-02",
-        "other": "2026-11-02",
-        "gyeonggi": "2026-11-02"
-      },
-      "rank2": {
-        "local": "2026-11-17",
-        "other": "2026-11-17",
-        "gyeonggi": "2026-11-17"
-      },
-      "contractBegin": "2027-02-01",
-      "contractEnd": "2027-02-03",
-      "houseType": "국민",
-      "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000531&pblancNo=2026000531"
-    },
-    {
-      "name": "안산신길2지구 B-1블록 공공분양주택(본청약)",
-      "area": "경기",
-      "address": "경기도 안산시 단원구 신길동 일원 안산신길2 공공주택지구 내 B-1블록",
-      "households": 387,
-      "receiptBegin": "2026-11-09",
-      "receiptEnd": "2026-11-18",
-      "state": "open",
-      "dday": 5,
-      "announceDate": "2026-10-30",
-      "winnerDate": "2026-11-30",
-      "specialBegin": null,
-      "specialEnd": null,
-      "rank1": {
-        "local": "2026-11-09",
-        "other": "2026-11-09",
-        "gyeonggi": "2026-11-09"
-      },
-      "rank2": {
-        "local": "2026-11-18",
-        "other": "2026-11-18",
-        "gyeonggi": "2026-11-18"
-      },
-      "contractBegin": "2027-03-15",
-      "contractEnd": "2027-03-18",
-      "houseType": "국민",
-      "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000533&pblancNo=2026000533"
-    },
-    {
-      "name": "시흥 거모 아테라(시흥거모 A-6BL) 신혼희망타운(공공분양)(본청약)",
-      "area": "경기",
-      "address": "경기도 시흥시 거모지구 내 A-6블록",
-      "households": 480,
-      "receiptBegin": "2026-11-16",
-      "receiptEnd": "2026-11-27",
-      "state": "upcoming",
-      "dday": 3,
-      "announceDate": "2026-11-06",
-      "winnerDate": "2026-12-08",
-      "specialBegin": null,
-      "specialEnd": null,
-      "rank1": {
-        "local": "2026-11-16",
-        "other": "2026-11-16",
-        "gyeonggi": "2026-11-16"
-      },
-      "rank2": {
-        "local": "2026-11-27",
-        "other": "2026-11-27",
-        "gyeonggi": "2026-11-27"
-      },
-      "contractBegin": "2027-03-11",
-      "contractEnd": "2027-03-14",
-      "houseType": "국민",
-      "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026820015&pblancNo=2026820015"
-    },
-    {
       "name": "안산신길2 A-6블록 신혼희망타운(공공분양)(본청약)",
       "area": "경기",
       "address": "경기도 안산시 단원구 신길동 일원 안산신길2 공공주택지구 내 A-6블록",
       "households": 251,
       "receiptBegin": "2026-11-16",
       "receiptEnd": "2026-11-24",
-      "state": "upcoming",
-      "dday": 3,
+      "state": "open",
+      "dday": 0,
       "announceDate": "2026-10-30",
       "winnerDate": "2026-12-04",
       "specialBegin": null,
@@ -121,98 +37,14 @@
       "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026820013&pblancNo=2026820013"
     },
     {
-      "name": "의정부역 펠리스타워 양우내안애",
-      "area": "경기",
-      "address": "경기도 의정부시 의정부동 424번지 일원",
-      "households": 414,
-      "receiptBegin": "2026-11-16",
-      "receiptEnd": "2026-11-18",
-      "state": "upcoming",
-      "dday": 3,
-      "announceDate": "2026-11-06",
-      "winnerDate": "2026-11-24",
-      "specialBegin": "2026-11-16",
-      "specialEnd": "2026-11-16",
-      "rank1": {
-        "local": "2026-11-17",
-        "other": "2026-11-17",
-        "gyeonggi": null
-      },
-      "rank2": {
-        "local": "2026-11-18",
-        "other": "2026-11-18",
-        "gyeonggi": null
-      },
-      "contractBegin": "2026-12-07",
-      "contractEnd": "2026-12-09",
-      "houseType": "민영",
-      "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000553&pblancNo=2026000553"
-    },
-    {
-      "name": "제일풍경채 광주 포에듀",
-      "area": "경기",
-      "address": "경기도 광주시 탄벌동 203-4번지 일원 (탄벌A지구 A5블럭)",
-      "households": 572,
-      "receiptBegin": "2026-11-16",
-      "receiptEnd": "2026-11-18",
-      "state": "upcoming",
-      "dday": 3,
-      "announceDate": "2026-11-06",
-      "winnerDate": "2026-11-24",
-      "specialBegin": "2026-11-16",
-      "specialEnd": "2026-11-16",
-      "rank1": {
-        "local": "2026-11-17",
-        "other": "2026-11-17",
-        "gyeonggi": null
-      },
-      "rank2": {
-        "local": "2026-11-18",
-        "other": "2026-11-18",
-        "gyeonggi": null
-      },
-      "contractBegin": "2026-12-07",
-      "contractEnd": "2026-12-09",
-      "houseType": "민영",
-      "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000557&pblancNo=2026000557"
-    },
-    {
-      "name": "중화역 라온프라이빗 센트로",
-      "area": "서울",
-      "address": "서울특별시 중랑구 중화동 303-9번지 일원",
-      "households": 113,
-      "receiptBegin": "2026-11-16",
-      "receiptEnd": "2026-11-19",
-      "state": "upcoming",
-      "dday": 3,
-      "announceDate": "2026-11-06",
-      "winnerDate": "2026-11-25",
-      "specialBegin": "2026-11-16",
-      "specialEnd": "2026-11-16",
-      "rank1": {
-        "local": "2026-11-17",
-        "other": "2026-11-18",
-        "gyeonggi": null
-      },
-      "rank2": {
-        "local": "2026-11-19",
-        "other": "2026-11-19",
-        "gyeonggi": null
-      },
-      "contractBegin": "2026-12-07",
-      "contractEnd": "2026-12-09",
-      "houseType": "민영",
-      "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000497&pblancNo=2026000497"
-    },
-    {
       "name": "부천대장 하우스토리 디센트(부천대장지구 A2BL) 공공분양주택",
       "area": "경기",
       "address": "경기도 부천시 오정구 대장동, 오정동, 원종동, 삼정동 일원 부천대장 공공주택지구 내 A2블록",
       "households": 548,
       "receiptBegin": "2026-11-23",
       "receiptEnd": "2026-11-25",
-      "state": "upcoming",
-      "dday": 10,
+      "state": "open",
+      "dday": 1,
       "announceDate": "2026-11-12",
       "winnerDate": "2026-12-01",
       "specialBegin": "2026-11-23",
@@ -239,8 +71,8 @@
       "households": 984,
       "receiptBegin": "2026-11-23",
       "receiptEnd": "2026-11-25",
-      "state": "upcoming",
-      "dday": 10,
+      "state": "open",
+      "dday": 1,
       "announceDate": "2026-11-12",
       "winnerDate": "2026-12-01",
       "specialBegin": "2026-11-23",
@@ -259,6 +91,174 @@
       "contractEnd": "2026-12-15",
       "houseType": "민영",
       "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000576&pblancNo=2026000576"
+    },
+    {
+      "name": "해링턴 플레이스 문래",
+      "area": "서울",
+      "address": "서울특별시 영등포구 문래동3가 27-1번지 일원",
+      "households": 218,
+      "receiptBegin": "2026-11-23",
+      "receiptEnd": "2026-11-26",
+      "state": "open",
+      "dday": 2,
+      "announceDate": "2026-11-13",
+      "winnerDate": "2026-12-02",
+      "specialBegin": "2026-11-23",
+      "specialEnd": "2026-11-23",
+      "rank1": {
+        "local": "2026-11-24",
+        "other": "2026-11-25",
+        "gyeonggi": null
+      },
+      "rank2": {
+        "local": "2026-11-26",
+        "other": "2026-11-26",
+        "gyeonggi": null
+      },
+      "contractBegin": "2026-12-14",
+      "contractEnd": "2026-12-16",
+      "houseType": "민영",
+      "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000560&pblancNo=2026000560"
+    },
+    {
+      "name": "시흥 거모 아테라(시흥거모 A-6BL) 신혼희망타운(공공분양)(본청약)",
+      "area": "경기",
+      "address": "경기도 시흥시 거모지구 내 A-6블록",
+      "households": 480,
+      "receiptBegin": "2026-11-16",
+      "receiptEnd": "2026-11-27",
+      "state": "open",
+      "dday": 3,
+      "announceDate": "2026-11-06",
+      "winnerDate": "2026-12-08",
+      "specialBegin": null,
+      "specialEnd": null,
+      "rank1": {
+        "local": "2026-11-16",
+        "other": "2026-11-16",
+        "gyeonggi": "2026-11-16"
+      },
+      "rank2": {
+        "local": "2026-11-27",
+        "other": "2026-11-27",
+        "gyeonggi": "2026-11-27"
+      },
+      "contractBegin": "2027-03-11",
+      "contractEnd": "2027-03-14",
+      "houseType": "국민",
+      "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026820015&pblancNo=2026820015"
+    },
+    {
+      "name": "경희궁 에피트",
+      "area": "서울",
+      "address": "서울특별시 종로구 교남동 28번지 일원",
+      "households": 134,
+      "receiptBegin": "2026-11-25",
+      "receiptEnd": "2026-11-30",
+      "state": "upcoming",
+      "dday": 1,
+      "announceDate": "2026-11-13",
+      "winnerDate": "2026-12-04",
+      "specialBegin": "2026-11-25",
+      "specialEnd": "2026-11-25",
+      "rank1": {
+        "local": "2026-11-26",
+        "other": "2026-11-27",
+        "gyeonggi": null
+      },
+      "rank2": {
+        "local": "2026-11-30",
+        "other": "2026-11-30",
+        "gyeonggi": null
+      },
+      "contractBegin": "2026-12-16",
+      "contractEnd": "2026-12-18",
+      "houseType": "민영",
+      "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000505&pblancNo=2026000505"
+    },
+    {
+      "name": "고양 한신더휴 퍼스트원",
+      "area": "경기",
+      "address": "경기도 고양시 덕양구 행신동 173-1번지 일원",
+      "households": 102,
+      "receiptBegin": "2026-11-30",
+      "receiptEnd": "2026-12-02",
+      "state": "upcoming",
+      "dday": 6,
+      "announceDate": "2026-11-19",
+      "winnerDate": "2026-12-09",
+      "specialBegin": "2026-11-30",
+      "specialEnd": "2026-11-30",
+      "rank1": {
+        "local": "2026-12-01",
+        "other": "2026-12-01",
+        "gyeonggi": null
+      },
+      "rank2": {
+        "local": "2026-12-02",
+        "other": "2026-12-02",
+        "gyeonggi": null
+      },
+      "contractBegin": "2026-12-21",
+      "contractEnd": "2026-12-23",
+      "houseType": "민영",
+      "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000585&pblancNo=2026000585"
+    },
+    {
+      "name": "소사 휴먼빌",
+      "area": "경기",
+      "address": "경기도 부천시 소사구 소사본동 277-30번지 일원",
+      "households": 45,
+      "receiptBegin": "2026-11-30",
+      "receiptEnd": "2026-12-02",
+      "state": "upcoming",
+      "dday": 6,
+      "announceDate": "2026-11-20",
+      "winnerDate": "2026-12-08",
+      "specialBegin": "2026-11-30",
+      "specialEnd": "2026-11-30",
+      "rank1": {
+        "local": "2026-12-01",
+        "other": "2026-12-01",
+        "gyeonggi": null
+      },
+      "rank2": {
+        "local": "2026-12-02",
+        "other": "2026-12-02",
+        "gyeonggi": null
+      },
+      "contractBegin": "2026-12-21",
+      "contractEnd": "2026-12-23",
+      "houseType": "민영",
+      "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000591&pblancNo=2026000591"
+    },
+    {
+      "name": "왕숙 한신더휴 센텀(남양주 왕숙 A-17BL) 공공분양주택",
+      "area": "경기",
+      "address": "경기도 남양주시 진건읍 진관리 일원 남양주 왕숙 공공주택지구 A-17BL",
+      "households": 379,
+      "receiptBegin": "2026-11-30",
+      "receiptEnd": "2026-12-02",
+      "state": "upcoming",
+      "dday": 6,
+      "announceDate": "2026-11-19",
+      "winnerDate": "2026-12-08",
+      "specialBegin": "2026-11-30",
+      "specialEnd": "2026-11-30",
+      "rank1": {
+        "local": "2026-12-01",
+        "other": "2026-12-01",
+        "gyeonggi": "2026-12-01"
+      },
+      "rank2": {
+        "local": "2026-12-02",
+        "other": "2026-12-02",
+        "gyeonggi": "2026-12-02"
+      },
+      "contractBegin": "2027-02-15",
+      "contractEnd": "2027-02-17",
+      "houseType": "국민",
+      "url": "https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do?houseManageNo=2026000575&pblancNo=2026000575"
     }
   ]
 }
