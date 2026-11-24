@@ -3,16 +3,16 @@
   "region": "경기 양평군",
   "sido": "경기",
   "group": "gyeonggi-si",
-  "updatedAt": "2026-11-13T20:18:58+09:00",
+  "updatedAt": "2026-11-24T16:20:24+09:00",
   "sparse": false,
   "trades3m": 109,
   "trade": {
-    "week": "2026-11-2",
+    "week": "2026-11-3",
     "weeks": 4,
     "statsDays": 92,
-    "pyeongPrice": 1576,
+    "pyeongPrice": 1633,
     "m84": 46000,
-    "m59": 30000,
+    "m59": 32750,
     "count": 109,
     "highs": [
       {
@@ -44,28 +44,23 @@
         "prevHigh": 40200
       },
       {
-        "apt": "블루밍1단지",
-        "area": 134.9,
-        "date": "2026-09-27",
-        "amount": 37000,
-        "prevHigh": 32000
+        "apt": "양평휴먼빌리버파크어반",
+        "area": 75.0,
+        "date": "2026-09-09",
+        "amount": 41000,
+        "prevHigh": 40500
       }
     ],
     "actives": [
       {
         "apt": "양평역한라비발디",
-        "count": 22,
-        "median": 47850
+        "count": 25,
+        "median": 47000
       },
       {
         "apt": "용문역반도유보라아이비파크",
-        "count": 10,
-        "median": 31250
-      },
-      {
-        "apt": "블루밍2단지",
-        "count": 6,
-        "median": 30000
+        "count": 8,
+        "median": 32750
       },
       {
         "apt": "양평공흥3휴먼빌아틀리에",
@@ -76,29 +71,27 @@
         "apt": "행복마을(공흥주공)",
         "count": 6,
         "median": 17100
+      },
+      {
+        "apt": "블루밍2단지",
+        "count": 5,
+        "median": 30000
       }
     ]
   },
   "rent": {
-    "week": "2026-11-2",
+    "week": "2026-11-3",
     "weeks": 4,
-    "jeonseM84": 28650,
-    "jeonseM59": 18500,
-    "monthlyDeposit": 4000,
-    "monthlyRent": 110,
-    "jeonseRatio": 82,
+    "jeonseM84": 28500,
+    "jeonseM59": 13900,
+    "monthlyDeposit": 3000,
+    "monthlyRent": 100,
+    "jeonseRatio": 80,
     "ratioDays": 92,
-    "count": 23
+    "count": 27
   },
   "window": 4,
   "weeks": [
-    {
-      "week": "2026-06-2",
-      "pyeongPrice": 1516,
-      "jeonseRatio": 60,
-      "tradeCount": 11,
-      "rentCount": 14
-    },
     {
       "week": "2026-06-3",
       "pyeongPrice": 1541,
@@ -157,36 +150,36 @@
     },
     {
       "week": "2026-08-1",
-      "pyeongPrice": 1741,
-      "jeonseRatio": 73,
-      "tradeCount": 14,
+      "pyeongPrice": 1695,
+      "jeonseRatio": 75,
+      "tradeCount": 15,
       "rentCount": 28
     },
     {
       "week": "2026-08-2",
-      "pyeongPrice": 1485,
-      "jeonseRatio": 75,
+      "pyeongPrice": 1474,
+      "jeonseRatio": 77,
       "tradeCount": 12,
       "rentCount": 21
     },
     {
       "week": "2026-08-3",
-      "pyeongPrice": 1412,
-      "jeonseRatio": 75,
+      "pyeongPrice": 1406,
+      "jeonseRatio": 77,
       "tradeCount": 7,
       "rentCount": 16
     },
     {
       "week": "2026-08-4",
-      "pyeongPrice": 1485,
-      "jeonseRatio": 76,
+      "pyeongPrice": 1451,
+      "jeonseRatio": 77,
       "tradeCount": 10,
       "rentCount": 11
     },
     {
       "week": "2026-08-5",
       "pyeongPrice": 1485,
-      "jeonseRatio": 76,
+      "jeonseRatio": 77,
       "tradeCount": 2,
       "rentCount": 2
     },
@@ -200,7 +193,7 @@
     {
       "week": "2026-09-2",
       "pyeongPrice": 1576,
-      "jeonseRatio": 77,
+      "jeonseRatio": 78,
       "tradeCount": 12,
       "rentCount": 15
     },
@@ -237,12 +230,12 @@
       "pyeongPrice": 1447,
       "jeonseRatio": 79,
       "tradeCount": 9,
-      "rentCount": 6
+      "rentCount": 7
     },
     {
       "week": "2026-10-3",
       "pyeongPrice": 1667,
-      "jeonseRatio": 78,
+      "jeonseRatio": 79,
       "tradeCount": 14,
       "rentCount": 9
     },
@@ -251,28 +244,35 @@
       "pyeongPrice": 1800,
       "jeonseRatio": 79,
       "tradeCount": 9,
-      "rentCount": 11
+      "rentCount": 12
     },
     {
       "week": "2026-10-5",
-      "pyeongPrice": 1819,
+      "pyeongPrice": 1814,
       "jeonseRatio": 79,
-      "tradeCount": 1,
+      "tradeCount": 2,
       "rentCount": 4
     },
     {
       "week": "2026-11-1",
-      "pyeongPrice": 1805,
+      "pyeongPrice": 1800,
       "jeonseRatio": 81,
-      "tradeCount": 4,
+      "tradeCount": 6,
       "rentCount": 3
     },
     {
       "week": "2026-11-2",
       "pyeongPrice": 1795,
-      "jeonseRatio": 82,
-      "tradeCount": 2,
-      "rentCount": 5
+      "jeonseRatio": 79,
+      "tradeCount": 5,
+      "rentCount": 11
+    },
+    {
+      "week": "2026-11-3",
+      "pyeongPrice": 1859,
+      "jeonseRatio": 80,
+      "tradeCount": 4,
+      "rentCount": 9
     }
   ]
 }
